@@ -1,20 +1,25 @@
-import React from "react"; 
+import React from "react";
 import Lefside from "./Component/LFTsideBAR/Lefside";
-//import {Header} from "./Component/Header/Header";
-function App(){
- return(
-   <>
-    <div>
-      <section>
-      {/* leftsidebar */}
-       <Lefside />
-       {/*End leftsidebar */}
-       </section>
-       <section>
-         {/* <Header/> */}
-         </section>
-      </div>   
-   </>
- )
+function App() {
+  return (
+    <>
+      {/* <!-- Loader --> */}
+      <div id="global-loader" class="light-loader">
+        <img
+          src="../../assets/img/loaders/loader.svg"
+          class="loader-img"
+          alt="Loader"
+        />
+      </div>
+      {/* <!-- /Loader --> */}
+
+      <div class="page">
+        <section>
+          <Lefside />
+        </section>
+      </div>
+      {/* <Test /> */}
+    </>
+  );
 }
 export default App;
