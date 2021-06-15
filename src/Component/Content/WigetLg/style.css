@@ -1,0 +1,37 @@
+.img-parent-new {
+  /* height: 45px;
+  width: 45px; */
+  border-radius: 50%;
+  text-align: left;
+  display: inline-block;
+  margin-left: -40px;
+}
+.img-parent-new img {
+  height: 35px;
+  width: 40px;
+}
+.text-wrapper {
+  margin-right: 5px;
+  /* flex-direction: row-reverse; */
+  width: 100px;
+}
+.spn {
+  display: inline-block;
+}
+
+.text-wrapper p {
+  margin-top: 0;
+  margin-bottom: 1px;
+  color: #777;
+  text-align: inherit;
+}
+.text-wrapper span {
+  color: #777;
+}
+.text-wrapper {
+  float: right;
+}
+.text {
+  color: rgb(91, 91, 247);
+  font-size: 12px;
+}

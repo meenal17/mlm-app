@@ -1,0 +1,33 @@
+.img-parent {
+  height: 45px;
+  width: 45px;
+  background: #5bc554;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 2;
+  display: flex;
+}
+.img-parent img {
+  margin: 5px;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+}
+.text-wrapper h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #777;
+  padding: 0;
+}
+.text-wrapper span {
+  color: #777;
+}
+.text-wrapper {
+  float: right;
+}
+.search_icons {
+  color: rgb(84, 142, 252);
+  font-size: 15px;
+}
