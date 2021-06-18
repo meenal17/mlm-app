@@ -1,0 +1,59 @@
+/* div[role="menu"] {
+  visibility: hidden;
+}
+
+div[role="menu"].visible {
+  visibility: visible;
+} */
+.download-Content {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px 4px 10px;
+  border-radius: 5px;
+  min-width: 130px;
+  height: 120px;
+  border: 4px solid #dad5f5;
+  background-color: #dad5f5;
+}
+.textpurple {
+  color: #716b96;
+  margin-top: 18px;
+  font-size: 18px;
+}
+.text-1x {
+  font-size: 1.5em;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-purple {
+  color: #35297d;
+}
+.dr-members .referral_count {
+  text-align: center;
+}
+.download-Content2 {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px 4px 10px;
+  border-radius: 5px;
+  min-width: 130px;
+  height: 120px;
+  border: 4px solid #d3e0d4;
+  background-color: #d3e0d4;
+  margin-left: -20 !important;
+}
+.textgreen {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #366139;
+}
+img {
+  height: 40px;
+  width: 40px;
+}
+.icon {
+  background-color: grey;
+  color: #dad5f5;
+  font-size: 30px;
+}

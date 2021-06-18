@@ -1,6 +1,5 @@
 import React from "react";
-import {Table} from "react-bootstrap";
-
+import "./style.css";
 function ListWidget2() {
   return (
     <div>
@@ -8,55 +7,58 @@ function ListWidget2() {
         <div className="col-xl-12 col-lg-6">
           <div className="card overflow-hidden ">
             <div className="card-header pb-0">
-              <div className="d-flex justify-content-between">
-                <h4
-                  className="card-title mg-b-10"
-                  style={{textDecoration: "none"}}
-                >
-                  Income & Commssion
-                </h4>
+              <div className="card-body p-0 mb-1">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Package Amount</td>
+                      <td class="info-td"> € 36406.06 </td>
+                      <td>
+                        <td>
+                          <button className="btn btn-info">PA</button>
+                        </td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> Registration Fee </td>
+                      <td class="info-td"> € 10792.23 </td>
+                      <td>
+                        <td>
+                          <button className="btn btn-info">PA</button>
+                        </td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> Purchase Amount </td>
+                      <td class="info-td"> € 2104.72 </td>
+                      <td>
+                        <td>
+                          <button
+                            className="btn btn-info"
+                            style={{padding: "5"}}
+                          >
+                            PA
+                          </button>
+                        </td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> Commission Charges </td>
+                      <td class="info-td"> € 1461.1 </td>
+                      <td>
+                        <td>
+                          <button
+                            className="btn btn-info"
+                            style={{padding: "5"}}
+                          >
+                            PA
+                          </button>
+                        </td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              {/* heding */}
-            </div>
-            {/* <Table>
-              <thead>
-                <a href="">Income</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                <a href="">Comission</a>
-              </thead>
-            </Table> */}
-            <div className="card-body p-0">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>
-                      <a href="">Income</a>
-                    </th>
-                    <th>
-                      <a href="">Comission</a>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                  </tr>
-                  <tr>
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="btn btn-outline-info">PA</button>
-                    </td>
-                    <td>
-                      <button className="btn btn-outline-info">PA</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>

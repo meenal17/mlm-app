@@ -20,6 +20,7 @@
   margin-bottom: 2px;
   color: #777;
   padding: 0;
+  display: inline-block;
 }
 .text-wrapper span {
   color: #777;
@@ -30,4 +31,24 @@
 .search_icons {
   color: rgb(84, 142, 252);
   font-size: 15px;
+}
+.icon-parent {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #64646d;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.icon-parent:hover {
+  background-color: rgb(97, 95, 95);
+  cursor: pointer;
+}
+.content-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 30px; */
 }

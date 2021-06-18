@@ -1,24 +1,38 @@
 import React from "react";
 import Lefside from "./Component/LFTsideBAR/Lefside";
+import Header from "./Component/Header/Header";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Breadcrumb from "./Breadcrumb";
+import Description from "./Component/Dashboard/Description";
 function App() {
   return (
     <>
-      {/* <!-- Loader --> */}
-      <div id="global-loader" class="light-loader">
-        <img
-          src="../../assets/img/loaders/loader.svg"
-          class="loader-img"
-          alt="Loader"
-        />
-      </div>
-      {/* <!-- /Loader --> */}
+      <Router>
+        {/* <!-- Loader --> */}
+        <div id="global-loader" class="light-loader">
+          <img
+            src="../../assets/img/loaders/loader.svg"
+            class="loader-img"
+            alt="Loader"
+          />
+        </div>
+        {/* <!-- /Loader --> */}
 
-      <div class="page">
-        <section>
-          <Lefside />
-        </section>
-      </div>
-      {/* <Test /> */}
+        <div class="page">
+          <section>
+            {/* <Header /> */}
+            <Lefside />
+            <Switch>
+              {/* <Route path="/" exact component={Header} />  */}
+              {/* <Route path="/widgets" exact component={Widgets} /> */}
+            </Switch>
+            {/* <div className="col-sm-12 col-lg-12 ">
+              <Description />
+            </div> */}
+          </section>
+        </div>
+        {/* <Test /> */}
+      </Router>
     </>
   );
 }

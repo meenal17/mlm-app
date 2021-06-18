@@ -35,3 +35,22 @@
   color: rgb(91, 91, 247);
   font-size: 12px;
 }
+.info-td {
+  color: rgb(83, 248, 83);
+  font-size: 15px;
+}
+.font-icons {
+  color: #757e83;
+  line-height: 1.42857143;
+  font-size: 40px;
+  justify-content: space-between;
+  padding: 15px;
+}
+.text-style:hover {
+  text-decoration: underline rgb(59, 182, 231) 4px;
+  transition: ease-in;
+}
+.icons-text {
+  font-size: 20px;
+  justify-content: space-between;
+}
