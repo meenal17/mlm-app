@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./Networkstyle.css";
-// import Description from "../Dashboard/Description";
 function DownloadMember() {
   return (
     <>
@@ -344,7 +343,6 @@ function DownloadMember() {
           </div>
         </div>
       </Link>
-      {/* <Description /> */}
     </>
   );
 }

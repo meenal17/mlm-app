@@ -1,5 +1,4 @@
 import React from "react";
-import Description from "../Dashboard/Description";
 import "./signUpStyle.css";
 import {Link} from "react-router-dom";
 function Register() {
@@ -116,9 +115,7 @@ function Register() {
           </div>
         </div>
       </Link>
-      <div className="mr-2 ml-2">
-        <Description />
-      </div>
+      <div className="mr-2 ml-2"></div>
     </>
   );
 }
