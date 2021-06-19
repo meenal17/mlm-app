@@ -8,20 +8,6 @@ function Register() {
         <div class="alert alert-light mr-2 ml-2" style={{fontSize: 22 + "px"}}>
           Refferal Member
         </div>
-        {/* <div className="container-2">
-          <div className="row">
-            <div className="col-md-3"></div>
-            <div className="col-md-6">
-              <ul className="progres">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-              </ul>
-            </div>
-            <div className="col-md-3"></div>
-          </div>
-        </div> */}
         <div class="container-fluid">
           <div class="row">
             <div className="col-md-3"></div>

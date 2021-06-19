@@ -51,7 +51,7 @@ const LefSide = () => {
                 window?.jQuery(e.currentTarget)?.toggleClass("is-expanded")
               }
             >
-              <Link class="side-menu__item" to="">
+              <Link class="side-menu__item">
                 <i class="side-menu__icon fa fa-sitemap text-white"> </i>
                 <span class="side-menu__label">Networks</span>
                 <i class="angle fe fe-chevron-down"></i>
@@ -68,7 +68,7 @@ const LefSide = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/tree-view">
+                  <Link class="slide-item" to="/TreeView">
                     Tree View
                   </Link>
                 </li>
@@ -97,17 +97,17 @@ const LefSide = () => {
               </a>
               <ul class="slide-menu">
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/Register">
                     Register
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/Approval">
                     Approval
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/BRegister">
                     Bulk Register
                   </Link>
                 </li>

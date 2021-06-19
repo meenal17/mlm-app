@@ -3,7 +3,7 @@ import "../Dashboard/style.css";
 function Description() {
   return (
     <>
-      <div className="card">
+      <div className="card mr-2 ml-2">
         <div class="card-body mr-10">
           {/* first row */}
           <div className="row">

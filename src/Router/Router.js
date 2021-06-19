@@ -9,7 +9,7 @@ import TreeView from "../Component/Networks/TreeView";
 import ReferralMember from "../Component/Networks/ReferralMember";
 import Register from "../Component/SignUp/Register";
 import Approval from "../Component/SignUp/Approval";
-import BulkRegister from "../Component/SignUp/Bulk Register";
+import BRegister from "../Component/SignUp/BRegister";
 import DownloadMember from "../Component/Networks/DownloadMember";
 export default function Router() {
   return (
@@ -21,19 +21,18 @@ export default function Router() {
             <div className="main-content app-content">
               <Header />
               <Switch>
-                <Route path="/" component={Breadcrumb} />
-                <Route path="/TreeView" exact component={TreeView} />
+                <Route exact path="/dashboard" component={Breadcrumb} />
+                <Route exact path="/TreeView" component={TreeView} />
                 <Route
                   path="/DownloadMember"
                   exact
                   component={DownloadMember}
                 />
-                <Route path="/ReferalMember" exact component={ReferralMember} />
-                <Route path="/Register" exact component={Register} />
-                <Route path="/Approval" exact component={Approval} />
-                <Route path="/Bulkregister" exact component={BulkRegister} />
+                <Route exact path="/ReferalMember" component={ReferralMember} />
+                <Route exact path="/Register" component={Register} />
+                <Route exact path="/Approval" component={Approval} />
+                <Route exact path="/BRegister" component={BRegister} />
               </Switch>
-
               <Description />
             </div>
           </div>

@@ -7,7 +7,7 @@ import DownloadMember from "../Networks/DownloadMember";
 import ReferralMember from "../Networks/ReferralMember";
 import Register from "../SignUp/Register";
 import Approval from "../SignUp/Approval";
-import BulkRegister from "../SignUp/Bulk Register";
+import BulkRegister from "../SignUp/BRegister";
 import Description from "../Dashboard/Description";
 const Header = () => {
   return (
