@@ -89,9 +89,7 @@ function TreeView() {
           <br />
         </div>
       </Link>
-      <div className="col-md-12">
-        <Description />
-      </div>
+      <div className="col-md-12">{/* <Description /> */}</div>
     </>
   );
 }

@@ -163,11 +163,11 @@ function Bar() {
         </div>
       </div>
 
-      <div className="mt-0">
+      {/* <div className="mt-0">
         <div class="card col-sm-12">
           <Description />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

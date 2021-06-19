@@ -4,6 +4,7 @@ import Header from "./Component/Header/Header";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Breadcrumb from "./Breadcrumb";
 import Description from "./Component/Dashboard/Description";
+import DownloadMember from "./Component/Networks/DownloadMember";
 function App() {
   return (
     <>
@@ -21,8 +22,12 @@ function App() {
         <div class="page">
           <section>
             {/* <Header /> */}
-            <Lefside />
+            <div className="col-lg-12 pl-0 pr-0">
+              <Lefside />
+            </div>
+
             <Switch>
+              {/* <Route exact path="/downlinemember" componen={DownloadMember} /> */}
               {/* <Route path="/" exact component={Header} />  */}
               {/* <Route path="/widgets" exact component={Widgets} /> */}
             </Switch>

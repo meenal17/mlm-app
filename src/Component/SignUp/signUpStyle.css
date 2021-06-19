@@ -1,0 +1,20 @@
+.title-name {
+  color: grey;
+}
+
+.progres li {
+  list-style-type: none;
+  float: left;
+  width: 22.22%;
+  position: relative;
+}
+.progres li {
+  content: "1";
+  width: 30px;
+  height: 30px;
+  border: 1px solid#fff;
+  display: block;
+  text-align: center;
+  color: black;
+  background-color: #fff;
+}

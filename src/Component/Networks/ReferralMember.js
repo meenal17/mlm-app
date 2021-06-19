@@ -1,13 +1,12 @@
 import React from "react";
+import DownloadMember from "./DownloadMember";
 import {Link} from "react-router-dom";
-import "./Networkstyle.css";
-// import Description from "../Dashboard/Description";
-function DownloadMember() {
+function ReferralMember() {
   return (
     <>
-      <Link to="/Download">
+      <Link to="/ReferalMember">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          DownloadMember
+          Refferal Member
         </div>
 
         <div className="card ml-2 p-0 mr-2">
@@ -82,16 +81,6 @@ function DownloadMember() {
                       fontWeight: "bold",
                     }}
                   >
-                    Placement
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
                     Sponsor
                   </th>
                   <th
@@ -112,7 +101,17 @@ function DownloadMember() {
                       fontWeight: "bold",
                     }}
                   >
-                    Icon
+                    Joining Date
+                  </th>
+                  <th
+                    style={{
+                      fontSize: 15 + "px",
+                      color: "black",
+                      fontWeight: "bold",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Action
                   </th>
                 </tr>
               </thead>
@@ -130,8 +129,8 @@ function DownloadMember() {
                     John
                   </td>
                   <td>binaryaddon</td>
-                  <td>binaryaddon</td>
                   <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
 
                   <i
                     className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -151,8 +150,8 @@ function DownloadMember() {
                     John
                   </td>
                   <td>binaryaddon</td>
-                  <td>binaryaddon</td>
                   <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
 
                   <i
                     className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -172,8 +171,8 @@ function DownloadMember() {
                     John
                   </td>
                   <td>binaryaddon</td>
-                  <td>binaryaddon</td>
                   <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
 
                   <i
                     className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -193,8 +192,28 @@ function DownloadMember() {
                     John
                   </td>
                   <td>binaryaddon</td>
+                  <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
+                  <i
+                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                    style={{fontSize: 15 + "px"}}
+                  ></i>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      className="mr-3"
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/img/dashboard/user.jpg"
+                      }
+                      alt="image not found"
+                    />
+                    John
+                  </td>
                   <td>binaryaddon</td>
                   <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
 
                   <i
                     className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -214,8 +233,28 @@ function DownloadMember() {
                     John
                   </td>
                   <td>binaryaddon</td>
+                  <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
+                  <i
+                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                    style={{fontSize: 15 + "px"}}
+                  ></i>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      className="mr-3"
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/img/dashboard/user.jpg"
+                      }
+                      alt="image not found"
+                    />
+                    John
+                  </td>
                   <td>binaryaddon</td>
                   <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
 
                   <i
                     className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -235,8 +274,8 @@ function DownloadMember() {
                     John
                   </td>
                   <td>binaryaddon</td>
-                  <td>binaryaddon</td>
                   <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
 
                   <i
                     className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -256,50 +295,8 @@ function DownloadMember() {
                     John
                   </td>
                   <td>binaryaddon</td>
-                  <td>binaryaddon</td>
                   <td>1</td>
-
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
-
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                  <td>15 Feb 2021 - 06:49:31 PM</td>
 
                   <i
                     className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -311,7 +308,7 @@ function DownloadMember() {
           </div>
           <div className="card ml-5">
             <div className="card body">
-              <nav aria-label="...">
+              <nav aria-label="... ">
                 <ul class="pagination">
                   <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="1">
@@ -344,9 +341,8 @@ function DownloadMember() {
           </div>
         </div>
       </Link>
-      {/* <Description /> */}
     </>
   );
 }
 
-export default DownloadMember;
+export default ReferralMember;

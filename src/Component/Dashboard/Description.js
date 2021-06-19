@@ -8,25 +8,31 @@ function Description() {
           {/* first row */}
           <div className="row">
             <div className="col-sm-6">
-              <p class="card-text mr-5">
-                <i className="fa fa-check-circle mr-2"></i>
+              <p class="card-text mr-5" style={{color: "grey"}}>
+                <i
+                  className="fa fa-check-circle mr-2"
+                  style={{color: "grey"}}
+                ></i>
                 You are viewing shared demo. Multiple users may try this demo
                 simultaneously
               </p>
-              <p>
-                <i className="fa fa-check-circle"></i>Try custom demo as per
-                your configurations.
+              <p style={{color: "grey"}}>
+                <i className="fa fa-check-circle" style={{color: "grey"}}></i>
+                Try custom demo as per your configurations.
               </p>
             </div>
             <div className="col-sm-6">
-              <p class="card-text mr-5">
-                <i className="fa fa-check-circle mr-2"></i>
+              <p class="card-text mr-5" style={{color: "grey"}}>
+                <i
+                  className="fa fa-check-circle mr-2"
+                  style={{color: "grey"}}
+                ></i>
                 You are viewing shared demo. Multiple users may try this demo
                 simultaneously
               </p>
-              <p>
-                <i className="fa fa-check-circle"></i>Try custom demo as per
-                your configurations.
+              <p style={{color: "grey"}}>
+                <i className="fa fa-check-circle" style={{color: "grey"}}></i>
+                Try custom demo as per your configurations.
               </p>
             </div>
           </div>

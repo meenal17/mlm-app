@@ -4,6 +4,11 @@ import MainHeader from "./Main_header";
 import {Link} from "react-router-dom";
 import TreeView from "../Networks/TreeView";
 import DownloadMember from "../Networks/DownloadMember";
+import ReferralMember from "../Networks/ReferralMember";
+import Register from "../SignUp/Register";
+import Approval from "../SignUp/Approval";
+import BulkRegister from "../SignUp/Bulk Register";
+import Description from "../Dashboard/Description";
 const Header = () => {
   return (
     <>
@@ -362,10 +367,15 @@ const Header = () => {
           </div>
           <MainHeader />
         </div>
+        <Breadcrumb />
+        <Description />
 
-        {/* <Breadcrumb /> */}
-        {/* <Link path="/widgets" exact component={TreeView} /> */}
-        <Link path="/DownloadMember" exact component={DownloadMember} />
+        {/* <Link path="/TreeView" exact component={TreeView} /> */}
+        {/* <Link path="/DownloadMember" exact component={DownloadMember} /> */}
+        {/* <Link path="/ReferalMember" exact component={ReferralMember} /> */}
+        {/* <Link path="/Register" exact component={Register} /> */}
+        {/* <Link path="/Approval" exact component={Approval} /> */}
+        {/* <Link path="/Bulkregister" exact component={BulkRegister} /> */}
       </div>
     </>
   );
