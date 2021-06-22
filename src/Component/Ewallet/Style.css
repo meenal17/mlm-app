@@ -1,0 +1,61 @@
+.li-col {
+  border-left: 2px solid red;
+}
+.p-col {
+  color: red;
+}
+.td-color {
+  color: #44badc;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+.linked:hover {
+  text-decoration: underline 2px solid #7266ba;
+}
+.td {
+  color: #11a666;
+  background-color: #dbf2e8;
+}
+.td-color1 {
+  display: inline-block;
+  padding: 0.35em 0.5em;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3.25rem;
+}
+.td2 {
+  color: #7266ba;
+  /* background-color: #7266ba54; */
+}
+.td-color2 {
+  /* display: inline-block; */
+  /* padding: 0.35em 0.5em;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3.25rem;
+  margin-left: 100px; */
+}
+.td-2 {
+  color: #7266ba;
+  background-color: #7266ba54;
+}
+.td-col {
+  display: inline-block;
+  padding: 0.35em 0.5em;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3.25rem;
+}

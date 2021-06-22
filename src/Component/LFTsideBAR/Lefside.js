@@ -6,8 +6,8 @@ const LefSide = () => {
   return (
     <>
       <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-      <aside class="app-sidebar sidebar-scroll bg-dark">
-        <div class="main-sidebar-header">
+      <aside class="app-sidebar sidebar-scroll">
+        <div class="main-sidebar-header" style={{backgroundColor: "#1c2b36"}}>
           <a class=" desktop-logo logo-light " href="">
             <img
               src="../../assets/img/brand/logo.png"
@@ -29,15 +29,18 @@ const LefSide = () => {
               alt="logo"
             />
           </a>
-          <a class="logo-icon mobile-logo icon-dark" href="">
+          <a class="logo-icon mobile-logo " href="">
             <img
               src="../../assets/img/brand/icon.png"
-              class="logo-icon dark-theme"
+              class="logo-icon "
               alt="logo"
             />
           </a>
         </div>
-        <div class="main-sidebar-body circle-animation  ">
+        <div
+          class="main-sidebar-body circle-animation"
+          style={{backgroundColor: "#1c2b36"}}
+        >
           <ul class="side-menu circle">
             <li class="slide">
               <Link class="side-menu__item" to="/dashboard">
@@ -114,13 +117,13 @@ const LefSide = () => {
               </ul>
             </li>
             <li class="slide">
-              <Link class="side-menu__item" to="/">
+              <Link class="side-menu__item" to="/Bussiness">
                 <i class="side-menu__icon fa fa-building-o"></i>
                 <span class="side-menu__label">Bussiness</span>
               </Link>
             </li>
             <li class="slide">
-              <Link class="side-menu__item" to="/">
+              <Link class="side-menu__item" to="/Ewallet">
                 <i class="side-menu__icon fa fa-briefcase"></i>
                 <span class="side-menu__label">Ewallet</span>
               </Link>
@@ -129,12 +132,6 @@ const LefSide = () => {
               <Link class="side-menu__item" to="/">
                 <i class="side-menu__icon fa fa-money"></i>
                 <span class="side-menu__label">PayOut</span>
-              </Link>
-            </li>
-            <li class="slide">
-              <Link class="side-menu__item" to="/">
-                <i class="side-menu__icon fa fa-bookmark-o"></i>
-                <span class="side-menu__label">Ewallet</span>
               </Link>
             </li>
             <li
@@ -253,21 +250,19 @@ const LefSide = () => {
                     PayOut
                   </Link>
                 </li>
-                <li class="slide">
-                  <a class="side-menu__item" data-toggle="slide" href="#">
-                    <i class="side-menu__icon fa fa-envelope-o"></i>
-                    <span class="side-menu__label">Mail</span>
-                    <i class="angle fe fe-chevron-down"></i>
-                  </a>
-                </li>
-                <li class="slide">
-                  <a class="side-menu__item" data-toggle="slide" href="#">
-                    <i class="side-menu__icon fa fa-sign-out"></i>
-                    <span class="side-menu__label">LogOut</span>
-                    <i class="angle fe fe-chevron-down"></i>
-                  </a>
-                </li>
               </ul>
+            </li>
+            <li class="slide">
+              <a class="side-menu__item" data-toggle="slide" href="#">
+                <i class="side-menu__icon fa fa-envelope-o"></i>
+                <span class="side-menu__label">Mail</span>
+              </a>
+            </li>
+            <li class="slide">
+              <a class="side-menu__item" data-toggle="slide" href="#">
+                <i class="side-menu__icon fa fa-sign-out"></i>
+                <span class="side-menu__label">LogOut</span>
+              </a>
             </li>
           </ul>
         </div>

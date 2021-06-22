@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function ReferralMember() {
   return (
     <>
-      <Link to="/ReferalMember">
+      <Link to="/ReferralMember">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
           Refferal Member
         </div>

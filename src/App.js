@@ -13,6 +13,7 @@ function App() {
             alt="Loader"
           />
         </div>
+
         <CustomRouter />
       </Router>
     </>

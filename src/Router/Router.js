@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "../Component/RTL/SideBar";
 import LefSide from "../Component/LFTsideBAR/Lefside";
 import Header from "../Component/Header/Header";
 import Breadcrumb from "../Breadcrumb";
@@ -11,6 +10,8 @@ import Register from "../Component/SignUp/Register";
 import Approval from "../Component/SignUp/Approval";
 import BRegister from "../Component/SignUp/BRegister";
 import DownloadMember from "../Component/Networks/DownloadMember";
+import Bussiness from "../Component/Bussiness/Bussiness";
+import Ewallet from "../Component/Ewallet/Ewallet";
 export default function Router() {
   return (
     <div class="page">
@@ -28,10 +29,16 @@ export default function Router() {
                   exact
                   component={DownloadMember}
                 />
-                <Route exact path="/ReferalMember" component={ReferralMember} />
+                <Route
+                  exact
+                  path="/ReferralMember"
+                  component={ReferralMember}
+                />
                 <Route exact path="/Register" component={Register} />
                 <Route exact path="/Approval" component={Approval} />
                 <Route exact path="/BRegister" component={BRegister} />
+                <Route exact path="/Bussiness" component={Bussiness} />
+                <Route exact path="/Ewallet" component={Ewallet} />
               </Switch>
               <Description />
             </div>

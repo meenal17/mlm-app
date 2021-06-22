@@ -60,6 +60,7 @@ function DownloadMember() {
             </div>
           </div>
         </div>
+        {/* Table */}
         <div class="card mr-2 ml-2">
           <div className="card-body">
             <table class="table table-hover">
@@ -308,6 +309,7 @@ function DownloadMember() {
               </tbody>
             </table>
           </div>
+          {/* Table end */}
           <div className="card ml-5">
             <div className="card body">
               <nav aria-label="...">
