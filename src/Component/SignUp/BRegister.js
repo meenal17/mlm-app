@@ -53,7 +53,6 @@ function BRegister() {
                   >
                     <a
                       className="p-2 "
-                      href=""
                       title="Download sample file"
                       style={{
                         backgroundColor: "#21c254",
@@ -74,5 +73,4 @@ function BRegister() {
     </>
   );
 }
-
 export default BRegister;

@@ -12,6 +12,7 @@ import BRegister from "../Component/SignUp/BRegister";
 import DownloadMember from "../Component/Networks/DownloadMember";
 import Bussiness from "../Component/Bussiness/Bussiness";
 import Ewallet from "../Component/Ewallet/Ewallet";
+import payout from "../Component/Payout/payout";
 export default function Router() {
   return (
     <div class="page">
@@ -39,6 +40,7 @@ export default function Router() {
                 <Route exact path="/BRegister" component={BRegister} />
                 <Route exact path="/Bussiness" component={Bussiness} />
                 <Route exact path="/Ewallet" component={Ewallet} />
+                <Route exact path="/payout" component={payout} />
               </Switch>
               <Description />
             </div>

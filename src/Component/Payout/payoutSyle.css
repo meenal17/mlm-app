@@ -1,0 +1,24 @@
+img {
+  /* border-radius: 100%; */
+}
+.amount-color {
+  color: #7266ba;
+  background-color: #7266ba54;
+}
+.amt-col2 {
+  display: inline-block;
+  padding: 0.35em 0.5em;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3.25rem;
+}
+.heading {
+  color: rgb(83, 83, 83);
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-left: 10px;
+}

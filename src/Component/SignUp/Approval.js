@@ -16,7 +16,6 @@ function Approval() {
                     style={{
                       fontSize: 15 + "px",
                       color: "black",
-                      fontWeight: "bold",
                     }}
                   >
                     <input type="checkbox" />
@@ -25,7 +24,6 @@ function Approval() {
                     style={{
                       fontSize: 15 + "px",
                       color: "black",
-                      fontWeight: "bold",
                     }}
                   >
                     Name
@@ -34,7 +32,6 @@ function Approval() {
                     style={{
                       fontSize: 15 + "px",
                       color: "black",
-                      fontWeight: "bold",
                     }}
                   >
                     Sponsor
@@ -43,7 +40,6 @@ function Approval() {
                     style={{
                       fontSize: 15 + "px",
                       color: "black",
-                      fontWeight: "bold",
                       fontWeight: "bold",
                     }}
                   >

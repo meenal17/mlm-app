@@ -129,7 +129,7 @@ const LefSide = () => {
               </Link>
             </li>
             <li class="slide">
-              <Link class="side-menu__item" to="/">
+              <Link class="side-menu__item" to="/payout">
                 <i class="side-menu__icon fa fa-money"></i>
                 <span class="side-menu__label">PayOut</span>
               </Link>
