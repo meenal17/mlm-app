@@ -13,6 +13,7 @@ import DownloadMember from "../Component/Networks/DownloadMember";
 import Bussiness from "../Component/Bussiness/Bussiness";
 import Ewallet from "../Component/Ewallet/Ewallet";
 import payout from "../Component/Payout/payout";
+import ProfileView from "../Component/Profile Mangement/ProfileView";
 export default function Router() {
   return (
     <div class="page">
@@ -41,6 +42,7 @@ export default function Router() {
                 <Route exact path="/Bussiness" component={Bussiness} />
                 <Route exact path="/Ewallet" component={Ewallet} />
                 <Route exact path="/payout" component={payout} />
+                <Route exact path="/Profile" component={ProfileView} />
               </Switch>
               <Description />
             </div>

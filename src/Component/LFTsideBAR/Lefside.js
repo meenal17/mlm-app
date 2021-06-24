@@ -147,7 +147,7 @@ const LefSide = () => {
               </a>
               <ul class="slide-menu">
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/Profile">
                     Profile View
                   </Link>
                 </li>

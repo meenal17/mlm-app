@@ -1,0 +1,48 @@
+.profile-pic {
+  height: 150px;
+  width: 100px;
+}
+.profile-icon {
+  margin-left: "20px";
+}
+.image-upload img {
+  width: 80px;
+  cursor: pointer;
+}
+.content {
+  margin-top: 12px;
+  text-align: center;
+}
+.profile-img {
+  text-align: center;
+}
+
+.modal-icon {
+  color: #fff;
+  font-size: 60px;
+}
+.modal-icon2 {
+  color: #fff;
+  font-size: 60px;
+}
+.content-header {
+  background-image: linear-gradient(to right, rgb(40, 15, 109), blue);
+  color: #fff;
+}
+.button:hover {
+  background: #685e9c;
+  color: white;
+  display: block;
+  max-width: 300px;
+  margin: 3px auto;
+  padding: 8px 10px 11px 10px;
+  border-radius: 2px;
+}
+.vertical {
+  border-left: 1px solid rgb(219, 215, 215);
+  height: 350px;
+}
+.vertical2 {
+  border-left: 1px solid rgb(219, 215, 215);
+  height: 200px;
+}

@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import Cards from "../Ewallet/Cards";
 import {Link} from "react-router-dom";
 import PayoutSortingTable1 from "./payoutSortingTable1";
+import Payouttable2 from "./Payouttable2";
+import Payouttable3 from "./Payouttable3";
 function Payout() {
   return (
     <Link to="/payout">
@@ -44,10 +46,10 @@ function Payout() {
             <PayoutSortingTable1 />
           </div>
           <div role="tabpanel" class="tab-pane fade" id="release">
-            payout release
+            <Payouttable2 />
           </div>
           <div role="tabpanel" class="tab-pane fade" id="payment">
-            payment Prosess
+            <Payouttable3 />
           </div>
         </div>
       </div>
