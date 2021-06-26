@@ -14,6 +14,9 @@ import Bussiness from "../Component/Bussiness/Bussiness";
 import Ewallet from "../Component/Ewallet/Ewallet";
 import payout from "../Component/Payout/payout";
 import ProfileView from "../Component/Profile Mangement/ProfileView";
+import MemberList from "../Component/Profile Mangement/MemberList";
+import KycDetails from "../Component/Profile Mangement/KycDetails";
+import Membership from "../Component/Package/Membership";
 export default function Router() {
   return (
     <div class="page">
@@ -43,6 +46,9 @@ export default function Router() {
                 <Route exact path="/Ewallet" component={Ewallet} />
                 <Route exact path="/payout" component={payout} />
                 <Route exact path="/Profile" component={ProfileView} />
+                <Route exact path="/MemberList" component={MemberList} />
+                <Route exact path="/KycDetails" component={KycDetails} />
+                <Route exact path="/membership" component={Membership} />
               </Switch>
               <Description />
             </div>

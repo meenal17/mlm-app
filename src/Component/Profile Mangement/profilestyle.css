@@ -26,7 +26,8 @@
   font-size: 60px;
 }
 .content-header {
-  background-image: linear-gradient(to right, rgb(40, 15, 109), blue);
+  background-color: #685e9c;
+  background-image: linear-gradient(to right, #685e9c, blue);
   color: #fff;
 }
 .button:hover {
@@ -45,4 +46,13 @@
 .vertical2 {
   border-left: 1px solid rgb(219, 215, 215);
   height: 200px;
+}
+.icon-item {
+  margin-top: 10px;
+}
+.check-btn {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #17a2b8;
+  margin-top: 18px;
 }

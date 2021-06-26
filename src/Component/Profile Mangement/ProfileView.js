@@ -4,6 +4,12 @@ import {Link} from "react-router-dom";
 import "../Profile Mangement/profilestyle.css";
 import Modal2 from "./Modal2";
 import Appcard from "./Appcard";
+import Updatepv from "./Updatepv";
+import Form1 from "./Form1";
+import Form2 from "./Form2";
+import Form3 from "./Form3";
+import Form4 from "./Form4";
+import Form5 from "./Form5";
 function ProfileView() {
   return (
     <Link to="/Profile">
@@ -12,7 +18,7 @@ function ProfileView() {
           Profile View
         </div>
         {/* header  ProfileView */}
-        <div className="card mr-2 ml-2 ">
+        <div className="card mr-2 ml-2 pb-3 ">
           <div className="row pt-4 pb-1">
             <div className="col-md-6"></div>
             <div className="col-md-3">
@@ -60,14 +66,21 @@ function ProfileView() {
                 {/* content */}
                 <div className="">
                   <div className="content">
-                    <h4 className="name">Salar khalid </h4>
-                    <h5 className="name2">binaryaddon</h5>
-                    <p className="mail">salarkalid155@gmail.com</p>
+                    <h4 className="name" style={{color: "grey"}}>
+                      Salar khalid{" "}
+                    </h4>
+                    <h5 className="name2" style={{color: "grey"}}>
+                      binaryaddon
+                    </h5>
+                    <p className="mail" style={{color: "grey"}}>
+                      salarkalid155@gmail.com
+                    </p>
                     <div
                       type="button"
                       data-toggle="modal"
                       data-target="#exampleModal"
                       className="button mb-3"
+                      style={{color: "purple"}}
                     >
                       Change Password
                     </div>
@@ -182,19 +195,113 @@ function ProfileView() {
               <h6 style={{color: "grey"}}>Membership packge:</h6>
               <h5 style={{color: "black"}}>Membership Pack:3</h5>
               <hr />
-              <div
-                className="col-md-3"
-                style={{borderRight: "1px solid rgb(219, 215, 215)"}}
-              >
-                <div className="ml-3">
-                  <h6>
+              <div className="row">
+                {/* first */}
+                <div
+                  className="col-md-3"
+                  style={{borderRight: "1px solid rgb(219, 215, 215)"}}
+                >
+                  <div className="p-1">
+                    <h6 style={{color: "grey"}}>
+                      <span>
+                        <i
+                          className="fas fa-arrow-right mr-2"
+                          style={{
+                            backgroundColor: "#DEC5F6",
+                            padding: "8px",
+                            borderRadius: "50%",
+                            color: "black",
+                          }}
+                        ></i>
+                      </span>
+                      Personal PV
+                    </h6>
+
+                    <h4 className="ml-5" style={{color: "black"}}>
+                      2080
+                    </h4>
+                    {/* Update PV */}
+                    <Updatepv />
+                  </div>
+                </div>
+                {/* second */}
+                <div
+                  className="col-md-3 "
+                  style={{borderRight: "1px solid rgb(219, 215, 215)"}}
+                >
+                  <h6 style={{color: "grey"}}>
                     <span>
-                      <i className="fas fa-user mr-2"></i>
+                      <i
+                        className="fas fa-users mr-2"
+                        style={{
+                          backgroundColor: "#F9EAB4",
+                          padding: "8px",
+                          borderRadius: "50%",
+                          color: "black",
+                        }}
+                      ></i>
                     </span>
-                    PersonalPV
+                    Group PV
                   </h6>
-                  <h4>1245734</h4>
-                  Update PV
+                  <h4 className="ml-5" style={{color: "black"}}>
+                    80503
+                  </h4>
+                </div>
+                {/* third */}
+                <div
+                  className="col-md-3"
+                  style={{
+                    borderRight: "1px solid rgb(219, 215, 215)",
+                    padding: "5px",
+                  }}
+                >
+                  <div className="ml-3">
+                    <h6 style={{color: "grey"}}>
+                      <span>
+                        <i
+                          className="fa fa-arrow-left mr-2"
+                          style={{
+                            backgroundColor: "#C5F6F0",
+                            padding: "8px",
+                            borderRadius: "50%",
+                            color: "black",
+                          }}
+                        ></i>
+                      </span>
+                      Left Carry
+                    </h6>
+                    <h4 className="ml-5" style={{color: "black"}}>
+                      8050
+                    </h4>
+                  </div>
+                </div>
+                {/* fourth */}
+                <div
+                  className="col-md-3"
+                  style={{
+                    borderRight: "1px solid rgb(219, 215, 215)",
+                    padding: "5px",
+                  }}
+                >
+                  <div className="ml-3">
+                    <h6 style={{color: "grey"}}>
+                      <span>
+                        <i
+                          className="fas fa-arrow-right mr-2"
+                          style={{
+                            backgroundColor: "#C5F6F0",
+                            padding: "8px",
+                            borderRadius: "50%",
+                            color: "black",
+                          }}
+                        ></i>
+                      </span>
+                      Right Carry
+                    </h6>
+                    <h4 className="ml-5" style={{color: "black"}}>
+                      10
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,6 +309,35 @@ function ProfileView() {
             {/* <Appcard /> */}
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-4 ">
+            <div className="card mt-2 ml-3 p-2">
+              <Form1 />
+            </div>
+          </div>
+          <div className="col-md-8">
+            <div className="card mt-2 mr-3 p-2">
+              <Form2 />
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card  ml-3 p-2">
+              <Form3 />
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card   p-2">
+              <Form4 />
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card  mr-3 p-2">
+              <Form5 />
+            </div>
+          </div>
+        </div>
+
+        {/* second card */}
       </>
     </Link>
   );

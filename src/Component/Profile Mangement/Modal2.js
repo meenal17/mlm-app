@@ -8,6 +8,7 @@ function Modal2() {
         data-toggle="modal"
         data-target="#exampleModal2"
         className="button"
+        style={{color: "purple"}}
       >
         Change Transaction Password
       </div>

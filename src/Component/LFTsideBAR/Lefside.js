@@ -152,12 +152,12 @@ const LefSide = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/MemberList">
                     Member List
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/KycDetails">
                     KYC Details
                   </Link>
                 </li>
@@ -176,12 +176,12 @@ const LefSide = () => {
               </a>
               <ul class="slide-menu">
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/membership">
                     Membership
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/cart">
                     Repurchase/Cart
                   </Link>
                 </li>
