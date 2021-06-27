@@ -13,14 +13,23 @@ const LefSide = () => {
               src="../../assets/img/brand/logo.png"
               class="main-logo"
               alt="logo"
+              // height="100"
+              // width="100"
             />
           </a>
           <a class=" desktop-logo logo-dark" href="">
-            <img
-              src="../../assets/img/brand/logo.png"
+            <div
               class="main-logo dark-theme"
-              alt="logo"
-            />
+              style={{height: "50px", width: "150px"}}
+            >
+              <img
+                src="../../assets/img/brand/logo.png"
+                alt="logo"
+                style={{height: "100%", width: "100%"}}
+                // height="100"
+                // width="100"
+              />
+            </div>
           </a>
           <a class="logo-icon mobile-logo icon-light" href="">
             <img
@@ -187,13 +196,31 @@ const LefSide = () => {
                 </li>
               </ul>
             </li>
-            <li class="slide">
+            <li
+              class="slide"
+              onClick={(e) =>
+                window?.jQuery(e.currentTarget)?.toggleClass("is-expanded")
+              }
+            >
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-shopping-bag"></i>
                 <span class="side-menu__label">Shopping Cart</span>
+                <i class="angle fe fe-chevron-down"></i>
               </a>
+              <ul class="slide-menu">
+                <li>
+                  <Link class="slide-item" to="/shoppingcart">
+                    Checkout
+                  </Link>
+                </li>
+                <li>
+                  <Link class="slide-item" to="/approval2">
+                    Approval
+                  </Link>
+                </li>
+              </ul>
             </li>
-            <li
+            {/* <li
               class="slide"
               onClick={(e) =>
                 window?.jQuery(e.currentTarget)?.toggleClass("is-expanded")
@@ -251,7 +278,7 @@ const LefSide = () => {
                   </Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li class="slide">
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-envelope-o"></i>
