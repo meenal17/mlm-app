@@ -52,7 +52,7 @@ const LefSide = () => {
         >
           <ul class="side-menu circle">
             <li class="slide">
-              <Link class="side-menu__item" to="/dashboard">
+              <Link class="side-menu__item" to="">
                 <i class="side-menu__icon ti-desktop"></i>
                 <span class="side-menu__label">Dashboard</span>
               </Link>
@@ -70,12 +70,12 @@ const LefSide = () => {
               </Link>
               <ul class="slide-menu">
                 <li>
-                  <Link class="slide-item" to="/genealogy">
+                  <Link class="slide-item" to="/genologytree">
                     Genealogy Tree
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/SponserTree">
+                  <Link class="slide-item" to="/sponsortree">
                     Sponsor Tree
                   </Link>
                 </li>
@@ -279,14 +279,30 @@ const LefSide = () => {
                 </li>
               </ul>
             </li> */}
-            <li class="slide">
+            {/* <li class="slide">
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-envelope-o"></i>
                 <span class="side-menu__label">Mail</span>
               </a>
+            </li> */}
+            <li class="slide">
+              <Link class="side-menu__item" to="/mailbox">
+                <i class="side-menu__icon fa fa-envelope-o "></i>
+                <span class="side-menu__label">Mail</span>
+              </Link>
             </li>
             <li class="slide">
-              <a class="side-menu__item" data-toggle="slide" href="#">
+              <Link
+                class="side-menu__item"
+                data-toggle="slide"
+                to="/privilegeduser"
+              >
+                <i class="side-menu__icon fa fa-user-circle-o"></i>
+                <span class="side-menu__label">Privileged User</span>
+              </Link>
+            </li>
+            <li class="slide">
+              <a class="side-menu__item" data-toggle="slide" href="/logout">
                 <i class="side-menu__icon fa fa-sign-out"></i>
                 <span class="side-menu__label">LogOut</span>
               </a>

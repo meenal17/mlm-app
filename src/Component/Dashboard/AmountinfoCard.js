@@ -25,7 +25,7 @@ function AmountinfoCard() {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>E-walletBalance</span>
+                    <span>EwalletBalance</span>
                   </div>
                 </div>
               </Card.Body>

@@ -1,0 +1,31 @@
+.logo {
+  margin-left: 100%;
+  margin-top: 10px;
+  height: 90%;
+  width: 90%;
+}
+.logoutcard-body {
+  margin-top: 5%;
+}
+.labelcol {
+  color: "grey";
+
+  font-size: 15px;
+}
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  cursor: pointer !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 5px 10px !important;
+  font-family: inherit !important;
+  color: #4d4d4d !important;
+  border: none !important;
+  border-radius: none !important;
+  background: transparent;
+  justify-content: flex-start !important;
+}
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6 {
+  height: 80px !important;
+  width: 160px !important;
+}
