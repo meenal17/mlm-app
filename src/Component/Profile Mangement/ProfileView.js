@@ -65,7 +65,7 @@ function ProfileView() {
                 </div>
                 {/* content */}
                 <div className="">
-                  <div className="content">
+                  <div className="content2">
                     <h4 className="name" style={{color: "grey"}}>
                       Salar khalid{" "}
                     </h4>

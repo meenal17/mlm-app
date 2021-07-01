@@ -44,23 +44,7 @@ const Header = () => {
               <form
                 className="navbar-form nav-item my-auto d-lg-none"
                 role="search"
-              >
-                {/* <div className="input-group nav-item my-auto">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Search"
-                  />
-                  <span className="input-group-btn">
-                    <button type="reset" className="btn btn-default">
-                      <i className="ti-close"></i>
-                    </button>
-                    <button className="btn btn-default nav-link">
-                      <i className="ti-search"></i>
-                    </button>
-                  </span>
-                </div> */}
-              </form>
+              ></form>
               <div className="nav-item full-screen fullscreen-button">
                 <a className="new nav-link full-screen-link" href="#">
                   <i className="ti-fullscreen"></i>

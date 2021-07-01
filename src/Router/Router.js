@@ -28,6 +28,18 @@ import GenologyTree from "../Component/Networks/GenologyTree";
 import Privilegeduser from "../Component/Privileged User/Privilegeduse";
 import SponsorTree from "../Component/Networks/SponsorTree";
 import LogOut from "../Component/Logout/LogOut";
+import Profile from "../Component/Reports/Profile";
+import Activedeactive from "../Component/Reports/Active-deactive";
+import Joining from "../Component/Reports/Joining";
+import Commission from "../Component/Reports/Commission";
+import TotalBonus from "../Component/Reports/TotalBonus";
+import Totalearning from "../Component/Reports/Totalearning";
+import PaoutRelease from "../Component/Reports/PaoutRelease";
+import Rankperformance from "../Component/Reports/Rankperformance";
+import RankArchive from "../Component/Reports/RankArchive";
+import Epintransferreport from "../Component/Reports/E-pin-transferreport";
+import PackageUpgrated from "../Component/Reports/PackageUpgrated";
+import Epin from "../Component/E-pin/Epin";
 
 export default function Router() {
   const location = useLocation();
@@ -44,7 +56,7 @@ export default function Router() {
                 <div className="main-content app-content">
                   <Header />
                   <Switch>
-                    <Route exact path="/" component={Breadcrumb} />
+                    {/* <Route exact path="/" component={Breadcrumb} /> */}
                     <Route exact path="/TreeView" component={TreeView} />
                     <Route
                       path="/DownloadMember"
@@ -97,6 +109,42 @@ export default function Router() {
                       path="/privilegeduser"
                       component={Privilegeduser}
                     />
+                    <Route exact path="/reportprofile" component={Profile} />
+                    <Route
+                      exact
+                      path="/active-deactiveprofile"
+                      component={Activedeactive}
+                    />
+                    <Route exact path="/joinings" component={Joining} />
+                    <Route exact path="/commission" component={Commission} />
+                    <Route exact path="/totalBonus" component={TotalBonus} />
+                    <Route
+                      exact
+                      path="/totalearning"
+                      component={Totalearning}
+                    />
+                    <Route
+                      exact
+                      path="/payoutrelease"
+                      component={PaoutRelease}
+                    />
+                    <Route
+                      exact
+                      path="/rankperformane"
+                      component={Rankperformance}
+                    />
+                    <Route exact path="/rankarchive" component={RankArchive} />
+                    <Route
+                      exact
+                      path="/e-pintransfer"
+                      component={Epintransferreport}
+                    />
+                    <Route
+                      exact
+                      path="/packageupgrated"
+                      component={PackageUpgrated}
+                    />
+                    <Route exact path="/Epin" component={Epin} />
                   </Switch>
                   <Description />
                 </div>

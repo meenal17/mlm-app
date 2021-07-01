@@ -12,7 +12,7 @@ function DownloadMember() {
         <div className="card ml-2 p-0 mr-2">
           <div className="card-body">
             <div class="row">
-              <div className=" col-lg-3">
+              <div className=" col-lg-3 ">
                 <div className="card-text download-Content ">
                   <div class="textpurple">Total DownLine Members</div>
                   <div class="textpurple mt-2">258</div>
@@ -24,7 +24,7 @@ function DownloadMember() {
                   <div class="textgreen">76</div>
                 </div>
               </div>
-              <div className=" col-lg-3">
+              <div className=" col-lg-3 col-sm-4">
                 <form>
                   <div class="form-group">
                     <label for="exampleFormControlInput1">Username</label>
@@ -37,7 +37,7 @@ function DownloadMember() {
                   </div>
                 </form>
               </div>
-              <div className=" col-lg-2">
+              <div className=" col-lg-2 col-sm-3">
                 <form>
                   <div class="form-group">
                     <label for="exampleFormControlSelect1">Levels</label>

@@ -1,20 +1,18 @@
 import React, {useState} from "react";
 // import Header from "../Header/Header";
 import {Link} from "react-router-dom";
-
+import "../LFTsideBAR/style.css";
 const LefSide = () => {
   return (
     <>
       <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-      <aside class="app-sidebar sidebar-scroll">
+      <aside class="app-sidebar sidebar-scroll scroller">
         <div class="main-sidebar-header" style={{backgroundColor: "#1c2b36"}}>
           <a class=" desktop-logo logo-light " href="">
             <img
               src="../../assets/img/brand/logo.png"
               class="main-logo"
               alt="logo"
-              // height="100"
-              // width="100"
             />
           </a>
           <a class=" desktop-logo logo-dark" href="">
@@ -26,8 +24,6 @@ const LefSide = () => {
                 src="../../assets/img/brand/logo.png"
                 alt="logo"
                 style={{height: "100%", width: "100%"}}
-                // height="100"
-                // width="100"
               />
             </div>
           </a>
@@ -143,6 +139,12 @@ const LefSide = () => {
                 <span class="side-menu__label">PayOut</span>
               </Link>
             </li>
+            <li class="slide">
+              <Link class="side-menu__item" to="/Epin">
+                <i class="side-menu__icon fa fa-bookmark-o"></i>
+                <span class="side-menu__label">E-pin</span>
+              </Link>
+            </li>
             <li
               class="slide"
               onClick={(e) =>
@@ -220,7 +222,7 @@ const LefSide = () => {
                 </li>
               </ul>
             </li>
-            {/* <li
+            <li
               class="slide"
               onClick={(e) =>
                 window?.jQuery(e.currentTarget)?.toggleClass("is-expanded")
@@ -233,52 +235,68 @@ const LefSide = () => {
               </a>
               <ul class="slide-menu">
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/reportprofile">
                     Profile
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/active-deactiveprofile">
                     Active/Deactive
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/joinings">
                     Joining
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/commission">
                     Commission
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/totalBonus">
                     Total Bonus
                   </Link>
                 </li>
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/totalearning">
                     Total Earning
                   </Link>
                 </li>
-                <li>
-                  <Link class="slide-item" to="/">
-                    Repurchase/Cart
-                  </Link>
-                </li>
-                <li>
+
+                {/* <li>
                   <Link class="slide-item" to="/">
                     Purchase
                   </Link>
-                </li>
+                </li> */}
                 <li>
-                  <Link class="slide-item" to="/">
+                  <Link class="slide-item" to="/payoutrelease">
                     PayOut
                   </Link>
                 </li>
+                <li>
+                  <Link class="slide-item" to="/rankperformane">
+                    Rank Performance
+                  </Link>
+                </li>
+                <li>
+                  <Link class="slide-item" to="/rankarchive">
+                    Rank Archive
+                  </Link>
+                </li>
+                <li>
+                  <Link class="slide-item" to="/e-pintransfer">
+                    E-pin Transfer
+                  </Link>
+                </li>
+                <li>
+                  <Link class="slide-item" to="/packageupgrated">
+                    Package Upgrade
+                  </Link>
+                </li>
               </ul>
-            </li> */}
+            </li>
             {/* <li class="slide">
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-envelope-o"></i>

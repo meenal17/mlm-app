@@ -17,7 +17,7 @@ const LogOut = () => {
       >
         <div className="card" style={{height: "80vh", width: "80vh"}}>
           <div className="card-title mt-3">
-            <div style={{height: "50px", width: "150px"}}>
+            {/* <div style={{height: "50px", width: "150px"}}>
               <a class=" desktop-logo logo-light " href="">
                 <img
                   src="../../assets/img/brand/logo.png"
@@ -25,7 +25,8 @@ const LogOut = () => {
                   alt="logo"
                 />
               </a>
-            </div>
+            </div> */}
+            <h4 className="text-center mt-1">LogOut</h4>
           </div>
           <div className="ml-3" style={{listStyleType: "none"}}>
             <Countrylang />
