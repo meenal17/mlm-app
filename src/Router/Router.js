@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import LefSide from "../Component/LFTsideBAR/Lefside";
 import Header from "../Component/Header/Header";
 import Breadcrumb from "../Breadcrumb";
@@ -40,14 +40,15 @@ import RankArchive from "../Component/Reports/RankArchive";
 import Epintransferreport from "../Component/Reports/E-pin-transferreport";
 import PackageUpgrated from "../Component/Reports/PackageUpgrated";
 import Epin from "../Component/E-pin/Epin";
+import Login from "../Component/login/Login";
 
 export default function Router() {
   const location = useLocation();
   return (
     <>
-      {location.pathname === "/logout" ? (
-        <LogOut />
-      ) : (
+      {location.pathname === "/login" ? <Login /> : null}
+      {location.pathname === "/logout" ? <LogOut /> : null}
+      {location.pathname !== "/logout" && location.pathname !== "/login" ? (
         <div class="page">
           <section>
             <div className="col-lg-12 pl-0 pr-0">
@@ -56,7 +57,7 @@ export default function Router() {
                 <div className="main-content app-content">
                   <Header />
                   <Switch>
-                    {/* <Route exact path="/" component={Breadcrumb} /> */}
+                    <Route exact path="/" component={Breadcrumb} />
                     <Route exact path="/TreeView" component={TreeView} />
                     <Route
                       path="/DownloadMember"
@@ -152,7 +153,7 @@ export default function Router() {
             </div>
           </section>
         </div>
-      )}
+      ) : null}
     </>
   );
 }

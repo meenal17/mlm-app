@@ -121,7 +121,7 @@ const Header = () => {
                     <i className="far fa-user"></i> My Profile
                   </Link>
 
-                  <Link className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/login">
                     <i className="fa fa-sign-in"></i> SignUp
                   </Link>
                   <Link className="dropdown-item" to="/">

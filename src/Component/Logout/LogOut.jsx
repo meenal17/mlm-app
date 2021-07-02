@@ -5,66 +5,79 @@ import "../Logout/style.css";
 const LogOut = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex !important",
-          justifyContent: "center !important",
-          alignItems: "center !important",
-          height: "100% !important",
-          width: "100% !important",
-          marginTop: "10%",
-        }}
-      >
-        <div className="card" style={{height: "80vh", width: "80vh"}}>
-          <div className="card-title mt-3">
-            {/* <div style={{height: "50px", width: "150px"}}>
-              <a class=" desktop-logo logo-light " href="">
+      <div className="main-signin-wrapper mt-4">
+        <div className="main-card-signin d-md-flex wd-100p">
+          <div
+            className="wd-md-50p login d-none d-md-block  p-5 text-white"
+            style={{
+              background: `url(../../assets/img/dashboard/login.jpg)`,
+              opacity: "0.9",
+              backgroundrepeat: "no-repeat",
+            }}
+          >
+            <div className="my-auto authentication-pages">
+              <div>
                 <img
                   src="../../assets/img/brand/logo.png"
-                  class="logo"
+                  className=" ml-5 mb-4"
                   alt="logo"
+                  style={{
+                    height: "40px",
+                    width: "130px",
+                  }}
                 />
-              </a>
-            </div> */}
-            <h4 className="text-center mt-1">LogOut</h4>
+                <h5 className="mb-4"></h5>
+                <p className="mb-5">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                {/* <a href="index.html" className="btn btn-danger">
+                    Learn More
+                  </a> */}
+              </div>
+            </div>
           </div>
-          <div className="ml-3" style={{listStyleType: "none"}}>
-            <Countrylang />
-          </div>
-          <div className="card-body logoutcard-body">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1" className="labelcol">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
-                <small id="emailHelp" class="form-text text-muted">
-                  We'll never share your email with anyone else.
-                </small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1" className="labelcol">
-                  Password
-                </label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
-              </div>
-              <div className="text-center mt-5">
-                <button type="submit" class="btn btn-purple">
-                  Logout
-                </button>
-              </div>
-            </form>
+          <div className="p-5 wd-md-50p">
+            <div className="main-signin-header">
+              <h2 style={{color: "#736d6d", textAlign: "center"}}>LogOut</h2>
+              <h6>
+                {" "}
+                <div className="ml-3" style={{listStyleType: "none"}}>
+                  <Countrylang />
+                </div>
+              </h6>
+              <form action="index.html">
+                <div className="form-group">
+                  <label>Email</label>
+                  <input
+                    className="form-control"
+                    placeholder="Enter your email"
+                    type="text"
+                    value="info@spruko.com"
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Password</label>{" "}
+                  <input
+                    className="form-control"
+                    placeholder="Enter your password"
+                    type="password"
+                    value="sprukodemo"
+                  />
+                </div>
+                <button className="btn btn-purple btn-block">Sign Out</button>
+              </form>
+            </div>
+            <div className="main-signin-footer mt-3 mg-t-5">
+              <p>
+                <a href="" className="text-info">
+                  Forgot password?
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

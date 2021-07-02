@@ -1,10 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./Networkstyle.css";
+import {Table, Thead, Tbody, Tr, Th, Td} from "react-super-responsive-table";
+import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+
 function DownloadMember() {
   return (
     <>
-      <Link to="/Download">
+      <Link to="/DownloadMember">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
           DownloadMember
         </div>
@@ -60,290 +63,529 @@ function DownloadMember() {
             </div>
           </div>
         </div>
-        {/* Table */}
-        <div class="card mr-2 ml-2">
+        <div className="card ml-2 p-0 mr-2">
           <div className="card-body">
-            <table class="table table-hover">
-              <thead>
-                <tr className="">
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Member Name
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Placement
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Sponsor
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Level
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Icon
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+            <div class="row">
+              <div className=" col-lg-12 col-sm-4">
+                <Table>
+                  <Thead>
+                    <Tr style={{borderBottom: "1px solid grey"}}>
+                      <Th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Member Name
+                      </Th>
+                      <Th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Placement
+                      </Th>
+                      <Th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Sponsor
+                      </Th>
+                      <Th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Level
+                      </Th>
+                      <Th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Icon
+                      </Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                    <Tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
 
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      className="mr-3"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/img/dashboard/user.jpg"
-                      }
-                      alt="image not found"
-                    />
-                    John
-                  </td>
-                  <td>binaryaddon</td>
-                  <td>binaryaddon</td>
-                  <td>1</td>
-
-                  <i
-                    className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          {/* Table end */}
-          <div className="card ml-5">
-            <div className="card body">
-              <nav aria-label="...">
-                <ul class="pagination">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="1">
-                      Previous
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">
-                      1 <span class="sr-only">(current)</span>
-                    </a>
-                  </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="#">
-                      2
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">
-                      3
-                    </a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">
-                      Next
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </Tr>
+                  </Tbody>
+                </Table>
+              </div>
             </div>
           </div>
         </div>
+        {/* Table */}
+        {/* <div className="container">
+          <div class="card mr-2 ml-2">
+            <div className="card-body">
+              <div className="table-responsive-sm">
+                <table class="table table-hover">
+                  <thead>
+                    <tr className="">
+                      <th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Member Name
+                      </th>
+                      <th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Placement
+                      </th>
+                      <th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Sponsor
+                      </th>
+                      <th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Level
+                      </th>
+                      <th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Icon
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          className="mr-3"
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/assets/img/dashboard/user.jpg"
+                          }
+                          alt="image not found"
+                        />
+                        John
+                      </td>
+                      <td>binaryaddon</td>
+                      <td>binaryaddon</td>
+                      <td>1</td>
+
+                      <i
+                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                        style={{fontSize: 15 + "px"}}
+                      ></i>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        {/* Table end */}
+
+        {/* <div className="card ml-5 ">
+          <div className="card body">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="1">
+                    Previous
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    1 <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">
+                    2
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    3
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    Next
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div> */}
       </Link>
     </>
   );
