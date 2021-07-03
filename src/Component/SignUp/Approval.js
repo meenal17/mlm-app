@@ -1,6 +1,189 @@
 import React from "react";
 import {Link} from "react-router-dom";
 function Approval() {
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <thead className="d-none d-md-table-header-group">
+          <tr>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Memeber Name
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Sponsor
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Package
+            </th>
+
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Total Amount
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Payment Method
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Action
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <RowComponent
+            checkbox=""
+            MemberName="John"
+            sponsor="binaoryaddon"
+            Package="ELITE PACKEt (Amount: € 87.70 )"
+            TotalAmont="$38.0"
+            paymentmethod="Free Joining"
+            Action=""
+          />
+          <RowComponent
+            checkbox=""
+            MemberName="John"
+            sponsor="binaoryaddon"
+            Package="ELITE PACKEt (Amount: € 87.70 )"
+            TotalAmont="$38.0"
+            paymentmethod="Free Joining"
+            Action=""
+          />
+          <RowComponent
+            checkbox=""
+            MemberName="John"
+            sponsor="binaoryaddon"
+            Package="ELITE PACKEt (Amount: € 87.70 )"
+            TotalAmont="$38.0"
+            paymentmethod="Free Joinig"
+            Action=""
+          />
+          <RowComponent
+            checkbox=""
+            MemberName="John"
+            sponsor="binaoryaddon"
+            Package="ELITE PACKEt (Amount: € 87.70 )"
+            TotalAmont="$38.0"
+            paymentmethod="Free Joining"
+            Action=""
+          />
+          <RowComponent
+            checkbox=""
+            MemberName="John"
+            sponsor="binaoryaddon"
+            Package="ELITE PACKEt (Amount: € 87.70 )"
+            TotalAmont="$38.0"
+            paymentmethod="Free Joining"
+            Action=""
+          />
+          <RowComponent
+            checkbox=""
+            MemberName="John"
+            sponsor="binaoryaddon"
+            Package="ELITE PACKEt (Amount: € 87.70 )"
+            TotalAmont="$38.0"
+            paymentmethod="Free Joining"
+            Action=""
+          />
+        </tbody>
+      </table>
+    );
+  }
+
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              <strong class="card-title">{props.MemberName}</strong>
+              <p className="card-text">
+                sponsor {props.sponsor}
+                <br />
+                {props.Package && `ISN ${props.isn}`}
+              </p>
+              <i
+                className="fa fa-sitemap icon mt-3 ml-4 p-2"
+                style={{fontSize: 15 + "px"}}
+              ></i>
+            </div>
+          </div>
+        </td>
+        <td className="d-none d-md-table-cell">
+          {props.checkbox} <input type="checkbox" />{" "}
+        </td>
+        <td className="d-none d-md-table-cell">{props.MemberName}</td>
+        <td className="d-none d-md-table-cell">{props.sponsor}</td>
+        <td className="d-none d-md-table-cell">{props.Package}</td>
+        <td className="d-none d-md-table-cell">{props.TotalAmont}</td>
+        <td className="d-none d-md-table-cell">{props.paymentmethod}</td>
+
+        <td className="d-none d-md-table-cell ">
+          {props.Action}
+          <i
+            className="fa fa-sitemap icon mt-3 p-2 "
+            style={{fontSize: 15 + "px"}}
+          ></i>
+        </td>
+      </tr>
+    );
+  }
   return (
     <>
       <Link to="/Approval">
@@ -9,217 +192,9 @@ function Approval() {
         </div>
         <div class="card mr-2 ml-2">
           <div className="card-body">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                    }}
-                  >
-                    <input type="checkbox" />
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                    }}
-                  >
-                    Name
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                    }}
-                  >
-                    Sponsor
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Package
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Total Amount
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Payment Method
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Action
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
-                  <td>Jack</td>
-                  <td>binaryaddon</td>
-                  <td>ELITE PACKEt (Amount: € 87.70 )</td>
-                  <td>€ 129.53</td>
-                  <td>Free Join</td>
-                  <i
-                    className="fa fa-eye icon mt-3 ml-4 p-2"
-                    style={{fontSize: 15 + "px"}}
-                  ></i>
-                </tr>
-              </tbody>
-            </table>
+            <div className="container">
+              <TableComponent />
+            </div>
           </div>
           <div className="row mb-3">
             <div className="col-lg-1 ml-4 mr-2">
