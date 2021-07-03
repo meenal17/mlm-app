@@ -11,17 +11,9 @@ const InboxTable = () => {
           ></i>
         </h5>
       </div>
+
       <table class="table table-striped">
-        <thead>
-          <tr>
-            {/* <h5 className="ml-2" style={{color: "grey"}}>
-              <i
-                className="fas fa-refresh p-2"
-                style={{border: "1px solid grey"}}
-              ></i>
-            </h5> */}
-          </tr>
-        </thead>
+        <thead></thead>
         <tbody>
           <tr>
             <td>

@@ -11,7 +11,7 @@ export default function Mail() {
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
           Mail Box
         </div>
-        <div className="card mr-4 ml-4">
+        <div className="card ">
           <section class="container p-3 ">
             <div className="row">
               <div class="col-md-12 pr-2">
@@ -62,7 +62,7 @@ export default function Mail() {
                       </a>
                     </li>
                   </ul>
-                  <div className="ml-5"></div>
+                  <div className=""></div>
 
                   <div
                     style={{

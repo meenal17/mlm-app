@@ -8,10 +8,10 @@ const Commission = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          User Joinig
+          User Commission Joinig
         </div>
 
-        <div className="card p-3  mr-2 ml-3">
+        <div className="card p-3">
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-4 col-sm-2">

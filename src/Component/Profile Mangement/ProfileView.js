@@ -40,29 +40,19 @@ function ProfileView() {
           <div className="row">
             <div className="col-md-4">
               <div className="profile-img">
-                <img
-                  src="/assets/img/dashboard/profile.jpg"
-                  alt=""
-                  style={{width: "50%", height: "50%"}}
-                />
-                <label
-                  for="imageUpload"
-                  style={{position: "absolute", bottom: 0}}
-                >
-                  <i
-                    className="fas fa-pen profile-icon"
-                    style={{marginLeft: "20px"}}
-                  ></i>
-                </label>
-
-                <div className="avatar-edit">
-                  <input
-                    id="imageUpload"
-                    type="file"
-                    accept=".png, .jpg, .jpeg"
-                    style={{display: "none"}}
-                  />
+                <div class="main-profile-overview">
+                  <div class="main-img-user profile-user">
+                    <img alt="" src="/assets/img/dashboard/profile.jpg" />
+                    <a
+                      href="JavaScript:void(0);"
+                      class="fas fa-camera profile-edit"
+                    ></a>
+                  </div>
+                  <div class="d-flex justify-content-between mg-b-20">
+                    <div></div>
+                  </div>
                 </div>
+
                 {/* content */}
                 <div className="">
                   <div className="content2">

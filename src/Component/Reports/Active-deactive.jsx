@@ -37,7 +37,7 @@ const Activedeactive = () => {
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file mr-1"></i>Create excel
+                <i className="fas fa-file "></i>Create excel
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
@@ -47,7 +47,8 @@ const Activedeactive = () => {
             </div>
           </div>
         </div>
-        <div className="card mr-3 ml-3 p-3">
+
+        <div className="card mr-2 ml-2 p-2">
           <img
             src="../../assets/img/brand/logo.png"
             alt=""
@@ -111,7 +112,7 @@ const Activedeactive = () => {
                       fontSize: "15px",
                     }}
                   >
-                    Activate/Deactivate Date
+                    Date
                   </th>
                 </tr>
               </thead>
