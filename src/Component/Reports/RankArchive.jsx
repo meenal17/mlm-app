@@ -2,6 +2,130 @@ import {fontSize} from "@material-ui/system";
 import React from "react";
 import {Link} from "react-router-dom";
 const RankArchive = () => {
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <thead className="d-none d-md-table-header-group">
+          <tr>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              #
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Rank
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              MemberName
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Rank Archive Date
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <RowComponent
+            Id="1"
+            Rank="silver"
+            MemberName="Your First Name (DEMOTF0)"
+            totalamount="$38.0"
+            rankdate="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="2"
+            Rank="silver"
+            MemberName="Your First Name (DEMOTF0)"
+            totalamount="$38.0"
+            rankdate="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="3"
+            Rank="silver"
+            MemberName="Your First Name (DEMOTF0)"
+            totalamount="$38.0"
+            rankdate="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="4"
+            Rank="silver"
+            MemberName="Your First Name (DEMOTF0)"
+            totalamount="$38.0"
+            rankdate="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="5"
+            Rank="silver"
+            MemberName="Your First Name (DEMOTF0)"
+            totalamount="$38.0"
+            rankdate="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="6"
+            Rank="silver"
+            MemberName="Your First Name (DEMOTF0)"
+            totalamount="$38.0"
+            rankdate="11 Nov 2020 - 10:09:56 AM"
+          />
+        </tbody>
+      </table>
+    );
+  }
+
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              <p class="card-title">
+                ID:{props.Id}
+                Name: {props.Rank}
+              </p>
+              <p className="card-text">
+                {props.MemberName}
+                <br />
+                {props.rankdate}
+              </p>
+            </div>
+          </div>
+        </td>
+        <td className="d-none d-md-table-cell">{props.Id}</td>
+        <td className="d-none d-md-table-cell">{props.Rank}</td>
+        <td className="d-none d-md-table-cell">{props.MemberName}</td>
+
+        <td className="d-none d-md-table-cell">{props.rankdate}</td>
+      </tr>
+    );
+  }
   return (
     <Link to="/rankarchive">
       <>
@@ -79,8 +203,10 @@ const RankArchive = () => {
             </div>
             <div class="col-xl-12 mt-4">
               <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-striped mg-b-0 text-md-nowrap">
+                <div className="container mt-3">
+                  <TableComponent />
+                </div>
+                {/* <table class="table table-striped mg-b-0 text-md-nowrap">
                     <thead>
                       <tr>
                         <th style={{color: "black", fontSize: "15px"}}>ID</th>
@@ -127,8 +253,7 @@ const RankArchive = () => {
                         <td>11 Nov 2020 - 10:09:56 AM</td>
                       </tr>
                     </tbody>
-                  </table>
-                </div>
+                  </table> */}
               </div>
             </div>
           </div>

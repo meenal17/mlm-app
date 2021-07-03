@@ -11,16 +11,16 @@ const ShoppingCart = () => {
           </div>
           <h5 className="ml-4 mt-2" style={{color: "grey"}}>
             <i
-              class="fa fa-exclamation-circle bell mr-2 "
+              class="fa fa-exclamation-circle bell "
               style={{color: "#ffad31", fontSize: 25 + "px"}}
             />
             <span style={{color: "black"}}>Note</span> : This is an add-on
             module
           </h5>
-          <div className="card mr-2 ml-2">
+          <div className="card">
             <div className="card-body">
               <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-12 col-sm-6">
                   <table class="table table-bordered">
                     <thead>
                       <tr>

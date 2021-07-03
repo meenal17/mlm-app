@@ -1,6 +1,143 @@
 import React from "react";
 import {Link} from "react-router-dom";
 const Epintransferreport = () => {
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <thead className="d-none d-md-table-header-group">
+          <tr>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              #
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              From User
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              To User
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              E-pin
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Transfer Date
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <RowComponent
+            Id="1"
+            fromuser="Ramirez"
+            touser="Hugo Esteban Ramirez"
+            pin="W3ZQI2QSVW"
+            transfer="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="2"
+            fromuser="Ramirez"
+            touser="Hugo Esteban Ramirez"
+            pin="W3ZQI2QSVW"
+            transfer="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="3"
+            fromuser="Ramirez"
+            touser="Hugo Esteban Ramirez"
+            pin="W3ZQI2QSVW"
+            transfer="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="4"
+            fromuser="Ramirez"
+            touser="Hugo Esteban Ramirez"
+            pin="W3ZQI2QSVW"
+            transfer="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="5"
+            fromuser="Ramirez"
+            touser="Hugo Esteban Ramirez"
+            pin="W3ZQI2QSVW"
+            transfer="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="6"
+            fromuser="Ramirez"
+            touser="Hugo Esteban Ramirez"
+            pin="W3ZQI2QSVW"
+            transfer="11 Nov 2020 - 10:09:56 AM"
+          />
+        </tbody>
+      </table>
+    );
+  }
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              <p class="card-title">
+                ID:{props.Id}
+                From user: {props.fromuser}
+              </p>
+              <p className="card-text">
+                To-user{props.touser}
+                <br />
+                E-pin{props.pin}
+                <br />
+                Transfer-Date{props.transfer}
+              </p>
+            </div>
+          </div>
+        </td>
+        <td className="d-none d-md-table-cell">{props.Id}</td>
+        <td className="d-none d-md-table-cell">{props.fromuser}</td>
+        <td className="d-none d-md-table-cell">{props.touser}</td>
+
+        <td className="d-none d-md-table-cell">{props.pin}</td>
+        <td className="d-none d-md-table-cell">{props.transfer}</td>
+      </tr>
+    );
+  }
   return (
     <Link to="/e-pintransfer">
       <>
@@ -99,113 +236,9 @@ const Epintransferreport = () => {
           </div>
           {/* table */}
           <div className="card-body">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    #
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    From User
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    To User
-                  </th>
-
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    E-pin
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Transferred Date
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-
-                  <td> Ramirez</td>
-                  <td>Hugo Esteban Ramirez</td>
-                  <td>W3ZQI2QSVW</td>
-                  <td>06 Jan 2021 - 12:42:19 PM</td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-
-                  <td> Ramirez</td>
-                  <td>Hugo Esteban Ramirez</td>
-                  <td>W3ZQI2QSVW</td>
-                  <td>06 Jan 2021 - 12:42:19 PM</td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-
-                  <td> Ramirez</td>
-                  <td>Hugo Esteban Ramirez</td>
-                  <td>W3ZQI2QSVW</td>
-                  <td>06 Jan 2021 - 12:42:19 PM</td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-
-                  <td> Ramirez</td>
-                  <td>Hugo Esteban Ramirez</td>
-                  <td>W3ZQI2QSVW</td>
-                  <td>06 Jan 2021 - 12:42:19 PM</td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-
-                  <td> Ramirez</td>
-                  <td>Hugo Esteban Ramirez</td>
-                  <td>W3ZQI2QSVW</td>
-                  <td>06 Jan 2021 - 12:42:19 PM</td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-
-                  <td> Ramirez</td>
-                  <td>Hugo Esteban Ramirez</td>
-                  <td>W3ZQI2QSVW</td>
-                  <td>06 Jan 2021 - 12:42:19 PM</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="container mt-3">
+              <TableComponent />
+            </div>
           </div>
         </div>
       </>

@@ -1,6 +1,183 @@
 import React from "react";
 import {Link} from "react-router-dom";
 const PackageUpgrated = () => {
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <thead className="d-none d-md-table-header-group">
+          <tr>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              #
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              MemberName
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Old Package
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Upgrated package
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Amount
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Upgraded Package
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Upgraded Date
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <RowComponent
+            Id="1"
+            membername="YourFistName(binnoryaddon)"
+            oldpackage="Elit(Packit)"
+            PackageUpgrated="Membership Pack 2"
+            amount="$100.00"
+            package="Free Upgraded"
+            date="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="2"
+            membername="YourFistName(binnoryaddon)"
+            oldpackage="Elit(Packit)"
+            PackageUpgrated="Membership Pack 2"
+            amount="$100.00"
+            package="Free Upgraded"
+            date="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="3"
+            membername="YourFistName(binnoryaddon)"
+            oldpackage="Elit(Packit)"
+            PackageUpgrated="Membership Pack 2"
+            amount="$100.00"
+            package="Free Upgraded"
+            date="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="4"
+            membername="YourFistName(binnoryaddon)"
+            oldpackage="Elit(Packit)"
+            PackageUpgrated="Membership Pack 2"
+            amount="$100.00"
+            package="Free Upgraded"
+            date="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="5"
+            membername="YourFistName(binnoryaddon)"
+            oldpackage="Elit(Packit)"
+            PackageUpgrated="Membership Pack 2"
+            amount="$100.00"
+            package="Free Upgraded"
+            date="11 Nov 2020 - 10:09:56 AM"
+          />
+          <RowComponent
+            Id="6"
+            membername="YourFistName(binnoryaddon)"
+            oldpackage="Elit(Packit)"
+            PackageUpgrated="Membership Pack 2"
+            amount="$100.00"
+            package="Free Upgraded"
+            date="11 Nov 2020 - 10:09:56 AM"
+          />
+        </tbody>
+      </table>
+    );
+  }
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              <p class="card-title">
+                ID:{props.Id}
+                MemberName : {props.membername}
+              </p>
+              <p className="card-text">
+                Old Package :{props.oldpackage}
+                <br />
+                Upgrated Package:{props.PackageUpgrated}
+                <br />
+                Amount:{props.amount}
+                <br />
+                Upgrated Package:{props.package}
+                <br />
+                Date:{props.date}
+              </p>
+            </div>
+          </div>
+        </td>
+        <td className="d-none d-md-table-cell">{props.Id}</td>
+        <td className="d-none d-md-table-cell">{props.membername}</td>
+        <td className="d-none d-md-table-cell">{props.oldpackage}</td>
+        <td className="d-none d-md-table-cell">{props.PackageUpgrated}</td>
+        <td className="d-none d-md-table-cell">{props.amount}</td>
+        <td className="d-none d-md-table-cell">{props.package}</td>
+
+        <td className="d-none d-md-table-cell">{props.date}</td>
+      </tr>
+    );
+  }
   return (
     <Link to="/packageupgrated">
       <>
@@ -45,7 +222,7 @@ const PackageUpgrated = () => {
                 <button className="btn btn-info">Submit</button>
               </div>
               <div
-                className="col-md-1 col-lg-1 ml-2"
+                className="col-md-1 col-lg-1 ml-2 p-3"
                 style={{marginTop: "28px"}}
               >
                 <button className="btn btn-purple">Rest</button>
@@ -68,158 +245,33 @@ const PackageUpgrated = () => {
             </div>
           </div>
         </div>
-        <div className="card mr-3 ml-3 p-3">
-          <img
-            src="../../assets/img/brand/logo.png"
-            alt=""
-            style={{width: "15%", height: "23%", marginBottom: "15px"}}
-          />
-          <div
-            className="card-title"
-            style={{
-              textAlign: "left",
-              textTransform: "capitalize",
-              color: "grey",
-            }}
-          >
-            <h5 className="mb-1"> Company Name</h5>
-            <h6 className="mb-1">Company address </h6>
-            <h8 className=" mb-1">
-              Phone: 9999999999 <br />
-              Email:companyname@emil.com
-            </h8>
+        <div className="card mr-2 ml-2">
+          <div className=" container-fluid">
+            <img
+              src="../../assets/img/brand/logo.png"
+              alt=""
+              style={{width: "15%", height: "23%", marginBottom: "15px"}}
+            />
+            <div
+              className="card-title"
+              style={{
+                textAlign: "left",
+                textTransform: "capitalize",
+                color: "grey",
+              }}
+            >
+              <h5 className="mb-1"> Company Name</h5>
+              <h6 className="mb-1">Company address </h6>
+              <h8 className=" mb-1">
+                Phone: 9999999999 <br />
+                Email:companyname@emil.com
+              </h8>
+            </div>
           </div>
           {/* table */}
-          <div className="card-body">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    #
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Member Name
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Old Package
-                  </th>
 
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Upgraded Package
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Amount
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Upgraded Package
-                  </th>
-                  <th
-                    scope="col"
-                    style={{
-                      color: "black",
-                      textTransform: "capitalize",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Upgrated Date
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-
-                  <td> salar khalid(binaryaddon) </td>
-                  <td>ELITE PACKEt</td>
-                  <td>Membership Pack 2</td>
-                  <td>$ 100.00 </td>
-                  <td> Free Upgrade </td>
-                  <td>25 Nov 2020 - 08:19:31 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-
-                  <td> salar khalid(binaryaddon) </td>
-                  <td>ELITE PACKEt</td>
-                  <td>Membership Pack 2</td>
-                  <td>$ 100.00 </td>
-                  <td> Free Upgrade </td>
-                  <td>25 Nov 2020 - 08:19:31 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-
-                  <td> salar khalid(binaryaddon) </td>
-                  <td>ELITE PACKEt</td>
-                  <td>Membership Pack 2</td>
-                  <td>$ 100.00 </td>
-                  <td> Free Upgrade </td>
-                  <td>25 Nov 2020 - 08:19:31 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-
-                  <td> salar khalid(binaryaddon) </td>
-                  <td>ELITE PACKEt</td>
-                  <td>Membership Pack 2</td>
-                  <td>$ 100.00 </td>
-                  <td> Free Upgrade </td>
-                  <td>25 Nov 2020 - 08:19:31 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-
-                  <td> salar khalid(binaryaddon) </td>
-                  <td>ELITE PACKEt</td>
-                  <td>Membership Pack 2</td>
-                  <td>$ 100.00 </td>
-                  <td> Free Upgrade </td>
-                  <td>25 Nov 2020 - 08:19:31 AM</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="container mt-3">
+            <TableComponent />
           </div>
         </div>
       </>
