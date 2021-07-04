@@ -1,6 +1,6 @@
 import React from "react";
 
-const UpdatePackage = () => {
+const UpdatePackage = (props) => {
   return (
     <>
       {/* <!-- Button trigger modal --> */}
@@ -9,6 +9,7 @@ const UpdatePackage = () => {
         class="fa fa-edit icon mt-3 ml-4 p-2"
         data-toggle="modal"
         data-target="#exampleModalLong"
+        onClick={() => props.getform()}
       ></i>
 
       {/* <!-- Modal --> */}

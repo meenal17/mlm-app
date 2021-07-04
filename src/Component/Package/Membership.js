@@ -6,6 +6,180 @@ import EditMemeber from "./EditMemeber";
 
 const Membership = () => {
   const [checked, setchecked] = useState(false);
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <thead className="d-none d-md-table-header-group">
+          <tr>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              <input
+                type="checkbox"
+                class="check-btn"
+                checked={checked}
+                onClick={() => setchecked(!checked)}
+              />
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              ID
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Package
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Amount
+            </th>
+
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              PV
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            ></th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Action
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <RowComponent
+            checked=""
+            id="1"
+            package="binaoryaddon"
+            amount="$38.0"
+            pv="Free Joining"
+            no="0"
+            Action="  "
+          />
+          <RowComponent
+            checked=""
+            id="2"
+            package="binaoryaddon"
+            amount="$38.0"
+            pv="Free Joining"
+            no="0"
+            Action="  "
+          />
+          <RowComponent
+            checked=""
+            id="3"
+            package="binaoryaddon"
+            amount="$38.0"
+            pv="Free Joining"
+            no="0"
+            Action="  "
+          />
+          <RowComponent
+            checked=""
+            id="4"
+            package="binaoryaddon"
+            amount="$38.0"
+            pv="Free Joining"
+            no="0"
+            Action="  "
+          />
+          <RowComponent
+            checked=""
+            id="5"
+            package="binaoryaddon"
+            amount="$38.0"
+            pv="Free Joining"
+            no="0"
+            Action="  "
+          />
+        </tbody>
+      </table>
+    );
+  }
+
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              Package: <strong class="card-title">{props.package}</strong>
+              <p className="card-text">
+                Amount: {props.amount}
+                <br />
+                PV:{props.pv}
+                <br />
+                <br />
+                {props.no}
+                Action: <EditMemeber editform={EditMemeber} />
+              </p>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <CheckBox checkall={checked} />
+        </td>
+        <td className="d-none d-md-table-cell">{props.id}</td>
+        <td className="d-none d-md-table-cell">{props.package}</td>
+        <td className="d-none d-md-table-cell">{props.amount}</td>
+        <td className="d-none d-md-table-cell">{props.pv}</td>
+
+        <td className="d-none d-md-table-cell">{props.no}</td>
+
+        {props.Action}
+        <EditMemeber editform={EditMemeber} />
+      </tr>
+    );
+  }
 
   return (
     <>
@@ -38,162 +212,10 @@ const Membership = () => {
           {/* table */}
           <div className="card">
             <div className="col-md-12">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th
-                      style={{
-                        fontSize: 15 + "px",
-                        color: "black",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      <input
-                        type="checkbox"
-                        class="check-btn"
-                        checked={checked}
-                        onClick={() => setchecked(!checked)}
-                      />
-                    </th>
-                    <th
-                      style={{
-                        fontSize: 15 + "px",
-                        color: "black",
-                      }}
-                    >
-                      ID
-                    </th>
-                    <th
-                      style={{
-                        fontSize: 15 + "px",
-                        color: "black",
-                      }}
-                    >
-                      Package
-                    </th>
-                    <th
-                      style={{
-                        fontSize: 15 + "px",
-                        color: "black",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      Amount
-                    </th>
-                    <th
-                      style={{
-                        fontSize: 15 + "px",
-                        color: "black",
-                        fontWeight: "bold",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      PV
-                    </th>
-                    <th
-                      style={{
-                        fontSize: 15 + "px",
-                        color: "black",
-                        fontWeight: "bold",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      Action
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
+              <div className="container">
+                <TableComponent />
+              </div>
 
-                    <EditMemeber />
-                  </tr>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
-                    <EditMemeber />
-                  </tr>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
-                    <EditMemeber />
-                  </tr>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
-                    <EditMemeber />
-                  </tr>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
-                    <EditMemeber />
-                  </tr>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
-                    <EditMemeber />
-                  </tr>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
-                    <EditMemeber />
-                  </tr>
-                  <tr>
-                    <td>
-                      <CheckBox checkall={checked} />
-                    </td>
-                    <td>pck1</td>
-                    <td>ELITE PACKEt</td>
-                    <td>$ 100.00 </td>
-                    <td>50</td>
-                    <td>0</td>
-                    <EditMemeber />
-                  </tr>
-                </tbody>
-              </table>
               <div className="col-lg-6">
                 <nav aria-label="Page navigation example">
                   <ul class="pagination justify-content-center">

@@ -4,6 +4,145 @@ import UpdatePackage from "./Update-Package";
 import Selectbox from "./Selectbox";
 function ManagePack() {
   const [checked, setchecked] = useState(false);
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <thead className="d-none d-md-table-header-group">
+          <tr>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              <input
+                type="checkbox"
+                class="check-btn"
+                checked={checked}
+                onClick={() => setchecked(!checked)}
+              />
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Product image
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Package Name
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Category
+            </th>
+
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Amount
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              PV
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Action
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <RowComponent
+            checked=""
+            productimg="image of product"
+            packagename="binaoryaddon"
+            category="ELITE PACKEt (Amount: € 87.70 )"
+            amount="$38.0"
+            pv="Free Joining"
+            Action="  "
+          />
+        </tbody>
+      </table>
+    );
+  }
+
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              Product: <strong class="card-title">{props.productimg}</strong>
+              <p className="card-text">
+                Package Name: {props.packagename}
+                <br />
+                Category:{props.category}
+                <br />
+                Amount:{props.amount}
+                <br />
+                PV:{props.pv}
+                Action: <UpdatePackage getform={UpdatePackage} />
+              </p>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <CheckBox checkall={checked} />
+        </td>
+        <td className="d-none d-md-table-cell">{props.productimg}</td>
+        <td className="d-none d-md-table-cell">{props.packagename}</td>
+        <td className="d-none d-md-table-cell">{props.category}</td>
+        <td className="d-none d-md-table-cell">{props.amount}</td>
+        <td className="d-none d-md-table-cell">{props.pv}</td>
+
+        <UpdatePackage getform={UpdatePackage} />
+      </tr>
+    );
+  }
 
   return (
     <>
@@ -12,117 +151,10 @@ function ManagePack() {
         {/* table */}
         <div className="card">
           <div className="col-md-12 mt-2">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    <input
-                      type="checkbox"
-                      class="check-btn"
-                      checked={checked}
-                      onClick={() => setchecked(!checked)}
-                    />
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                    }}
-                  >
-                    ID
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                    }}
-                  >
-                    product image
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Package Name
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Category
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Amount
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Pv
-                  </th>
-                  <th
-                    style={{
-                      fontSize: 15 + "px",
-                      color: "black",
-                      fontWeight: "bold",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Action
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <CheckBox checkall={checked} />
-                  </td>
-                  <td>cart1</td>
-                  <td>image</td>
-                  <td>Purchase Pack 1</td>
-                  <td>category1</td>
-                  <td>$ 100.00 </td>
-                  <td>50</td>
-                  <UpdatePackage />
-                </tr>
-                <tr>
-                  <td>
-                    <CheckBox checkall={checked} />
-                  </td>
-                  <td>cart1</td>
-                  <td>image</td>
-                  <td>Purchase Pack 1</td>
-                  <td>category1</td>
-                  <td>$ 100.00 </td>
-                  <td>50</td>
-                  <UpdatePackage />
-                </tr>
-              </tbody>
-            </table>
+            <div className="container">
+              <TableComponent />
+            </div>
+
             <hr />
             <div className="row">
               <div className="col-md-9"></div>

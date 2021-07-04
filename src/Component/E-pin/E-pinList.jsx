@@ -1,6 +1,138 @@
 import React from "react";
 
 const EpinList = () => {
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <thead className="d-none d-md-table-header-group">
+          <tr>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Id
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Alocate Member
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              E-pin
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Amount
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Balance Amount
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Status
+            </th>
+            <th
+              className="d-sm-none d-md-table-cell"
+              style={{
+                fontSize: 15 + "px",
+                color: "black",
+                fontWeight: "bold",
+                textTransform: "capitalize",
+              }}
+            >
+              Expire Date
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <RowComponent
+          // checkBox=""
+          // image=""
+          // MemberName="John"
+          // sponsor="0123456789"
+          // email="binarryaddn@gmail.com"
+          // Mobile="9823456050"
+          // JoiningDate="15 Feb 2021 - 06:49:31 PM"
+          />
+        </tbody>
+
+        <h6 className="">no result yet</h6>
+      </table>
+    );
+  }
+
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              <strong class="card-title">{props.alocateMember}</strong>
+              <p className="card-text">
+                E-pin:{props.pin}
+                <br />
+                Amount:{props.amount}
+                <br />
+                Balance Amount:{props.blance}
+                <br />
+                Status: {props.status}
+                <br />
+                Expire Date:{props.date}
+              </p>
+            </div>
+          </div>
+        </td>
+
+        <td className="d-none d-md-table-cell">{props.alocateMember}</td>
+        <td className="d-none d-md-table-cell">{props.pin}</td>
+        <td className="d-none d-md-table-cell">{props.amount}</td>
+        <td className="d-none d-md-table-cell">{props.blance}</td>
+        <td className="d-none d-md-table-cell">{props.status}</td>
+        <td className="d-none d-md-table-cell">{props.date}</td>
+      </tr>
+    );
+  }
   return (
     <>
       <div className="container">
@@ -43,92 +175,8 @@ const EpinList = () => {
             <div className="btn btn-info">Rest</div>
           </div>
           <div className="col-lg-12 col-sm-6 mt-4">
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th
-                      scope="col"
-                      style={{
-                        color: "black",
-                        textTransform: "capitalize",
-                        fontSize: "15px",
-                      }}
-                    >
-                      #
-                    </th>
-                    <th
-                      scope="col"
-                      style={{
-                        color: "black",
-                        textTransform: "capitalize",
-                        fontSize: "15px",
-                      }}
-                    >
-                      Alocate Memeber
-                    </th>
-                    <th
-                      scope="col"
-                      style={{
-                        color: "black",
-                        textTransform: "capitalize",
-                        fontSize: "15px",
-                      }}
-                    >
-                      E-pin
-                    </th>
-                    <th
-                      scope="col"
-                      style={{
-                        color: "black",
-                        textTransform: "capitalize",
-                        fontSize: "15px",
-                      }}
-                    >
-                      Amount
-                    </th>
-                    <th
-                      scope="col"
-                      style={{
-                        color: "black",
-                        textTransform: "capitalize",
-                        fontSize: "15px",
-                      }}
-                    >
-                      Balance Amount
-                    </th>
-                    <th
-                      scope="col"
-                      style={{
-                        color: "black",
-                        textTransform: "capitalize",
-                        fontSize: "15px",
-                      }}
-                    >
-                      Status
-                    </th>
-                    <th
-                      scope="col"
-                      style={{
-                        color: "black",
-                        textTransform: "capitalize",
-                        fontSize: "15px",
-                      }}
-                    >
-                      Expire Date
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <h6 className="">No Data Avalable</h6>
-                </tbody>
-              </table>
+            <div className="container">
+              <TableComponent />
             </div>
           </div>
         </div>

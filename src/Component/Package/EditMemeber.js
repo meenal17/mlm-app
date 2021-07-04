@@ -1,6 +1,6 @@
 import React from "react";
 
-const EditMemeber = () => {
+const EditMemeber = (props) => {
   return (
     <>
       <i
@@ -8,6 +8,7 @@ const EditMemeber = () => {
         data-toggle="modal"
         data-target="#exampleModal"
         style={{fontSize: 15 + "px"}}
+        onClick={() => props.editform()}
       ></i>
       <div
         class="modal fade"
