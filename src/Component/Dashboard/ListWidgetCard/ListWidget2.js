@@ -1,66 +1,61 @@
 import React from "react";
 import "./style.css";
+import Container from "react-bootstrap/Container";
 function ListWidget2() {
-  return (
-    <div>
-      <div className="row row-sm row-deck">
-        <div className="col-xl-12 col-lg-6">
-          <div className="card overflow-hidden ">
-            <div className="card-header pb-0">
-              <div className="card-body p-0 mb-1">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td>Package Amount</td>
-                      <td class="info-td"> € 36406.06 </td>
-                      <td>
-                        <td>
-                          <button className="btn btn-info">PA</button>
-                        </td>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td> Registration Fee </td>
-                      <td class="info-td"> € 10792.23 </td>
-                      <td>
-                        <td>
-                          <button className="btn btn-info">PA</button>
-                        </td>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td> Purchase Amount </td>
-                      <td class="info-td"> € 2104.72 </td>
-                      <td>
-                        <td>
-                          <button
-                            className="btn btn-info"
-                            style={{padding: "5"}}
-                          >
-                            PA
-                          </button>
-                        </td>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td> Commission Charges </td>
-                      <td class="info-td"> € 1461.1 </td>
-                      <td>
-                        <td>
-                          <button
-                            className="btn btn-info"
-                            style={{padding: "5"}}
-                          >
-                            PA
-                          </button>
-                        </td>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+  function TableComponent(props = {}) {
+    return (
+      <table className="table">
+        <tbody>
+          <RowComponent charges="Commission Charges" amount=" €87.70" />
+          <RowComponent charges="Purchase Amount" amount=" €87.70" />
+          <RowComponent charges="Registration Fee " amount=" €87.70" />
+          <RowComponent charges="Registration Fee " amount=" €87.70" />
+          <RowComponent charges="Purchase Amount" amount=" €87.70" />
+          <RowComponent charges="Commission Charges" amount=" €87.70" />
+        </tbody>
+      </table>
+    );
+  }
+
+  function RowComponent(props = {}) {
+    return (
+      <tr>
+        <td className="d-md-none d-table-cell">
+          <div className="card">
+            <div className="card-body">
+              <p class="card-title">{props.charges}</p>
+              <p className="card-text">amount{props.amount}</p>
+              <p className="card-text">
+                <button className="btn btn-info">PA</button>
+              </p>
             </div>
           </div>
+        </td>
+
+        <td className="d-none d-md-table-cell mr-5">{props.charges}</td>
+        <td className="d-none d-md-table-cell mr-5 info-td">{props.amount}</td>
+        <td className="d-none d-md-table-cell mr-5">
+          <button className="btn btn-info">PA</button>
+        </td>
+      </tr>
+    );
+  }
+  return (
+    <div>
+      <div class="card">
+        <h4
+          style={{
+            fontSize: 20 + "px",
+            color: "grey",
+
+            paddingTop: "8px",
+            marginLeft: "7px",
+          }}
+        >
+          Income & Commssion
+        </h4>
+        <div className="container" style={{marginBottom: "7%"}}>
+          <TableComponent />
         </div>
       </div>
     </div>

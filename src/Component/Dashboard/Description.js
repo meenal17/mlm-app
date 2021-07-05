@@ -82,59 +82,6 @@ function Description() {
           </div>
         </div>
       </div>
-      {/* <div className="row">
-        <div className="col-sm-6">
-          <div className="card">
-            <div class="card-body">
-              <p class="card-text mr-5">
-                <i className="fa fa-check-circle mr-2"></i>
-                You are viewing shared demo. Multiple users may try this demo
-                simultaneously
-              </p>
-              <p>
-                <i className="fa fa-check-circle"></i>Try custom demo as per
-                your configurations.
-              </p>
-            </div>
-          </div>
-          <div className="col-sm-6">
-            <div className="card">
-              <div class="card-body">
-                <p class="card-text mr-5">
-                  <i className="fa fa-check-circle mr-2"></i>
-                  You are viewing shared demo. Multiple users may try this demo
-                  simultaneously
-                </p>
-                <p>
-                  <i className="fa fa-check-circle"></i>Try custom demo as per
-                  your configurations.
-                </p>
-              </div>
-            </div>
-            <div className="card-footer">
-              <i className="fa fa-newspaper"></i>
-              <i className="fa fa-skype"></i>
-              <i className="fa fa-whatsapp"></i>
-              <i className="fa fa-mail"></i>
-            </div>
-          </div>
-        </div>
-        {/* <p>
-          <i className="fa fa-check-circle"></i>
-          You are viewing shared demo. Multiple users may try this demo
-          simultaneously
-        </p>
-        <i className="fa fa-check-circle"></i>
-        <p>Try custom demo as per your configurations. </p>
-        <div className="col-s-12"></div>
-        <div className="c">
-          <i className="fa fa-newspaper"></i>
-          <i className="fa fa-skype"></i>
-          <i className="fa fa-whatsapp"></i>
-          <i className="fa fa-mail"></i>
-        </div> 
-      </div>
-     */}
     </>
   );
 }

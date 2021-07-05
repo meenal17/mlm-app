@@ -5,15 +5,6 @@ function SearchLinkBar() {
     <>
       <div className="card">
         <div className="card-body">
-          <h3
-            style={{
-              color: "grey",
-              fontSize: 16 + "px",
-              padding: 2 + "px",
-            }}
-          >
-            Promotion Tools
-          </h3>
           <div className="row">
             <div className="col-sm-6">
               <div style={{marginLeft: 25 + "px"}}>
