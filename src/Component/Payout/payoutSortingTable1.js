@@ -65,14 +65,26 @@ function PayoutSortingTable1() {
     rows: [
       {
         name: "Tiger Nixon",
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
         date: "2011/04/25",
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Garrett Winters",
 
         Invoice: "PR000114",
@@ -82,7 +94,13 @@ function PayoutSortingTable1() {
         Amount: "$170",
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Ashton Cox",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -91,7 +109,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Cedric Kelly",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -100,7 +124,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Airi Satou",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -109,7 +139,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Brielle Williamson",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -118,7 +154,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Herrod Chandler",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -127,7 +169,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Rhona Davidson",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -136,7 +184,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Colleen Hurst",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -145,7 +199,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Sonya Frost",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -154,7 +214,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Jena Gaines",
         PayOut: "Bank Transefer",
         PayOut: "Bank Transefer",
@@ -163,7 +229,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Quinn Flynn",
         PayOut: "Bank Transefer",
         PayOut: "Bank Transefer",
@@ -172,7 +244,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Charde Marshall",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -181,7 +259,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Haley Kennedy",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -190,7 +274,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Tatyana Fitzpatrick",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -199,7 +289,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Michael Silva",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -208,7 +304,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Paul Byrd",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -217,7 +319,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Gloria Little",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -226,7 +334,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Bradley Greer",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -235,7 +349,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Dai Rios",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -244,7 +364,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Jenette Caldwell",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -253,7 +379,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Yuri Berry",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -262,7 +394,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Caesar Vance",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -271,7 +409,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Doris Wilder",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -280,7 +424,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Angelica Ramos",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -289,7 +439,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Gavin Joyce",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -298,7 +454,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Jennifer Chang",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -307,7 +469,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Brenden Wagner",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -316,7 +484,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Fiona Green",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -325,7 +499,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Shou Itou",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -333,7 +513,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Michelle House",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -342,7 +528,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Suki Burks",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -350,7 +542,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Prescott Bartlett",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -359,7 +557,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Gavin Cortez",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -368,7 +572,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Martena Mccray",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -377,7 +587,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Unity Butler",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -386,7 +602,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Howard Hatfield",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -395,7 +617,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Hope Fuentes",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -404,7 +632,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Vivian Harrell",
         Invoice: " PR000114",
         PayOut: "Bank Transefer",
@@ -413,7 +647,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Timothy Mooney",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -422,7 +662,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Jackson Bradshaw",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -431,7 +677,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Olivia Liang",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -440,7 +692,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Bruno Nash",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -449,7 +707,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Sakura Yamamoto",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -458,7 +722,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Thor Walton",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -467,7 +737,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Finn Camacho",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -476,7 +752,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Serge Baldwin",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -485,7 +767,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Zenaida Frank",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -494,7 +782,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Zorita Serrano",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -503,7 +797,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Jennifer Acosta",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -512,7 +812,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Cara Stevens",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -521,7 +827,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Hermione Butler",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -530,7 +842,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Lael Greer",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -539,7 +857,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Jonas Alexander",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -548,7 +872,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Shad Decker",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -557,7 +887,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Michael Bruce",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -566,7 +902,13 @@ function PayoutSortingTable1() {
         Amount: <p class="amount-color amt-col2">$320,</p>,
       },
       {
-        pic: <img src="../../../assets/img/dashboard/user.jpg" id="img" />,
+        pic: (
+          <img
+            src="../../../assets/img/dashboard/user.jpg"
+            id="img"
+            style={{height: "50px", width: "50px"}}
+          />
+        ),
         name: "Donna Snider",
         Invoice: "PR000114",
         PayOut: "Bank Transefer",
@@ -613,6 +955,13 @@ function PayoutSortingTable1() {
           searchTop
           searchBottom={false}
           barReverse
+          style={{
+            maxHeigth: "100%",
+            minHeight: "360px",
+            maxwidth: "100%",
+            minwidth: "370px",
+            overflowX: "scroll",
+          }}
         />
       </div>
       {/* table end */}

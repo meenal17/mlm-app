@@ -60,14 +60,15 @@ function MainHeader() {
           >
             <span className="navbar-toggler-icon fe fe-more-vertical "></span>
           </button>
-          <div className="dropdown main-profile-menu nav nav-item nav-link">
-            <a className="profile-user" href="">
+          <div className="dropdown main-profile-menu nav nav-item nav-link ">
+            <a
+              className="profile-user"
+              href=""
+              style={{backgroundColor: "black"}}
+            >
               <img alt="" src="./assets/img/dashboard/user.jpg" />
             </a>
-            {/* <div className="card ">
-                  <p>Profile</p>
-                  <p>Settings</p>
-                </div> */}
+
             <div className="dropdown-menu dropdown-menu-arrow animated fadeInUp">
               <div className="main-header-profile header-img">
                 <div className="main-img-user">
