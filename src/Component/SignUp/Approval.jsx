@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function Approval() {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -25,7 +27,7 @@ function Approval() {
                 textTransform: "capitalize",
               }}
             >
-              Memeber Name
+              {t("Memeber Name.74")}{" "}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -36,7 +38,7 @@ function Approval() {
                 textTransform: "capitalize",
               }}
             >
-              Sponsor
+              {t("Sponsor.75")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -47,7 +49,7 @@ function Approval() {
                 textTransform: "capitalize",
               }}
             >
-              Package
+              {t("Package.33")}
             </th>
 
             <th
@@ -59,7 +61,7 @@ function Approval() {
                 textTransform: "capitalize",
               }}
             >
-              Total Amount
+              {t("Total Amount.88")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -70,7 +72,7 @@ function Approval() {
                 textTransform: "capitalize",
               }}
             >
-              Payment Method
+              {t("Payment Method.89")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -81,7 +83,7 @@ function Approval() {
                 textTransform: "capitalize",
               }}
             >
-              Action
+              {t("Action.59")}
             </th>
             <th></th>
           </tr>
@@ -154,7 +156,7 @@ function Approval() {
             <div className="card-body">
               <strong class="card-title">{props.MemberName}</strong>
               <p className="card-text">
-                sponsor {props.sponsor}
+                {t("Sponsor.75")} {props.sponsor}
                 <br />
                 {props.Package && `ISN ${props.isn}`}
               </p>
@@ -188,7 +190,7 @@ function Approval() {
     <>
       <Link to="/Approval">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          Approval Member
+          {t("Approval Member.87")}
         </div>
         <div class="card mr-2 ml-2">
           <div className="card-body">
@@ -198,10 +200,10 @@ function Approval() {
           </div>
           <div className="row mb-3">
             <div className="col-lg-1 ml-4 mr-2">
-              <button className="btn btn-primary">Approve</button>
+              <button className="btn btn-primary">{t("Approve.90")}</button>
             </div>
             <div className="col-lg-1">
-              <button className="btn btn-danger">Reject</button>
+              <button className="btn btn-danger">{t("reject.91")}</button>
             </div>
           </div>
         </div>

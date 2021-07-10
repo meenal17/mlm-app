@@ -2,7 +2,10 @@ import React, {useState} from "react";
 // import Header from "../Header/Header";
 import {Link} from "react-router-dom";
 import "../LFTsideBAR/style.css";
+import {useTranslation} from "react-i18next";
 const LefSide = () => {
+  const {t, i18n} = useTranslation();
+
   return (
     <>
       <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -50,7 +53,7 @@ const LefSide = () => {
             <li class="slide">
               <Link class="side-menu__item" to="">
                 <i class="side-menu__icon ti-desktop"></i>
-                <span class="side-menu__label">Dashboard</span>
+                <span class="side-menu__label">{t("dashboard.1")}</span>
               </Link>
             </li>
             <li
@@ -61,33 +64,33 @@ const LefSide = () => {
             >
               <Link class="side-menu__item">
                 <i class="side-menu__icon fa fa-sitemap text-white"> </i>
-                <span class="side-menu__label">Networks</span>
+                <span class="side-menu__label">{t("network.15")}</span>
                 <i class="angle fe fe-chevron-down"></i>
               </Link>
               <ul class="slide-menu">
                 <li>
                   <Link class="slide-item" to="/genologytree">
-                    Genealogy Tree
+                    {t("GenealogyTree.16")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/sponsortree">
-                    Sponsor Tree
+                    {t("SponsorTree.17")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/TreeView">
-                    Tree View
+                    {t("TreeView.18")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/DownloadMember">
-                    DownLine Members
+                    {t("DownLineMembers.19")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/ReferralMember">
-                    Refferral Members
+                    {t("RefferralMembers.20")}
                   </Link>
                 </li>
               </ul>
@@ -100,23 +103,23 @@ const LefSide = () => {
             >
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fas fa-user-plus"></i>
-                <span class="side-menu__label">signup</span>
+                <span class="side-menu__label"> {t("signup.21")}</span>
                 <i class="angle fe fe-chevron-down"></i>
               </a>
               <ul class="slide-menu">
                 <li>
                   <Link class="slide-item" to="/Register">
-                    Register
+                    {t("register.22")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/Approval">
-                    Approval
+                    {t("Approval.23")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/BRegister">
-                    Bulk Register
+                    {t("bulk register.24")}
                   </Link>
                 </li>
               </ul>
@@ -124,25 +127,25 @@ const LefSide = () => {
             <li class="slide">
               <Link class="side-menu__item" to="/Bussiness">
                 <i class="side-menu__icon fa fa-building-o"></i>
-                <span class="side-menu__label">Bussiness</span>
+                <span class="side-menu__label"> {t("Bussiness.92")}</span>
               </Link>
             </li>
             <li class="slide">
               <Link class="side-menu__item" to="/Ewallet">
                 <i class="side-menu__icon fa fa-briefcase"></i>
-                <span class="side-menu__label">Ewallet</span>
+                <span class="side-menu__label">{t("Ewallet.26")}</span>
               </Link>
             </li>
             <li class="slide">
               <Link class="side-menu__item" to="/payout">
                 <i class="side-menu__icon fa fa-money"></i>
-                <span class="side-menu__label">PayOut</span>
+                <span class="side-menu__label">{t("PayOut.130")}</span>
               </Link>
             </li>
             <li class="slide">
               <Link class="side-menu__item" to="/Epin">
                 <i class="side-menu__icon fa fa-bookmark-o"></i>
-                <span class="side-menu__label">E-pin</span>
+                <span class="side-menu__label">{t("Epin.153")}</span>
               </Link>
             </li>
             <li
@@ -153,23 +156,25 @@ const LefSide = () => {
             >
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-address-book"></i>
-                <span class="side-menu__label">Profile Managment</span>
+                <span class="side-menu__label">
+                  {t("Profile Managment.29")}
+                </span>
                 <i class="angle fe fe-chevron-down"></i>
               </a>
               <ul class="slide-menu">
                 <li>
                   <Link class="slide-item" to="/Profile">
-                    Profile View
+                    {t("profileview.30")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/MemberList">
-                    Member List
+                    {t("memberlist.31")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/KycDetails">
-                    KYC Details
+                    {t("KYC detail.32")}
                   </Link>
                 </li>
               </ul>
@@ -182,18 +187,18 @@ const LefSide = () => {
             >
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-cubes"></i>
-                <span class="side-menu__label">Package</span>
+                <span class="side-menu__label"> {t("package.33")}</span>
                 <i class="angle fe fe-chevron-down"></i>
               </a>
               <ul class="slide-menu">
                 <li>
                   <Link class="slide-item" to="/membership">
-                    Membership
+                    {t("membership.34")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/cart">
-                    Repurchase/Cart
+                    {t("Repurchase/Cart.35")}
                   </Link>
                 </li>
               </ul>
@@ -206,18 +211,18 @@ const LefSide = () => {
             >
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-shopping-bag"></i>
-                <span class="side-menu__label">Shopping Cart</span>
+                <span class="side-menu__label">{t("Shopping Cart.36")}</span>
                 <i class="angle fe fe-chevron-down"></i>
               </a>
               <ul class="slide-menu">
                 <li>
                   <Link class="slide-item" to="/shoppingcart">
-                    Checkout
+                    {t("checkout.37")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/approval2">
-                    Approval
+                    {t("approval.38")}
                   </Link>
                 </li>
               </ul>
@@ -230,38 +235,38 @@ const LefSide = () => {
             >
               <a class="side-menu__item" data-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-cubes"></i>
-                <span class="side-menu__label">Reports</span>
+                <span class="side-menu__label"> {t("Reports.39")}</span>
                 <i class="angle fe fe-chevron-down"></i>
               </a>
               <ul class="slide-menu">
                 <li>
                   <Link class="slide-item" to="/reportprofile">
-                    Profile
+                    {t("profile.40")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/active-deactiveprofile">
-                    Active/Deactive
+                    {t("checkout.41")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/joinings">
-                    Joining
+                    {t("Joining.42")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/commission">
-                    Commission
+                    {t("Commission.43")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/totalBonus">
-                    Total Bonus
+                    {t("totalBonus.44")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/totalearning">
-                    Total Earning
+                    {t("total earning.45")}
                   </Link>
                 </li>
 
@@ -272,27 +277,27 @@ const LefSide = () => {
                 </li> */}
                 <li>
                   <Link class="slide-item" to="/payoutrelease">
-                    PayOut
+                    {t("payoutrelease.46")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/rankperformane">
-                    Rank Performance
+                    {t("rankperformance.47")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/rankarchive">
-                    Rank Archive
+                    {t("rankarchive.48")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/e-pintransfer">
-                    E-pin Transfer
+                    {t("epin transfer.49")}
                   </Link>
                 </li>
                 <li>
                   <Link class="slide-item" to="/packageupgrated">
-                    Package Upgrade
+                    {t("packageupgrated.50")}
                   </Link>
                 </li>
               </ul>
@@ -306,7 +311,7 @@ const LefSide = () => {
             <li class="slide">
               <Link class="side-menu__item" to="/mailbox">
                 <i class="side-menu__icon fa fa-envelope-o "></i>
-                <span class="side-menu__label">Mail</span>
+                <span class="side-menu__label">{t("mail.51")}</span>
               </Link>
             </li>
             <li class="slide">
@@ -316,13 +321,13 @@ const LefSide = () => {
                 to="/privilegeduser"
               >
                 <i class="side-menu__icon fa fa-user-circle-o"></i>
-                <span class="side-menu__label">Privileged User</span>
+                <span class="side-menu__label">{t("Privileged User.52")}</span>
               </Link>
             </li>
             <li class="slide">
               <a class="side-menu__item" data-toggle="slide" href="/logout">
                 <i class="side-menu__icon fa fa-sign-out"></i>
-                <span class="side-menu__label">LogOut</span>
+                <span class="side-menu__label">{t("logout.53")}</span>
               </a>
             </li>
           </ul>

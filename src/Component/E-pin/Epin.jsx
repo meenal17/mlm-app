@@ -3,14 +3,16 @@ import Card from "./card";
 import {Link} from "react-router-dom";
 import EpinList from "./E-pinList";
 import PendingRequest from "./PendingRequest";
+import {useTranslation} from "react-i18next";
 const Epin = () => {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/Epin">
       <div
         class="alert alert-light p-1"
         style={{fontSize: 22 + "px", height: "50px"}}
       >
-        Payout Released Report
+        {t("PayoutReleasedReport.154")}
       </div>
       <Card />
       <div className="container-fluid">
@@ -24,12 +26,12 @@ const Epin = () => {
                   role="tab"
                   data-toggle="tab"
                 >
-                  E-pin List
+                  {t("EpinList.155")}
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">
-                  Pending Request
+                  {t("PendingRequest.156")}
                 </a>
               </li>
             </ul>

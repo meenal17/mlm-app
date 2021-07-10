@@ -1,8 +1,11 @@
 import React, {useState} from "react";
 import "../Profile Mangement/profilestyle.css";
 import CheckBox from "./CheckBox";
+import {useTranslation} from "react-i18next";
 export default function MemberlistTabs() {
   const [checked, setchecked] = useState(false);
+  const {t, i18n} = useTranslation();
+
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -31,7 +34,7 @@ export default function MemberlistTabs() {
                 fontWeight: "bold",
               }}
             >
-              Memeber Name
+              {t("Memeber Name.74")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -41,7 +44,7 @@ export default function MemberlistTabs() {
                 fontWeight: "bold",
               }}
             >
-              Sponsor
+              {t("Sponsor.75")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -51,7 +54,7 @@ export default function MemberlistTabs() {
                 fontWeight: "bold",
               }}
             >
-              Email
+              {t("Email.196")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -61,7 +64,7 @@ export default function MemberlistTabs() {
                 fontWeight: "bold",
               }}
             >
-              Mobile
+              {t("Mobile.318")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -71,7 +74,7 @@ export default function MemberlistTabs() {
                 fontWeight: "bold",
               }}
             >
-              Joining Date
+              {t("Joining Date.76")}
             </th>
           </tr>
         </thead>
@@ -144,13 +147,14 @@ export default function MemberlistTabs() {
                 {props.MemberName}
               </strong>
               <p className="card-text">
-                sponsor:{props.sponsor}
+                {t("Sponsor.75")}:{props.sponsor}
                 <br />
-                E-mail:{props.email}
+                {t("Email.196")}:{props.email}
                 <br />
-                Mobile{props.Mobile}
+                {t("Mobile.318")}
+                {props.Mobile}
                 <br />
-                JoiningDate: {props.JoiningDate}
+                {t("Joining Date.76")}:{props.JoiningDate}
               </p>
             </div>
           </div>
@@ -190,16 +194,16 @@ export default function MemberlistTabs() {
           <div className="col-lg-3">
             <div class="form-group">
               <select class="form-control" id="exampleFormControlSelect1">
-                <option>Active</option>
-                <option>Block</option>
+                <option>{t("Active.174")}</option>
+                <option>{t("Blocked.175")}</option>
               </select>
             </div>
           </div>
           <div className="col-lg-1 mr-1">
-            <button className="btn btn-purple">Search</button>
+            <button className="btn btn-purple">{t("search.13")}</button>
           </div>
           <div className="col-lg-1 ">
-            <button className="btn btn-info">Reset</button>
+            <button className="btn btn-info">{t("reset.67")}</button>
           </div>
         </div>
         {/* Table */}
@@ -214,13 +218,13 @@ export default function MemberlistTabs() {
             <div className="row">
               <div className="col-lg-4 col-sm-3 mt-3">
                 <h6 style={{color: "grey"}}>
-                  Showing 1 to 10 of 1,881 entries
+                  {t("Showing 1 to 10 of 1,881 entries.97")}
                 </h6>
               </div>
               <div className="col-lg-2 col-sm-3">
                 <div class="form-group">
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Row Pages</option>
+                    <option>{t("Row Pages.98")}</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -238,7 +242,7 @@ export default function MemberlistTabs() {
                         tabindex="-1"
                         aria-disabled="true"
                       >
-                        Previous
+                        {t("Previous.99")}
                       </a>
                     </li>
                     <li class="page-item">
@@ -258,7 +262,7 @@ export default function MemberlistTabs() {
                     </li>
                     <li class="page-item">
                       <a class="page-link" href="#">
-                        Next
+                        {t("Next.100")}
                       </a>
                     </li>
                   </ul>

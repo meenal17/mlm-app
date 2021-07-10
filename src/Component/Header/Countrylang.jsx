@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import "../Header/style.css";
+import {useTranslation} from "react-i18next";
 const Countrylang = () => {
+  const {t, i18n} = useTranslation();
+  function handleClick(Languages) {
+    i18n.changeLanguage(Languages);
+  }
   return (
     <>
       <li class="dropdown">
@@ -22,6 +27,7 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/en.png"
                 className="imagestyle"
+                onClick={() => handleClick("en")}
               />
               English
             </a>
@@ -30,11 +36,12 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('2');"
               className="text-dark"
+              onClick={() => handleClick("sp")}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/es.png"
                 className="imagestyle"
-              />{" "}
+              />
               Español
             </a>
           </li>
@@ -46,6 +53,7 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ch.png"
                 className="imagestyle"
+                onClick={() => handleClick("jp")}
               />{" "}
               中文
             </a>
@@ -58,6 +66,7 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/de.png"
                 className="imagestyle"
+                onClick={() => handleClick("gm")}
               />{" "}
               Deutsch
             </a>
@@ -70,7 +79,8 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/pt.png"
                 className="imagestyle"
-              />{" "}
+                onClick={() => handleClick("pg")}
+              />
               Português
             </a>
           </li>
@@ -82,7 +92,8 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/fr.png"
                 className="imagestyle"
-              />{" "}
+                onClick={() => handleClick("fr")}
+              />
               français
             </a>
           </li>
@@ -94,6 +105,7 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/it.png"
                 className="imagestyle"
+                onClick={() => handleClick("il")}
               />{" "}
               italiano
             </a>
@@ -106,7 +118,8 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/tr.png"
                 className="imagestyle"
-              />{" "}
+                onClick={() => handleClick("tu")}
+              />
               Türk
             </a>
           </li>
@@ -118,6 +131,7 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/po.png"
                 className="imagestyle"
+                onClick={() => handleClick("po")}
               />{" "}
               polski
             </a>
@@ -130,6 +144,7 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ar.png"
                 className="imagestyle"
+                onClick={() => handleClick("ab")}
               />{" "}
               العربية
             </a>
@@ -142,6 +157,7 @@ const Countrylang = () => {
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ru.png"
                 className="imagestyle"
+                onClick={() => handleClick("ru")}
               />{" "}
               русский
             </a>

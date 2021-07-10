@@ -6,13 +6,13 @@ function App() {
     <>
       <Router>
         {/* <!-- Loader --> */}
-        <div id="global-loader" class="light-loader">
+        {/* <div id="global-loader" class="light-loader">
           <img
             src="../../assets/img/loaders/loader.svg"
             class="loader-img"
             alt="Loader"
           />
-        </div>
+        </div> */}
 
         <CustomRouter />
       </Router>

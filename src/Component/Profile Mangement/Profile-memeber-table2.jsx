@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import CheckBox from "./CheckBox";
+import {useTranslation} from "react-i18next";
 function Profilememebertable2() {
+  const {t, i18n} = useTranslation();
   const [checked, setchecked] = useState(false);
   function TableComponent(props = {}) {
     return (
@@ -30,7 +32,7 @@ function Profilememebertable2() {
                 fontWeight: "bold",
               }}
             >
-              Memeber Name
+              {t("Memeber Name.74")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -40,7 +42,7 @@ function Profilememebertable2() {
                 fontWeight: "bold",
               }}
             >
-              Sponsor
+              {t("Sponsor.75")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -50,7 +52,7 @@ function Profilememebertable2() {
                 fontWeight: "bold",
               }}
             >
-              Email
+              {t("Email.196")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -60,7 +62,7 @@ function Profilememebertable2() {
                 fontWeight: "bold",
               }}
             >
-              Mobile
+              {t("Mobile.318")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -70,7 +72,7 @@ function Profilememebertable2() {
                 fontWeight: "bold",
               }}
             >
-              Joining Date
+              {t("Joining Date.76")}
             </th>
           </tr>
         </thead>
@@ -99,13 +101,13 @@ function Profilememebertable2() {
             <div className="card-body">
               <strong class="card-title">{props.MemberName}</strong>
               <p className="card-text">
-                sponsor:{props.sponsor}
+                {t("Sponsor.75")}:{props.sponsor}
                 <br />
-                E-mail:{props.email}
+                {t("Email.196")}:{props.email}
                 <br />
-                Mobile{props.Mobile}
+                {t("Mobile.318")}:{props.Mobile}
                 <br />
-                JoiningDate: {props.JoiningDate}
+                {t("Joining Date.76")}: {props.JoiningDate}
               </p>
             </div>
           </div>

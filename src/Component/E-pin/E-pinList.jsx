@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 const EpinList = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -15,7 +16,7 @@ const EpinList = () => {
                 textTransform: "capitalize",
               }}
             >
-              Id
+              {t("Id.157")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -26,7 +27,7 @@ const EpinList = () => {
                 textTransform: "capitalize",
               }}
             >
-              Alocate Member
+              {t("Alocate Member.158")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -37,7 +38,7 @@ const EpinList = () => {
                 textTransform: "capitalize",
               }}
             >
-              E-pin
+              {t("Epin.153")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -48,7 +49,7 @@ const EpinList = () => {
                 textTransform: "capitalize",
               }}
             >
-              Amount
+              {t("Amount.95")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -59,7 +60,7 @@ const EpinList = () => {
                 textTransform: "capitalize",
               }}
             >
-              Balance Amount
+              {t("BalanceAmount.159")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -70,7 +71,7 @@ const EpinList = () => {
                 textTransform: "capitalize",
               }}
             >
-              Status
+              {t("Status.160")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -81,7 +82,7 @@ const EpinList = () => {
                 textTransform: "capitalize",
               }}
             >
-              Expire Date
+              {t("ExpireDate.170")}
             </th>
           </tr>
         </thead>
@@ -141,14 +142,14 @@ const EpinList = () => {
             <input
               class="form-control form-control-lg"
               type="text"
-              placeholder="Username"
+              placeholder={t("Username.128")}
             />
           </div>
           <div className="col-md-3 col-sm-4">
             <input
               class="form-control form-control-lg"
               type="text"
-              placeholder="E-pin"
+              placeholder={t("Epin.153")}
             />
           </div>
           <div className="col-md-3 col-sm-4">
@@ -161,18 +162,18 @@ const EpinList = () => {
           <div className="col-md-3 col-sm-4">
             <div class="form-group">
               <select class="form-control" id="exampleFormControlSelect1">
-                <option>Active</option>
-                <option>Blocked</option>
-                <option>Used/Expired</option>
-                <option>Deleted</option>
+                <option>{t("Active.174")}</option>
+                <option>{t("Blocked.175")}</option>
+                <option>{t("Used/Expired.176")}</option>
+                <option>{t("Deleted.177")}</option>
               </select>
             </div>
           </div>
           <div className="col-md-1 mr-2">
-            <div className="btn btn-purple ">Search</div>
+            <div className="btn btn-purple ">{t("search.13")}</div>
           </div>
           <div className="col-md-1">
-            <div className="btn btn-info">Rest</div>
+            <div className="btn btn-info">{t("reset.67")}</div>
           </div>
           <div className="col-lg-12 col-sm-6 mt-4">
             <div className="container">

@@ -1,11 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function TreeView() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/TreeView">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          TreeView
+          {t("tree.56")}
         </div>
         <div className="card p-4 ml-2 mr-2">
           <div className="card-body">
@@ -19,10 +21,10 @@ function TreeView() {
                   />
                   <div class="input-group-append">
                     <button type="button" class="btn btn-primary mr-2 ml-2">
-                      Search
+                      {t("search.13")}
                     </button>
                     <button type="button" class="btn btn-danger">
-                      Secondary
+                      {t("rest.57")}
                     </button>
                   </div>
                 </div>
@@ -32,7 +34,10 @@ function TreeView() {
         </div>
         <br />
 
-        <h3 style={{color: "grey", marginLeft: 8 + "px"}}>[binaryaddon]</h3>
+        <h3 style={{color: "grey", marginLeft: 8 + "px"}}>
+          {" "}
+          {t(`binarryaddon.58`)}
+        </h3>
         <hr></hr>
         <br />
 
@@ -51,13 +56,13 @@ function TreeView() {
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <a class="dropdown-item" href="#">
-              Action
+              {t(`action.59`)}
             </a>
             <a class="dropdown-item" href="#">
-              Another action
+              {t(`Another action.60`)}
             </a>
             <a class="dropdown-item" href="#">
-              Something else here
+              {t(`Something else here.61`)}
             </a>
           </div>
         </div>

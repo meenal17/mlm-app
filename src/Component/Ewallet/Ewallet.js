@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import "../Ewallet/Style.css";
 import {CardColumns} from "react-bootstrap";
 import Cards from "./Cards";
+import {useTranslation} from "react-i18next";
 function Ewallet() {
   const startValue: Date = new Date(
     new Date().getUTCFullYear(),
@@ -95,11 +96,12 @@ function Ewallet() {
     },
   ];
   const [options2] = useState(Data);
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/Ewallet">
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          Ewallet
+          {t("Ewallet.26")}
         </div>
         <Cards />
         {/* Tabs start */}
@@ -112,7 +114,7 @@ function Ewallet() {
                 role="tab"
                 data-toggle="tab"
               >
-                Ewallet Summary
+                {t("Ewallet Summary.102")}
               </a>
             </li>
             <li class="nav-item">
@@ -122,7 +124,7 @@ function Ewallet() {
                 role="tab"
                 data-toggle="tab"
               >
-                Ewallet Transactions
+                {t("Ewallet Transactions.103")}
               </a>
             </li>
             <li class="nav-item">
@@ -132,7 +134,7 @@ function Ewallet() {
                 role="tab"
                 data-toggle="tab"
               >
-                Ewallet Balance
+                {t("Ewallet Balance.104")}
               </a>
             </li>
             <li class="nav-item">
@@ -142,7 +144,7 @@ function Ewallet() {
                 role="tab"
                 data-toggle="tab"
               >
-                Ewallet Statment
+                {t("Ewallet Statment.105")}
               </a>
             </li>
             <li class="nav-item">
@@ -152,7 +154,7 @@ function Ewallet() {
                 role="tab"
                 data-toggle="tab"
               >
-                Purchase Wallet
+                {t("Purchase Wallet.106")}
               </a>
             </li>
             <li class="nav-item">
@@ -162,7 +164,7 @@ function Ewallet() {
                 role="tab"
                 data-toggle="tab"
               >
-                User Earning
+                {t("User Earning.107")}
               </a>
             </li>
           </ul>
@@ -182,13 +184,13 @@ function Ewallet() {
               </div>
               {/* first row */}
               <h4 className="ml-2 mt-2" style={{color: "black"}}>
-                Credit
+                {t("Credit.108")}
               </h4>
               <div className="row card-color">
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Registation Fee
+                      {t("Registation Fee.109")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -197,7 +199,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -206,7 +208,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -215,7 +217,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -227,7 +229,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Registation Fee
+                      {t("Registation Fee.109")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -236,7 +238,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -245,7 +247,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -254,7 +256,7 @@ function Ewallet() {
                 <div className="col-lg-3 mt-2">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -263,7 +265,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -272,7 +274,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -281,7 +283,7 @@ function Ewallet() {
                 <div className="col-lg-3 ">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -290,7 +292,7 @@ function Ewallet() {
                 <div className="col-lg-3 mt-2">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -299,7 +301,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -308,7 +310,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -317,7 +319,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-color">
-                      Purchase Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-color">€27.718</p>
                     </li>
@@ -326,13 +328,13 @@ function Ewallet() {
               </div>
               {/* second row */}
               <h4 className="ml-2 mt-2" style={{color: "black"}}>
-                Debit
+                {t(" Debit.112")}
               </h4>
               <div className="row card-color">
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Registation Fee
+                      {t("Registation Fee.109")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -341,7 +343,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -350,7 +352,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Purchase Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-coL">€27.718</p>
                     </li>
@@ -359,7 +361,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -368,7 +370,7 @@ function Ewallet() {
                 <div className="col-lg-3 mt-2">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -377,7 +379,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -386,7 +388,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -395,7 +397,7 @@ function Ewallet() {
                 <div className="col-lg-3 mt-2">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -404,7 +406,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Package Amount.110")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -413,7 +415,7 @@ function Ewallet() {
                 <div className="col-lg-3">
                   <ul class="list-group">
                     <li class="list-group-item disabled li-col">
-                      Package Amount
+                      {t("Purchase Amount.111")}
                       <br />
                       <p className="p-col">€27.718</p>
                     </li>
@@ -428,14 +430,14 @@ function Ewallet() {
                   <input
                     class="form-control form-control-lg"
                     type="text"
-                    placeholder="Username"
+                    placeholder={t("Username.128")}
                   />
                 </div>
                 <div className="col-lg-3 col-sm-4">
                   <Multiselect
                     options={options2}
                     displayValue="infoType"
-                    placeholder="Type"
+                    placeholder={t("Type.129")}
                   />
                 </div>
                 <div
@@ -461,10 +463,10 @@ function Ewallet() {
               </div>
               <div className="row mt-3 ml-2">
                 <div className="col-sm-2 col-lg-1 mr-2">
-                  <button className="btn btn-purple">Search</button>
+                  <button className="btn btn-purple">{t("search.13")}</button>
                 </div>
                 <div className="col-sm-2 col-lg-1">
-                  <button className="btn btn-info">Reset</button>
+                  <button className="btn btn-info">{t("reset.67")}</button>
                 </div>
               </div>
 
@@ -481,7 +483,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Member Name
+                          {t("member name.68")}
                         </th>
                         <th
                           style={{
@@ -490,17 +492,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Category
-                        </th>
-                        <th
-                          style={{
-                            fontSize: 15 + "px",
-                            color: "black",
-                            fontWeight: "bold",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          Amount
+                          {t("Category.94")}
                         </th>
                         <th
                           style={{
@@ -510,7 +502,17 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Transection Date
+                          {t("Amount.95")}
+                        </th>
+                        <th
+                          style={{
+                            fontSize: 15 + "px",
+                            color: "black",
+                            fontWeight: "bold",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {t("Transection Date.116")}
                         </th>
                       </tr>
                     </thead>
@@ -710,7 +712,7 @@ function Ewallet() {
                   <button className="btn btn-purple">Search</button>
                 </div>
                 <div className="col-sm-2 col-lg-1">
-                  <button className="btn btn-info">Reset</button>
+                  <button className="btn btn-info">{t("reset.67")}</button>
                 </div>
               </div>
 
@@ -727,7 +729,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Member Name
+                          {t("member name.68")}
                         </th>
                         <th
                           style={{
@@ -737,7 +739,7 @@ function Ewallet() {
                             textAlign: "center",
                           }}
                         >
-                          E-wallet Balance
+                          {t("EwalletBalance.2")}
                         </th>
                       </tr>
                     </thead>
@@ -905,9 +907,7 @@ function Ewallet() {
                             </a>
                           </li>
                           <li class="page-item">
-                            <a class="page-link" href="#">
-                              Next
-                            </a>
+                            <a class="page-link" href="#"></a>
                           </li>
                         </ul>
                       </nav>
@@ -927,10 +927,10 @@ function Ewallet() {
                   />
                 </div>
                 <div className="col-sm-2 col-lg-1 mr-2">
-                  <button className="btn btn-purple">Search</button>
+                  <button className="btn btn-purple">{t("search.13")}</button>
                 </div>
                 <div className="col-sm-2 col-lg-1">
-                  <button className="btn btn-info">Reset</button>
+                  <button className="btn btn-info">{t("reset.67")}</button>
                 </div>
               </div>
               {/* table */}
@@ -947,7 +947,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Desciption
+                          {t("Desciption.114")}
                         </th>
                         <th
                           style={{
@@ -956,17 +956,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Amount
-                        </th>
-                        <th
-                          style={{
-                            fontSize: 15 + "px",
-                            color: "black",
-                            fontWeight: "bold",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          Balance
+                          {t("Amount.95")}
                         </th>
                         <th
                           style={{
@@ -976,7 +966,17 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Transection Date
+                          {t("Balance.115")}
+                        </th>
+                        <th
+                          style={{
+                            fontSize: 15 + "px",
+                            color: "black",
+                            fontWeight: "bold",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {t("Transection Date.116")}
                         </th>
                       </tr>
                     </thead>
@@ -1055,7 +1055,7 @@ function Ewallet() {
                           class="form-control"
                           id="exampleFormControlSelect1"
                         >
-                          <option>Row Pages</option>
+                          <option>{t("Row Pages.98")}</option>
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -1073,7 +1073,7 @@ function Ewallet() {
                               tabindex="-1"
                               aria-disabled="true"
                             >
-                              Previous
+                              {t("Previous.99")}
                             </a>
                           </li>
                           <li class="page-item">
@@ -1093,7 +1093,7 @@ function Ewallet() {
                           </li>
                           <li class="page-item">
                             <a class="page-link" href="#">
-                              Next
+                              {t("Next.82")}
                             </a>
                           </li>
                         </ul>
@@ -1111,21 +1111,21 @@ function Ewallet() {
                   class="fa fa-exclamation-circle bell mr-2 "
                   style={{color: "#ffad31", fontSize: 25 + "px"}}
                 />
-                Note : This is an add-on module
+                {t("onmodule.113")}
               </h5>
               <div className="row mt-3 ml-2">
                 <div className="col-lg-4">
                   <input
                     class="form-control form-control-lg"
                     type="text"
-                    placeholder="Username"
+                    placeholder={t("Username.128")}
                   />
                 </div>
                 <div className="col-sm-2 col-lg-1 mr-2">
-                  <button className="btn btn-purple">Search</button>
+                  <button className="btn btn-purple">{t("search.13")}</button>
                 </div>
                 <div className="col-sm-2 col-lg-1">
-                  <button className="btn btn-info">Reset</button>
+                  <button className="btn btn-info">{t("reset.67")}</button>
                 </div>
               </div>
               <div class="card mr-2 ml-2">
@@ -1140,7 +1140,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Desciption
+                          {t("Desciption.114")}
                         </th>
                         <th
                           style={{
@@ -1149,17 +1149,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Amount
-                        </th>
-                        <th
-                          style={{
-                            fontSize: 15 + "px",
-                            color: "black",
-                            fontWeight: "bold",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          Balance
+                          {t("Amount.95")}
                         </th>
                         <th
                           style={{
@@ -1169,7 +1159,17 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Transection Date
+                          {t("Balance.115")}
+                        </th>
+                        <th
+                          style={{
+                            fontSize: 15 + "px",
+                            color: "black",
+                            fontWeight: "bold",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {t("Transection Date.116")}
                         </th>
                       </tr>
                     </thead>
@@ -1239,7 +1239,7 @@ function Ewallet() {
                   <div className="row">
                     <div className="col-lg-4 col-sm-3 mt-3">
                       <h6 style={{color: "grey"}}>
-                        Showing 1 to 10 of 1,881 entries
+                        {t("Showing 1 to 10 of 1,881 entries.97")}
                       </h6>
                     </div>
                     <div className="col-lg-2 col-sm-3">
@@ -1248,7 +1248,7 @@ function Ewallet() {
                           class="form-control"
                           id="exampleFormControlSelect1"
                         >
-                          <option>Row Pages</option>
+                          <option>{t("Row Pages.98")}</option>
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -1266,7 +1266,7 @@ function Ewallet() {
                               tabindex="-1"
                               aria-disabled="true"
                             >
-                              Previous
+                              {t("Previous.99")}
                             </a>
                           </li>
                           <li class="page-item">
@@ -1286,7 +1286,7 @@ function Ewallet() {
                           </li>
                           <li class="page-item">
                             <a class="page-link" href="#">
-                              Next
+                              {t("Next.100")}
                             </a>
                           </li>
                         </ul>
@@ -1303,24 +1303,24 @@ function Ewallet() {
                   <input
                     class="form-control form-control-lg"
                     type="text"
-                    placeholder="Username"
+                    placeholder={t("Username.128")}
                   />
                 </div>
                 <div className="col-lg-3">
                   <div class="form-group">
                     <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Category</option>
-                      <option>Refferral Commission</option>
-                      <option>Rank Commission</option>
-                      <option>Level Commission</option>
-                      <option>Binary Commission</option>
-                      <option>Matching Bonus</option>
-                      <option>Pool Bonus</option>
-                      <option>Fast Start Bonus</option>
-                      <option>Vacation Bonus</option>
-                      <option>Education Fund</option>
-                      <option>Car Fund</option>
-                      <option>House Fund</option>
+                      <option>{t("Category.94")}</option>
+                      <option>{t("Refferral Commission.117")}</option>
+                      <option>{t("Rank Commission.118")}</option>
+                      <option>{t("Level Commission.119")}</option>
+                      <option>{t("Binary Commission.120")}</option>
+                      <option>{t("Matching Bonus.121")}</option>
+                      <option>{t("Pool Bonus.122")}</option>
+                      <option>{t("Fast Start Bonus.123")}</option>
+                      <option>{t("Vacation Bonus.124")}</option>
+                      <option>{t("Education Fund.125")}</option>
+                      <option>{t("Car Fund.126")}</option>
+                      <option>{t("House Fund.127")}</option>
                     </select>
                   </div>
                 </div>
@@ -1335,10 +1335,10 @@ function Ewallet() {
                   ></DateRangePickerComponent>
                 </div>
                 <div className="col-sm-2 col-lg-1 mr-2">
-                  <button className="btn btn-purple">Search</button>
+                  <button className="btn btn-purple">{t("search.13")}</button>
                 </div>
                 <div className="col-sm-2 col-lg-1">
-                  <button className="btn btn-info">Reset</button>
+                  <button className="btn btn-info">{t("reset.67")}</button>
                 </div>
               </div>
               {/* table Start*/}
@@ -1354,7 +1354,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Desciption
+                          {t("Desciption.114")}
                         </th>
                         <th
                           style={{
@@ -1363,7 +1363,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Amount
+                          {t("Amount.95")}
                         </th>
                         <th
                           style={{
@@ -1373,7 +1373,7 @@ function Ewallet() {
                             fontWeight: "bold",
                           }}
                         >
-                          Transection Date
+                          {t("Transection Date.116")}
                         </th>
                       </tr>
                     </thead>

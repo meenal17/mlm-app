@@ -1,11 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function BRegister() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/BRegister">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          Bulk Register
+          {t("Bulk Register.83")}{" "}
         </div>
         <div className="card ml-3 mr-3">
           <div className="card p-4 ml-2 mr-2 ">
@@ -13,7 +15,7 @@ function BRegister() {
               <div className="row">
                 <div className="col-sm-4" style={{marginLeft: 1 + "px"}}>
                   <label For="" style={{color: "grey"}} className="pl-2">
-                    Select File
+                    {t("Select File.84")}
                   </label>
                   <div>
                     <input
@@ -41,7 +43,7 @@ function BRegister() {
                       border: "none",
                     }}
                   >
-                    Register
+                    {t("Register.85")}{" "}
                   </button>
                 </div>
                 <div className="col-lg-3"></div>
@@ -61,7 +63,7 @@ function BRegister() {
                       }}
                     >
                       <i class="fa fa-download mr-2 "></i>
-                      Download sample file
+                      {t("Download sample file.86")}{" "}
                     </a>
                   </div>
                 </div>

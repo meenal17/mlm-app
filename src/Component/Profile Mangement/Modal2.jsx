@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 function Modal2() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <div
@@ -10,7 +11,7 @@ function Modal2() {
         className="button"
         style={{color: "purple"}}
       >
-        Change Transaction Password
+        {t("Change Password.302")}
       </div>
 
       <div
@@ -39,7 +40,7 @@ function Modal2() {
                     style={{textAlign: "center"}}
                   ></i>
                 </div>
-                Change Transacttion Password ?
+                {t("Change Transacttion Password.313")}?
               </h5>
             </div>
             <div class="modal-body">
@@ -49,7 +50,7 @@ function Modal2() {
                     for="exampleInputPassword1 "
                     style={{color: "grey", float: "left"}}
                   >
-                    current Password
+                    {t("currentPassword.303")}
                   </label>
                   <input
                     type="password"
@@ -61,7 +62,7 @@ function Modal2() {
                     for="exampleInputPassword1 "
                     style={{color: "grey", float: "left"}}
                   >
-                    New Password
+                    {t("NewPassword.304")}
                   </label>
                   <input
                     type="password"
@@ -73,7 +74,7 @@ function Modal2() {
                     for="exampleInputPassword1 "
                     style={{color: "grey", float: "left"}}
                   >
-                    Confirm Password
+                    {t("ConfirmPassword.305")}
                   </label>
                   <input
                     type="password"
@@ -90,10 +91,10 @@ function Modal2() {
                 class="btn btn-outline-light"
                 data-dismiss="modal"
               >
-                Close
+                {t("Close.314")}
               </button>
               <button type="button" class="btn btn-outline-indigo">
-                change Password
+                {t("Change Password.302")}
               </button>
             </div>
           </div>

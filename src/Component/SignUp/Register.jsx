@@ -1,12 +1,14 @@
 import React from "react";
 import "./signUpStyle.css";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function Register() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/Register">
         <div class="alert alert-light mr-2 ml-2" style={{fontSize: 22 + "px"}}>
-          Refferal Member
+          {t("Refferal Member.77")}
         </div>
         <div class="container-fluid">
           <div class="row">
@@ -18,7 +20,7 @@ function Register() {
                     className="m-3"
                     style={{textAlign: "center", color: "grey"}}
                   >
-                    <h4>Sponsor And Package Information</h4>
+                    <h4>{t("Sponsor And Package Information.78")}</h4>
                   </div>
                   <hr />
                   <div className="row">
@@ -29,7 +31,7 @@ function Register() {
                             for="exampleFormControlInput1"
                             class="title-name"
                           >
-                            Sponser Username
+                            {t("Sponser Username.79")}
                           </label>
                           <input
                             type="email"
@@ -43,7 +45,7 @@ function Register() {
                             for="exampleFormControlInput1"
                             class="title-name"
                           >
-                            Sponser fullname
+                            {t("Sponser fullname.80")}{" "}
                           </label>
                           <input
                             type="email"
@@ -56,7 +58,7 @@ function Register() {
                               for="exampleFormControlSelect1"
                               class="title-name"
                             >
-                              Levels
+                              {t("Levels.65")}
                             </label>
                             <select
                               class="form-control"
@@ -74,7 +76,7 @@ function Register() {
                               for="exampleFormControlSelect1"
                               class="title-name"
                             >
-                              Product
+                              {t("Product.81")}
                             </label>
                             <select
                               class="form-control"
@@ -88,7 +90,9 @@ function Register() {
                             </select>
                           </div>
                           <div style={{textAlign: "center"}}>
-                            <button className="btn btn-primary">Next</button>
+                            <button className="btn btn-primary">
+                              {t("Next.82")}
+                            </button>
                           </div>
                         </div>
                       </form>

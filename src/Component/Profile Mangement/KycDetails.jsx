@@ -1,11 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function KycDetails() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/KycDetails">
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          KYC Details
+          {t("KYC Details.319")}
         </div>
         <div className="row">
           <div className="col-md-5 pb-5">
@@ -14,15 +16,14 @@ function KycDetails() {
                 class="fa fa-exclamation-circle bell mr-2 "
                 style={{color: "#ffad31", fontSize: 25 + "px"}}
               />
-              <span style={{color: "black"}}>Note</span> : This is an add-on
-              module
+              {t("onmodule.113")}
             </h5>
           </div>
           <div className="col-md-5"></div>
           <div className="col-md-2">
             <div className="btn btn-info">
               <Link to="/Profile" style={{color: "#fff"}}>
-                <i className="fa fa-arrow-left" /> Back
+                <i className="fa fa-arrow-left" /> {t("Back.320")}
               </Link>
             </div>
           </div>
@@ -32,7 +33,7 @@ function KycDetails() {
             <div className="col-md-3 p-2">
               <div class="form-group p-3">
                 <label for="exampleFormControlSelect1" style={{color: "grey"}}>
-                  Select Category
+                  {t("SelectCategory.321")}
                 </label>
                 <select class="form-control" id="exampleFormControlSelect1">
                   <option>Any</option>
@@ -46,13 +47,13 @@ function KycDetails() {
             <div className="col-md-3 p-2">
               <div class="form-group p-3">
                 <label for="exampleFormControlSelect1" style={{color: "grey"}}>
-                  Status
+                  {t("Status.160")}
                 </label>
                 <select class="form-control" id="exampleFormControlSelect1">
                   <option>Any</option>
-                  <option>Pending</option>
-                  <option>Rejected</option>
-                  <option>Approved</option>
+                  <option>{t("Pending.5")}</option>
+                  <option>{t("Rejected.322")}</option>
+                  <option>{t("Approved.323")}</option>
                 </select>
               </div>
             </div>
@@ -60,7 +61,7 @@ function KycDetails() {
               <form>
                 <div class="form-group">
                   <label for="formGroupExampleInput" style={{color: "grey"}}>
-                    User Selecter
+                    {t("UserSelecter.324")}
                   </label>
                   <input
                     type="text"
@@ -71,17 +72,17 @@ function KycDetails() {
               </form>
             </div>
             <div className="col-lg-1 mr-1" style={{marginTop: "50px"}}>
-              <button className="btn btn-purple">Search</button>
+              <button className="btn btn-purple">{t("search.13")}</button>
             </div>
             <div className="col-lg-1 ">
               <button className="btn btn-info" style={{marginTop: "50px"}}>
-                Reset
+                {t("reset.67")}
               </button>
             </div>
           </div>
           <h6 className="ml-4 pb-2">
             <Link to="/kyc_settings" style={{color: "#19a9d5"}}>
-              Manage KYC configuration?
+              {t("Manage KYC configuration?.325")}
             </Link>
           </h6>
         </div>

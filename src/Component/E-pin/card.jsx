@@ -3,8 +3,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-
-const card = () => {
+import {useTranslation} from "react-i18next";
+const Card2 = () => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Container fluid>
@@ -27,7 +28,7 @@ const card = () => {
                       className=" text-dark"
                       style={{float: "left", fontSize: "18px"}}
                     >
-                      Active E-pin
+                      {t("ActiveEpin.152")}
                       <br />
                       <h7>0</h7>
                     </div>
@@ -53,9 +54,14 @@ const card = () => {
                   <div className="text-wrapper ">
                     <div
                       className=" text-dark"
-                      style={{float: "left", fontSize: "18px"}}
+                      style={{
+                        float: "left",
+                        fontSize: "18px",
+                        display: "inline-flex",
+                      }}
                     >
-                      E-pin&nbsp;Balance
+                      {t("Epin.153")}
+                      {t("Balance.115")}
                       <br />
                       <h7>$0.00</h7>
                     </div>
@@ -84,7 +90,7 @@ const card = () => {
                       className=" text-dark"
                       style={{float: "left", fontSize: "18px"}}
                     >
-                      Pending&nbsp;Request
+                      {t("pending.5")}&nbsp;{t("Request.144")}
                       <br />
                       <h7>1</h7>
                     </div>
@@ -100,4 +106,4 @@ const card = () => {
   );
 };
 
-export default card;
+export default Card2;

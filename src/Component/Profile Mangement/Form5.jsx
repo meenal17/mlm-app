@@ -1,7 +1,9 @@
 import React, {useState} from "react";
+import {useTranslation} from "react-i18next";
 function Form5() {
   const [disable, setdisable] = useState(true);
   const [show, setshow] = useState("none");
+
   const language = [
     {
       id: 1,
@@ -86,6 +88,7 @@ function Form5() {
       currency: "RSouth African Rand",
     },
   ];
+  const {t, i18n} = useTranslation();
   return (
     <>
       <div className=" mr-3 ml-3 mt-3" style={{marginBottom: "125%"}}>
@@ -109,12 +112,12 @@ function Form5() {
           />
         </span>
         <h3 className="" style={{color: "black"}}>
-          Settings
+          {t("Settings.208")}
         </h3>
         <form>
           <div class="form-group">
             <label for="exampleFormControlSelect1" style={{color: "grey"}}>
-              Language
+              {t("Language.209")}
             </label>
             <select
               class="form-control"
@@ -128,7 +131,7 @@ function Form5() {
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1" style={{color: "grey"}}>
-              currency
+              {t("currency.300")}
             </label>
             <select
               class="form-control"
@@ -141,7 +144,7 @@ function Form5() {
             </select>
           </div>
           <div className="FormBtn" style={{display: show}}>
-            <div className="btn btn-purple mt-3">Update</div>
+            <div className="btn btn-purple mt-3">{t("Update.187")}</div>
             <span>
               <div
                 className="btn btn-outline-primary mt-3 ml-1"
@@ -150,7 +153,7 @@ function Form5() {
                   setshow("none");
                 }}
               >
-                Cancel
+                {t("Cancel.188")}
               </div>
             </span>
           </div>

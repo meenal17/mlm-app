@@ -4,13 +4,15 @@ import {Link} from "react-router-dom";
 import PayoutSortingTable1 from "./payoutSortingTable1";
 import Payouttable2 from "./Payouttable2";
 import Payouttable3 from "./Payouttable3";
+import {useTranslation} from "react-i18next";
 function Payout() {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/payout">
       <>
         {/* heding */}
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          PayOut
+          {t("PayOut.130")}
         </div>
         {/* end heding */}
         <Cards />
@@ -25,17 +27,17 @@ function Payout() {
               role="tab"
               data-toggle="tab"
             >
-              PayOut Summary
+              {t("PayOut Summary.131")}
             </a>
           </li>
           <li class="nav-item linked">
             <a class="nav-link" href="#release" role="tab" data-toggle="tab">
-              PayOut Release
+              {t("PayOut Release.132")}
             </a>
           </li>
           <li class="nav-item linked">
             <a class="nav-link" href="#payment" role="tab" data-toggle="tab">
-              Prosess Payment
+              {t("Prosess Payment.133")}
             </a>
           </li>
         </ul>

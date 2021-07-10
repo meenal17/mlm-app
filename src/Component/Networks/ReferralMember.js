@@ -2,7 +2,9 @@ import React from "react";
 import DownloadMember from "./DownloadMember";
 import "./style.css";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function ReferralMember() {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -16,7 +18,7 @@ function ReferralMember() {
                 fontWeight: "bold",
               }}
             >
-              Memeber Name
+              {t("Memeber Name.74")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -26,7 +28,7 @@ function ReferralMember() {
                 fontWeight: "bold",
               }}
             >
-              Sponsor
+              {t("Sponsor.75")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -36,7 +38,7 @@ function ReferralMember() {
                 fontWeight: "bold",
               }}
             >
-              Level
+              {t("levels.66")}
             </th>
 
             <th
@@ -47,7 +49,7 @@ function ReferralMember() {
                 fontWeight: "bold",
               }}
             >
-              Joining Date
+              {t("Joining Date.76")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -57,7 +59,7 @@ function ReferralMember() {
                 fontWeight: "bold",
               }}
             >
-              Action
+              {t("Action.59")}{" "}
             </th>
             <th></th>
           </tr>
@@ -176,7 +178,7 @@ function ReferralMember() {
     <>
       <Link to="/ReferralMember">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          Refferal Member
+          {t("Refferal Member.73")}
         </div>
 
         <div className="card ml-2 p-0 mr-2">
@@ -184,20 +186,22 @@ function ReferralMember() {
             <div class="row">
               <div className=" col-lg-3">
                 <div className="card-text download-Content ">
-                  <div class="textpurple">Total DownLine Members</div>
+                  <div class="textpurple">{t("Total DownLine Members.63")}</div>
                   <div class="textpurple mt-2">258</div>
                 </div>
               </div>
               <div className=" col-lg-2">
                 <div className="card-text download-Content2">
-                  <div class="textgreen">Total Levels</div>
+                  <div class="textgreen">{t("Total Levels.64")}</div>
                   <div class="textgreen">76</div>
                 </div>
               </div>
-              <div className=" col-lg-3">
+              <div className=" col-lg-2">
                 <form>
                   <div class="form-group">
-                    <label for="exampleFormControlInput1">Username</label>
+                    <label for="exampleFormControlInput1">
+                      {t("username.65")}
+                    </label>
                     <input
                       type="email"
                       class="form-control"
@@ -210,7 +214,10 @@ function ReferralMember() {
               <div className=" col-lg-2">
                 <form>
                   <div class="form-group">
-                    <label for="exampleFormControlSelect1">Levels</label>
+                    <label for="exampleFormControlSelect1">
+                      {" "}
+                      {t("levels.66")}
+                    </label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>All</option>
                       <option>1</option>
@@ -222,10 +229,16 @@ function ReferralMember() {
                 </form>
               </div>
               <div className="col-lg-1 mt-4 ml-0">
-                <button className="btn btn-outline-primary">search</button>
+                <button className="btn btn-outline-primary">
+                  {" "}
+                  {t("search.13")}
+                </button>
               </div>
               <div className="col-lg-1 mt-4 ml-0">
-                <button className="btn btn-outline-info">reset</button>
+                <button className="btn btn-outline-info">
+                  {" "}
+                  {t("reset.67")}
+                </button>
               </div>
             </div>
           </div>

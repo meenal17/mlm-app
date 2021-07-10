@@ -6,13 +6,16 @@ import Card from "react-bootstrap/Card";
 import MemberlistTabs from "../Profile Mangement/Member-list-Tabs";
 import Profilememebertable2 from "./Profile-memeber-table2";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function MemberList() {
+  const {t, i18n} = useTranslation();
+
   return (
     <>
       <Link to="/MemberList">
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          MemberList
+          {t("memberlist.31")}
         </div>
         <Container fluid>
           <Row>
@@ -30,7 +33,7 @@ function MemberList() {
                       />
                     </div>
                     <div className="text-wrapper p-1 mr-4">
-                      <h3 className="">TotalJoinings</h3>
+                      <h3 className="">{t("TotalJoinings.315")}</h3>
                       <span>540</span>
                     </div>
                   </div>
@@ -51,7 +54,7 @@ function MemberList() {
                       />
                     </div>
                     <div className="text-wrapper p-1  mr-4">
-                      <h3 className="">TodayJoinigs</h3>
+                      <h3 className="">{t("newJoinigs.316")}</h3>
                       <span>125</span>
                     </div>
                   </div>
@@ -70,7 +73,7 @@ function MemberList() {
                 role="tab"
                 data-toggle="tab"
               >
-                Member List
+                {t("memberlist.31")}
               </a>
             </li>
             <li class="nav-item">
@@ -81,7 +84,7 @@ function MemberList() {
                 role="tab"
                 data-toggle="tab"
               >
-                Pending Upgrades
+                {t("PendingUpgrades.317")}
               </a>
             </li>
           </ul>

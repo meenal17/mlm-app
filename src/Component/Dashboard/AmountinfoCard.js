@@ -4,8 +4,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import {useTranslation} from "react-i18next";
 import "./style.css";
 function AmountinfoCard() {
+  const {t, i18n} = useTranslation();
+
   return (
     <>
       <Container fluid>
@@ -25,7 +28,7 @@ function AmountinfoCard() {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>EwalletBalance</span>
+                    <span>{t("EwalletBalance.2")}</span>
                   </div>
                 </div>
               </Card.Body>
@@ -46,7 +49,7 @@ function AmountinfoCard() {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>Income</span>
+                    <span>{t("Income.3")}</span>
                   </div>
                 </div>
               </Card.Body>
@@ -68,7 +71,7 @@ function AmountinfoCard() {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>Bonus</span>
+                    <span>{t("Bonus.4")}</span>
                   </div>
                 </div>
               </Card.Body>
@@ -108,7 +111,7 @@ function AmountinfoCard() {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>Pending</span>
+                    <span>{t("pending.5")}</span>
                   </div>
                 </div>
               </Card.Body>

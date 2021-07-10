@@ -1,6 +1,7 @@
 import React from "react";
 import {Doughnut} from "react-chartjs-2";
 import "./style.css";
+import {useTranslation} from "react-i18next";
 const options = {
   legend: {
     display: false,
@@ -80,6 +81,7 @@ const pieData = {
 };
 
 const DonutGraph = () => {
+  const {t, i18n} = useTranslation();
   return (
     <div class="card">
       <h4
@@ -89,7 +91,7 @@ const DonutGraph = () => {
           padding: 15,
         }}
       >
-        Payout Overview
+        <span>{t("payoutoverview.7")}</span>
       </h4>
       <div class="card-body" style={{paddingBottom: "280px"}}>
         <div style={styles.Doughnut}>

@@ -4,7 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import "./style.css";
+import {useTranslation} from "react-i18next";
 const Cards = () => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Container fluid>
@@ -24,7 +26,7 @@ const Cards = () => {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>EwalletBalance</span>
+                    <span>{t("EwalletBalance.2")}</span>
                   </div>
                 </div>
               </Card.Body>
@@ -45,7 +47,7 @@ const Cards = () => {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>Income</span>
+                    <span>{t("Income.3")}</span>
                   </div>
                 </div>
               </Card.Body>
@@ -67,31 +69,13 @@ const Cards = () => {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>Bonus</span>
+                    <span>{t("Bonus.4")}</span>
                   </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
-          <Card>
-            {/* <Card.Body>
-              <div className="img-wrapper d-flex justify-content-between">
-                <div className="img-parent" style={{background: "#df80ff"}}>
-                  <img
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/assets/img/dashboard/Paid-w.png"
-                    }
-                    alt="image not found"
-                  />
-                </div>
-                <div className="text-wrapper ">
-                  <h3 className="">€14.61K</h3>
-                  <span>Paid</span>
-                </div>
-              </div>
-            </Card.Body> */}
-          </Card>
+          <Card></Card>
           <Col sm={3}>
             <Card>
               <Card.Body>
@@ -107,7 +91,7 @@ const Cards = () => {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>Pending</span>
+                    <span>{t("pending.5")}</span>
                   </div>
                 </div>
               </Card.Body>

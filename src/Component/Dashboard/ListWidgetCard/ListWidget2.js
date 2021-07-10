@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import {useTranslation} from "react-i18next";
 import Container from "react-bootstrap/Container";
 function ListWidget2() {
   function TableComponent(props = {}) {
@@ -40,6 +41,8 @@ function ListWidget2() {
       </tr>
     );
   }
+  const {t, i18n} = useTranslation();
+
   return (
     <div>
       <div class="card">
@@ -52,7 +55,7 @@ function ListWidget2() {
             marginLeft: "7px",
           }}
         >
-          Income & Commssion
+          {t("Incomeandcommssion.14")}{" "}
         </h4>
         <div className="container" style={{marginBottom: "7%"}}>
           <TableComponent />

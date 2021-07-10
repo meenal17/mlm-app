@@ -1,7 +1,9 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 const Transaction = () => {
   function TableComponent(props = {}) {
+    const {t, i18n} = useTranslation();
+
     return (
       <table className="table">
         <thead className="d-none d-md-table-header-group">
@@ -15,7 +17,7 @@ const Transaction = () => {
                 textTransform: "capitalize",
               }}
             >
-              Memeber Name
+              {t("Memeber Name.74")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -26,7 +28,7 @@ const Transaction = () => {
                 textTransform: "capitalize",
               }}
             >
-              Category
+              {t("Category.94")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -37,7 +39,7 @@ const Transaction = () => {
                 textTransform: "capitalize",
               }}
             >
-              Amount
+              {t("Amount.95")}{" "}
             </th>
 
             <th
@@ -49,7 +51,7 @@ const Transaction = () => {
                 textTransform: "capitalize",
               }}
             >
-              Transaction Date
+              {t("Transaction Date.96")}{" "}
             </th>
           </tr>
         </thead>
@@ -119,11 +121,11 @@ const Transaction = () => {
                 {props.MemberName}
               </strong>
               <p className="card-text">
-                Catogory:{props.Catogory}
+                {t("Category.94")}:{props.Catogory}
                 <br />
-                Amount:{props.Amount}
+                {t("Amount.95")}:{props.Amount}
                 <br />
-                JoiningDate: {props.date}
+                {t("Joining Date.76")}: {props.date}
               </p>
               <i
                 className="fa fa-sitemap icon mt-3 ml-4 p-2"
@@ -149,6 +151,7 @@ const Transaction = () => {
       </tr>
     );
   }
+  const {t, i18n} = useTranslation();
   return (
     <div class="card mr-2 ml-2">
       <div className="card-body">
@@ -156,12 +159,14 @@ const Transaction = () => {
           <TableComponent />
           <div className="row">
             <div className="col-lg-4 col-sm-3 mt-3">
-              <h6 style={{color: "grey"}}>Showing 1 to 10 of 1,881 entries</h6>
+              <h6 style={{color: "grey"}}>
+                {t("Showing 1 to 10 of 1,881 entries.97")}
+              </h6>
             </div>
             <div className="col-lg-2 col-sm-3">
               <div class="form-group">
                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Row Pages</option>
+                  <option>{t("Row Pages.98")}</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -179,7 +184,7 @@ const Transaction = () => {
                       tabindex="-1"
                       aria-disabled="true"
                     >
-                      Previous
+                      {t("Previous.99")}
                     </a>
                   </li>
                   <li class="page-item">
@@ -199,7 +204,7 @@ const Transaction = () => {
                   </li>
                   <li class="page-item">
                     <a class="page-link" href="#">
-                      Next
+                      {t("Next.100")}{" "}
                     </a>
                   </li>
                 </ul>

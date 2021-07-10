@@ -22,6 +22,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {useTranslation} from "react-i18next";
 function createData(name, calories, fat, carbs, protein) {
   return {name, calories, fat, carbs, protein};
 }
@@ -83,17 +84,6 @@ function stableSort(array, comparator) {
   return stabilizedThis.map((el) => el[0]);
 }
 
-const headCells = [
-  {
-    id: "name",
-    numeric: false,
-    disablePadding: true,
-    label: "Member Name",
-  },
-  {id: "amount", numeric: true, disablePadding: false, label: "Amount"},
-  {id: "Method", numeric: true, disablePadding: false, label: "Approved Date"},
-];
-
 function EnhancedTableHead(props) {
   const {
     classes,
@@ -107,7 +97,22 @@ function EnhancedTableHead(props) {
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
-
+  const {t, i18n} = useTranslation();
+  const headCells = [
+    {
+      id: "name",
+      numeric: false,
+      disablePadding: true,
+      label: t("member_name.148"),
+    },
+    {id: "amount", numeric: true, disablePadding: false, label: t("Amount.95")},
+    {
+      id: "Method",
+      numeric: true,
+      disablePadding: false,
+      label: t("Approved Date.151"),
+    },
+  ];
   return (
     <TableHead>
       <TableRow>

@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import TextField from "@material-ui/core/TextField";
+import {useTranslation} from "react-i18next";
 function Form1() {
   const [disable, setdisable] = useState(true);
   const [show, setshow] = useState("none");
+  const {t, i18n} = useTranslation();
   return (
     <>
       <div className=" mr-3 ml-3 mt-3" style={{marginBottom: "85px"}}>
@@ -26,12 +28,12 @@ function Form1() {
           />
         </span>
         <h3 className="" style={{color: "black"}}>
-          Personal Details
+          {t("PersonalDetails.179")}
         </h3>
         <form>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              First Name{" "}
+              {t("FirstName.180")}
               <span className="ml-1" style={{color: "red"}}>
                 *
               </span>
@@ -46,7 +48,7 @@ function Form1() {
           </div>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Last Name{" "}
+              {t("LastName.181")}
               <span className="ml-1" style={{color: "red"}}>
                 *
               </span>
@@ -60,20 +62,20 @@ function Form1() {
           </div>
           <div class="form-group">
             <label style={{color: "grey"}}>
-              Gender
+              {t("Gender.182")}
               <span className="ml-1" style={{color: "red"}}>
                 *
               </span>
             </label>
             <select class="form-control" disabled={disable}>
-              <option>Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
+              <option>{t("Gender.182")}</option>
+              <option>{t("Male.183")}</option>
+              <option> {t("Female.184")}</option>
+              <option>{t("other.185")}</option>
             </select>
           </div>
           <label style={{color: "grey"}}>
-            Date Of Birth
+            {t("DOB.186")}
             <span className="ml-1" style={{color: "red"}}>
               *
             </span>
@@ -96,7 +98,7 @@ function Form1() {
             />
           </div>
           <div className="FormBtn" style={{display: show}}>
-            <div className="btn btn-purple mt-3">Update</div>
+            <div className="btn btn-purple mt-3">{t("Update.187")}</div>
             <span>
               <div
                 className="btn btn-outline-primary mt-3 ml-1"
@@ -105,7 +107,7 @@ function Form1() {
                   setshow("none");
                 }}
               >
-                Cancel
+                {t("Cancel.188")}
               </div>
             </span>
           </div>

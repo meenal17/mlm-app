@@ -2,7 +2,9 @@ import React, {useState} from "react";
 import {Multiselect} from "multiselect-react-dropdown";
 import {MDBDataTableV5} from "mdbreact";
 import "../Payout/payoutSyle.css";
+import {useTranslation} from "react-i18next";
 function PayoutSortingTable1() {
+  const {t, i18n} = useTranslation();
   const Data = [
     {
       infoType: "Status-Paid",
@@ -25,12 +27,12 @@ function PayoutSortingTable1() {
   const [datatable, setDatatable] = React.useState({
     columns: [
       {
-        label: <p className="heading">User</p>,
+        label: <p className="heading">{t("user.134")}</p>,
         field: "pic",
         // width: 200,
       },
       {
-        label: <p className="heading">Name</p>,
+        label: <p className="heading">{t("Name.135")}</p>,
         field: "name",
         width: 150,
         attributes: {
@@ -39,24 +41,24 @@ function PayoutSortingTable1() {
         },
       },
       {
-        label: <p className="heading">Invoice</p>,
+        label: <p className="heading">{t("Invoice.136")}</p>,
         field: "Invoice",
         width: 270,
       },
       {
-        label: <p className="heading">Amount</p>,
+        label: <p className="heading">{t("Amount.95")}</p>,
         field: "Amount",
         sort: "disabled",
         width: 100,
       },
 
       {
-        label: <p className="heading">PayOut Method</p>,
+        label: <p className="heading">{t("PayOut Method.137")}</p>,
         field: "PayOut",
         width: 200,
       },
       {
-        label: <p className="heading">Paid Date</p>,
+        label: <p className="heading">{t("Paid Date.138")}</p>,
         field: "date",
         sort: "disabled",
         width: 150,
@@ -926,7 +928,7 @@ function PayoutSortingTable1() {
           <input
             class="form-control form-control-lg"
             type="text"
-            placeholder="Username"
+            placeholder={t("Username.128")}
           />
         </div>
         <div className="col-lg-3 col-sm-4">
@@ -937,10 +939,10 @@ function PayoutSortingTable1() {
           />
         </div>
         <div className="col-sm-2 col-lg-1 mr-2">
-          <button className="btn btn-purple">Search</button>
+          <button className="btn btn-purple">{t("search.13")}</button>
         </div>
         <div className="col-sm-2 col-lg-1">
-          <button className="btn btn-info">Reset</button>
+          <button className="btn btn-info">{t("reset.67")}</button>
         </div>
       </div>
       {/* table */}
@@ -957,9 +959,9 @@ function PayoutSortingTable1() {
           barReverse
           style={{
             maxHeigth: "100%",
-            minHeight: "360px",
+            minHeight: "300px",
             maxwidth: "100%",
-            minwidth: "370px",
+            minwidth: "300px",
             overflowX: "scroll",
           }}
         />

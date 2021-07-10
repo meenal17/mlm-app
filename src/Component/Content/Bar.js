@@ -9,7 +9,11 @@ import ListWidget2 from "../Dashboard/ListWidgetCard/ListWidget2";
 import FontLinks from "../Dashboard/FontLinks";
 import "../Dashboard/style.css";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
+
 function Bar() {
+  const {t, i18n} = useTranslation();
+
   return (
     <>
       {/* <!-- row --> */}
@@ -24,7 +28,7 @@ function Bar() {
                   padding: 15,
                 }}
               >
-                Income VS Commssion
+                <span>{t("IncomeVScommssion.6")}</span>
               </h4>
               <div class="card-body" style={{padding: 30}}>
                 <BarGraph />

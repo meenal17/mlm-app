@@ -1,7 +1,7 @@
 import {style} from "d3";
 import React from "react";
 import {Line} from "react-chartjs-2";
-
+import {useTranslation} from "react-i18next";
 const data = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
   datasets: [
@@ -22,6 +22,7 @@ const data = {
 };
 
 function LineGraph() {
+  const {t, i18n} = useTranslation();
   return (
     <div class="card">
       <div className=" mt-3 ml-3">
@@ -31,7 +32,7 @@ function LineGraph() {
             fontSize: 16 + "px",
           }}
         >
-          Total Joining's
+          <span>{t("totaljoinigs.8")}</span>
         </h4>
       </div>
       <div class="card-body" style={{}}>

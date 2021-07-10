@@ -3,13 +3,14 @@ import {Link} from "react-router-dom";
 import "./Networkstyle.css";
 import {Table, Thead, Tbody, Tr, Th, Td} from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
-
+import {useTranslation} from "react-i18next";
 function DownloadMember() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/DownloadMember">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          DownloadMember
+          {t("DownloadMember.62")}
         </div>
 
         <div className="card ml-2 p-0 mr-2">
@@ -17,20 +18,22 @@ function DownloadMember() {
             <div class="row">
               <div className=" col-lg-3 ">
                 <div className="card-text download-Content ">
-                  <div class="textpurple">Total DownLine Members</div>
+                  <div class="textpurple">{t("Total DownLine Members.63")}</div>
                   <div class="textpurple mt-2">258</div>
                 </div>
               </div>
               <div className=" col-lg-2">
                 <div className="card-text download-Content2">
-                  <div class="textgreen">Total Levels</div>
+                  <div class="textgreen">{t("Total Levels.64")}</div>
                   <div class="textgreen">76</div>
                 </div>
               </div>
-              <div className=" col-lg-3 col-sm-4">
+              <div className=" col-lg-2 col-sm-4">
                 <form>
                   <div class="form-group">
-                    <label for="exampleFormControlInput1">Username</label>
+                    <label for="exampleFormControlInput1">
+                      {t("username.65")}
+                    </label>
                     <input
                       type="email"
                       class="form-control"
@@ -43,7 +46,9 @@ function DownloadMember() {
               <div className=" col-lg-2 col-sm-3">
                 <form>
                   <div class="form-group">
-                    <label for="exampleFormControlSelect1">Levels</label>
+                    <label for="exampleFormControlSelect1">
+                      {t("levels.66")}
+                    </label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option>All</option>
                       <option>1</option>
@@ -55,10 +60,14 @@ function DownloadMember() {
                 </form>
               </div>
               <div className="col-lg-1 mt-4 ml-0">
-                <button className="btn btn-outline-primary">search</button>
+                <button className="btn btn-outline-primary">
+                  {t("search.13")}
+                </button>
               </div>
-              <div className="col-lg-1 mt-4 ml-0">
-                <button className="btn btn-outline-info">reset</button>
+              <div className="col-lg-1 mt-4 ">
+                <button className="btn btn-outline-info">
+                  {t("reset.67")}
+                </button>
               </div>
             </div>
           </div>
@@ -77,7 +86,7 @@ function DownloadMember() {
                           fontWeight: "bold",
                         }}
                       >
-                        Member Name
+                        {t("member name.68")}
                       </Th>
                       <Th
                         style={{
@@ -86,17 +95,7 @@ function DownloadMember() {
                           fontWeight: "bold",
                         }}
                       >
-                        Placement
-                      </Th>
-                      <Th
-                        style={{
-                          fontSize: 15 + "px",
-                          color: "black",
-                          fontWeight: "bold",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Sponsor
+                        {t("placement.69")}
                       </Th>
                       <Th
                         style={{
@@ -106,7 +105,7 @@ function DownloadMember() {
                           fontWeight: "bold",
                         }}
                       >
-                        Level
+                        {t("sponsor.70")}
                       </Th>
                       <Th
                         style={{
@@ -116,7 +115,17 @@ function DownloadMember() {
                           fontWeight: "bold",
                         }}
                       >
-                        Icon
+                        {t("level.71")}
+                      </Th>
+                      <Th
+                        style={{
+                          fontSize: 15 + "px",
+                          color: "black",
+                          fontWeight: "bold",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {t("icon.72")}
                       </Th>
                     </Tr>
                   </Thead>
@@ -295,297 +304,6 @@ function DownloadMember() {
             </div>
           </div>
         </div>
-        {/* Table */}
-        {/* <div className="container">
-          <div class="card mr-2 ml-2">
-            <div className="card-body">
-              <div className="table-responsive-sm">
-                <table class="table table-hover">
-                  <thead>
-                    <tr className="">
-                      <th
-                        style={{
-                          fontSize: 15 + "px",
-                          color: "black",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Member Name
-                      </th>
-                      <th
-                        style={{
-                          fontSize: 15 + "px",
-                          color: "black",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Placement
-                      </th>
-                      <th
-                        style={{
-                          fontSize: 15 + "px",
-                          color: "black",
-                          fontWeight: "bold",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Sponsor
-                      </th>
-                      <th
-                        style={{
-                          fontSize: 15 + "px",
-                          color: "black",
-                          fontWeight: "bold",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Level
-                      </th>
-                      <th
-                        style={{
-                          fontSize: 15 + "px",
-                          color: "black",
-                          fontWeight: "bold",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Icon
-                      </th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          className="mr-3"
-                          src={
-                            process.env.PUBLIC_URL +
-                            "/assets/img/dashboard/user.jpg"
-                          }
-                          alt="image not found"
-                        />
-                        John
-                      </td>
-                      <td>binaryaddon</td>
-                      <td>binaryaddon</td>
-                      <td>1</td>
-
-                      <i
-                        className="fa fa-sitemap icon mt-3 ml-4 p-2"
-                        style={{fontSize: 15 + "px"}}
-                      ></i>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* Table end */}
-
-        {/* <div className="card ml-5 ">
-          <div className="card body">
-            <nav aria-label="...">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="1">
-                    Previous
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    1 <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">
-                    2
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    3
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    Next
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div> */}
       </Link>
     </>
   );

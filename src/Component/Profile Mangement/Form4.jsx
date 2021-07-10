@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-
+import {useTranslation} from "react-i18next";
 function Form4() {
   const [disable, setdisable] = useState(true);
   const [show, setshow] = useState("none");
+  const {t, i18n} = useTranslation();
   return (
     <>
       <div className=" mr-3 ml-3 mt-3" style={{marginBottom: "63%"}}>
@@ -26,12 +27,12 @@ function Form4() {
           />
         </span>
         <h3 className="" style={{color: "black"}}>
-          Payment Details
+          {t("PaymentDetails.207")}
         </h3>
         <form>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Paypal Account
+              {t("PaypalAccount.206")}
             </label>
 
             <input
@@ -44,7 +45,7 @@ function Form4() {
           </div>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Block Chain
+              {t("Block Chain.140")}
             </label>
             <input
               type="text"
@@ -56,7 +57,7 @@ function Form4() {
           </div>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              BitGo
+              {t("Bitgo.142")}
             </label>
             <input
               type="text"
@@ -75,14 +76,14 @@ function Form4() {
               id="exampleFormControlSelect1"
               disabled={disable}
             >
-              <option>Bank Transfer</option>
-              <option>Block Chain</option>
-              <option>PayPal</option>
-              <option>BitGo</option>
+              <option>{t("Bank Transfer.139")}</option>
+              <option>{t("Block Chain.140")}</option>
+              <option>{t("Paypal.141")}</option>
+              <option>{t("Bitgo.142")}</option>
             </select>
           </div>
           <div className="FormBtn" style={{display: show}}>
-            <div className="btn btn-purple mt-3">Update</div>
+            <div className="btn btn-purple mt-3">{t("Update.187")}</div>
             <span>
               <div
                 className="btn btn-outline-primary mt-3 ml-1"
@@ -91,7 +92,7 @@ function Form4() {
                   setshow("none");
                 }}
               >
-                Cancel
+                {t("Cancel.188")}
               </div>
             </span>
           </div>

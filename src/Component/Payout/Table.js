@@ -22,6 +22,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {useTranslation} from "react-i18next";
 function createData(name, calories, fat, carbs, protein) {
   return {name, calories, fat, carbs, protein};
 }
@@ -83,29 +84,6 @@ function stableSort(array, comparator) {
   return stabilizedThis.map((el) => el[0]);
 }
 
-const headCells = [
-  {
-    id: "name",
-    numeric: false,
-    disablePadding: true,
-    label: "Member Name",
-  },
-  {id: "amount", numeric: true, disablePadding: false, label: "PayOut Amount"},
-  {id: "Method", numeric: true, disablePadding: false, label: "Payout Method"},
-  {
-    id: "payouttype",
-    numeric: true,
-    disablePadding: false,
-    label: "Payout type",
-  },
-  {
-    id: "protein",
-    numeric: true,
-    disablePadding: false,
-    label: "E-wallet Balance",
-  },
-];
-
 function EnhancedTableHead(props) {
   const {
     classes,
@@ -119,7 +97,40 @@ function EnhancedTableHead(props) {
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
+  const {t, i18n} = useTranslation();
 
+  const headCells = [
+    {
+      id: "name",
+      numeric: false,
+      disablePadding: true,
+      label: t("member_name.148"),
+    },
+    {
+      id: "amount",
+      numeric: true,
+      disablePadding: false,
+      label: t("PayOut Amount.147"),
+    },
+    {
+      id: "Method",
+      numeric: true,
+      disablePadding: false,
+      label: t("Payout_Method.150"),
+    },
+    {
+      id: "payouttype",
+      numeric: true,
+      disablePadding: false,
+      label: t("payoutType.149"),
+    },
+    {
+      id: "protein",
+      numeric: true,
+      disablePadding: false,
+      label: t("Ewallet Balance.104"),
+    },
+  ];
   return (
     <TableHead>
       <TableRow>
@@ -271,7 +282,7 @@ export default function EnhancedTable() {
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
-
+  // const {t, i18n} = useTranslation();
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
     setOrder(isAsc ? "desc" : "asc");

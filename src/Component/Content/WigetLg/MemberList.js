@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import "./style.css";
+import {useTranslation} from "react-i18next";
 function MemberList() {
   function TableComponent(props = {}) {
     return (
@@ -54,6 +55,8 @@ function MemberList() {
       </tr>
     );
   }
+  const {t, i18n} = useTranslation();
+
   return (
     <>
       <Container fluid>
@@ -65,7 +68,7 @@ function MemberList() {
             }}
           >
             <div className="text-center " style={{color: "grey"}}>
-              <h6>New Members</h6>
+              <h6>{t("NewMembers.9")}</h6>
             </div>
             <div className="container">
               <TableComponent />

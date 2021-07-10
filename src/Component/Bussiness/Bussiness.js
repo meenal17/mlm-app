@@ -5,7 +5,10 @@ import {Multiselect} from "multiselect-react-dropdown";
 import Transaction from "./Transaction";
 import Cards from "./cards";
 import "./style.css";
+import {useTranslation} from "react-i18next";
 function Bussiness() {
+  const {t, i18n} = useTranslation();
+
   const startValue: Date = new Date(
     new Date().getUTCFullYear(),
     new Date().getMonth(),
@@ -87,7 +90,7 @@ function Bussiness() {
     <>
       <Link to="/Bussiness">
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          Bussiness
+          {t("Bussiness.92")}
         </div>
         <Cards />
         {/* Tabs */}
@@ -107,7 +110,9 @@ function Bussiness() {
                         aria-controls="home"
                         aria-selected="false"
                       >
-                        <h5 className="h5-heading">Bussiness Summary</h5>
+                        <h5 className="h5-heading">
+                          {t("Bussiness Summary.93")}
+                        </h5>
                       </a>
                     </li>
                     <li class="nav-item waves-effect waves-light">
@@ -120,7 +125,9 @@ function Bussiness() {
                         aria-controls="profile"
                         aria-selected="false"
                       >
-                        <h5 className="h5-heading"> Bussiness Transactions</h5>
+                        <h5 className="h5-heading">
+                          {t("Bussiness Transactions.101")}
+                        </h5>
                       </a>
                     </li>
                   </ul>
@@ -131,25 +138,16 @@ function Bussiness() {
                       role="tabpanel"
                       aria-labelledby="home-tab"
                     >
-                      <div className="col-sm-3">
-                        {/* <DateRangePickerComponent
-                          placeholder="Enter Date Range"
-                          startDate={startValue}
-                          endValue={endValue}
-                          format="dd/MM/yy"
-                          start="Year"
-                          depth="Year"
-                        ></DateRangePickerComponent> */}
-                      </div>
+                      <div className="col-sm-3"></div>
                       <div className="row">
                         <div className="col-sm-6 mt-3 mb-2">
                           <h5 className="ml-3" style={{color: "grey"}}>
-                            Paid
+                            {t("Paid.178")}
                           </h5>
                           <div class="col-12 col-sm-6 col-lg-4">
                             <div class="card card1 text-secondary">
                               <div class="card-body body-text">
-                                <h4 class="card-title">Paid</h4>
+                                <h4 class="card-title"> {t("Paid.178")}</h4>
                                 <p class="card-text text1">€ 0.00</p>
                               </div>
                             </div>
@@ -157,12 +155,12 @@ function Bussiness() {
                         </div>
                         <div className="col-sm-6 mt-2">
                           <h5 className="ml-3" style={{color: "grey"}}>
-                            Pending
+                            {t("Pending.5")}
                           </h5>
                           <div class="col-12 col-sm-6 col-lg-4">
                             <div class="card card2  text-secondary">
                               <div class="card-body body-text">
-                                <h4 class="card-title">Pending</h4>
+                                <h4 class="card-title"> {t("Pending.5")}</h4>
                                 <p class="card-text text2">€ 0.00</p>
                               </div>
                             </div>
@@ -171,13 +169,13 @@ function Bussiness() {
                       </div>
                       {/* first row */}
                       <h4 className="ml-2" style={{color: "black"}}>
-                        Income
+                        {t("Income.3")}
                       </h4>
                       <div className="row card-color">
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color">
-                              Registation Fee
+                              {t("Registation Fee.109")}
                               <br />
                               <p className="p-color">€27.718</p>
                             </li>
@@ -186,7 +184,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color">
-                              Package Amount
+                              {t("Package Amount.110")}
                               <br />
                               <p className="p-color">€27.718</p>
                             </li>
@@ -195,7 +193,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color">
-                              Purchase Amount
+                              {t("Purchase Amount.111")}
                               <br />
                               <p className="p-color">€27.718</p>
                             </li>
@@ -204,7 +202,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color">
-                              Package Amount
+                              {t("Package Amount.110")}
                               <br />
                               <p className="p-color">€27.718</p>
                             </li>
@@ -216,7 +214,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color">
-                              Registation Fee
+                              {t("Registation Fee.109")}
                               <br />
                               <p className="p-color">€27.718</p>
                             </li>
@@ -225,7 +223,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color">
-                              Package Amount
+                              {t("Package Amount.110")}
                               <br />
                               <p className="p-color">€27.718</p>
                             </li>
@@ -234,7 +232,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color">
-                              Purchase Amount
+                              {t("Purchase Amount.111")}
                               <br />
                               <p className="p-color">€27.718</p>
                             </li>
@@ -244,13 +242,13 @@ function Bussiness() {
                       {/* ------------------------------------------------------------------------------------------------  */}
                       {/* first row */}
                       <h4 className="ml-2" style={{color: "black"}}>
-                        Bonous
+                        {t("Bonus.4")}
                       </h4>
                       <div className="row card-color">
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Registation Fee
+                              {t("Registation Fee.109")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -259,7 +257,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Package Amount
+                              {t("Package Amount.110")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -268,7 +266,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Purchase Amount
+                              {t("Purchase Amount.111")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -277,7 +275,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Package Amount
+                              {t("Package Amount.110")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -298,7 +296,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Package Amount
+                              {t("Package Amount.110")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -307,7 +305,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Purchase Amount
+                              {t("Purchase Amount.111")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -316,7 +314,7 @@ function Bussiness() {
                         <div className="col-lg-3">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Purchase Amount
+                              {t("Purchase Amount.111")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -326,7 +324,7 @@ function Bussiness() {
                         <div className="col-lg-3 mt-2">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Package Amount
+                              {t("Package Amount.110")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -335,7 +333,7 @@ function Bussiness() {
                         <div className="col-lg-3 mt-2">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Purchase Amount
+                              {t("Purchase Amount.111")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -344,7 +342,7 @@ function Bussiness() {
                         <div className="col-lg-3 mt-200">
                           <ul class="list-group">
                             <li class="list-group-item disabled li-color2">
-                              Purchase Amount
+                              {t("Purchase Amount.111")}
                               <br />
                               <p className="p-color2">€27.718</p>
                             </li>
@@ -397,10 +395,14 @@ function Bussiness() {
                       </div>
                       <div className="row mt-3 ml-2">
                         <div className="col-sm-2 col-lg-1 mr-2">
-                          <button className="btn btn-purple">Search</button>
+                          <button className="btn btn-purple">
+                            {t("search.13")}
+                          </button>
                         </div>
                         <div className="col-sm-2 col-lg-1">
-                          <button className="btn btn-info">Reset</button>
+                          <button className="btn btn-info">
+                            {t("reset.67")}
+                          </button>
                         </div>
                       </div>
 

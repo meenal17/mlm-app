@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import MuiPhoneNumber from "material-ui-phone-number";
-
+import {useTranslation} from "react-i18next";
 function Form2() {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState("countries");
@@ -8,6 +8,7 @@ function Form2() {
   const [state, setState] = useState("states");
   const [disable, setdisable] = useState(true);
   const [show, setshow] = useState("none");
+  const {t, i18n} = useTranslation();
   useEffect(() => {
     const getData = async () => {
       await fetch("https://disease.sh/V3/covid-19/Countries")
@@ -73,14 +74,14 @@ function Form2() {
           />
         </span>
         <h3 className="" style={{color: "black"}}>
-          Contact Details
+          {t("ContactDetails.190")}
         </h3>
         <form>
           <div className="row">
             <div className="col-md-6">
               <div class="form-group">
                 <label for="usr" style={{color: "grey"}}>
-                  Address Line 1
+                  {t("AddressLine1.191")}
                 </label>
 
                 <input
@@ -94,7 +95,7 @@ function Form2() {
             <div className="col-md-6">
               <div class="form-group">
                 <label for="usr" style={{color: "grey"}}>
-                  Address Line2
+                  {t("AddressLine2.192")}
                 </label>
                 <input
                   type="text"
@@ -115,7 +116,7 @@ function Form2() {
                   onChange={onCountryChange}
                   disabled={disable}
                 >
-                  <options value="countries">countries</options>
+                  <options value="countries">{t("countries.193")}</options>
                   {countries.map((country) => (
                     <option value={country.value}>{country.name}</option>
                   ))}
@@ -131,7 +132,7 @@ function Form2() {
                   onChange={onStateChange}
                   disabled={disable}
                 >
-                  <options value="states">countries</options>
+                  <options value="states">{t("countries.193")}</options>
                   {states.map((item) => (
                     <option value={state.value}>{item}</option>
                   ))}
@@ -143,7 +144,7 @@ function Form2() {
             <div className="col-md-6">
               <div class="form-group">
                 <label for="usr" style={{color: "grey"}}>
-                  City
+                  {t("City.194")}
                 </label>
 
                 <input
@@ -157,7 +158,7 @@ function Form2() {
             <div className="col-md-6">
               <div class="form-group">
                 <label for="usr" style={{color: "grey"}}>
-                  Zip Code
+                  {t("ZipCode.195")}
                 </label>
                 <input
                   type="text"
@@ -172,7 +173,7 @@ function Form2() {
             <div className="col-md-6">
               <div class="form-group">
                 <label for="usr" style={{color: "grey"}}>
-                  Email
+                  {t("Email.196")}
                 </label>
 
                 <input
@@ -186,7 +187,7 @@ function Form2() {
             <div className="col-md-6">
               <div class="form-group">
                 <label for="usr" style={{color: "grey"}}>
-                  Mobile number
+                  {t("Mobilenumber.197")}
                 </label>
                 <div>
                   <MuiPhoneNumber
@@ -203,7 +204,7 @@ function Form2() {
             <div className="col-md-6">
               <div class="form-group">
                 <label for="usr" style={{color: "grey"}}>
-                  Landline Number
+                  {t("LandlineNumber.198")}
                 </label>
                 <div>
                   <MuiPhoneNumber
@@ -217,7 +218,7 @@ function Form2() {
             </div>
           </div>
           <div className="FormBtn" style={{display: show}}>
-            <div className="btn btn-purple mt-3">Update</div>
+            <div className="btn btn-purple mt-3">{t("Update.187")}</div>
             <span>
               <div
                 className="btn btn-outline-primary mt-3 ml-1"
@@ -226,7 +227,7 @@ function Form2() {
                   setshow("none");
                 }}
               >
-                Cancel
+                {t("Cancel.188")}
               </div>
             </span>
           </div>

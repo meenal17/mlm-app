@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 const PendingRequest = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -15,7 +16,7 @@ const PendingRequest = () => {
                 textTransform: "capitalize",
               }}
             >
-              Id
+              {t("Id.157")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -26,7 +27,7 @@ const PendingRequest = () => {
                 textTransform: "capitalize",
               }}
             >
-              Name
+              {t("Name.135")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -37,7 +38,7 @@ const PendingRequest = () => {
                 textTransform: "capitalize",
               }}
             >
-              Pin Count
+              {t("PinCount.171")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -48,7 +49,7 @@ const PendingRequest = () => {
                 textTransform: "capitalize",
               }}
             >
-              Count
+              {t("Count.172")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -59,7 +60,7 @@ const PendingRequest = () => {
                 textTransform: "capitalize",
               }}
             >
-              Amount
+              {t("Amount.95")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -70,7 +71,7 @@ const PendingRequest = () => {
                 textTransform: "capitalize",
               }}
             >
-              Request Date
+              {t("Requestdate.173")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -81,7 +82,7 @@ const PendingRequest = () => {
                 textTransform: "capitalize",
               }}
             >
-              Expire Date
+              {t("ExpireDate.170")}
             </th>
           </tr>
         </thead>
@@ -154,16 +155,16 @@ const PendingRequest = () => {
               <p class="card-title">{props.Id}</p>
               <p className="">{props.Name}</p>
               <p className="card-text">
-                E-pin:{props.pincount}
+                {t("PinCount.171")}:{props.pincount}
                 <br />
-                count:{props.count}
+                {t("PinCount.171")} :{props.count}
                 <input type="number" style={{width: "50px"}} />
                 <br />
-                Amount:{props.amount}
+                {t("Amount.95")}:{props.amount}
                 <br />
-                Request Date: {props.requestdate}
+                {t("Requestdate.173")} : {props.requestdate}
                 <br />
-                Expire Date:{props.expiredate}
+                {t("ExpireDate.170")}:{props.expiredate}
               </p>
             </div>
           </div>
@@ -189,15 +190,15 @@ const PendingRequest = () => {
             <input
               class="form-control form-control-lg"
               type="text"
-              placeholder="Username"
+              placeholder={t("Username.128")}
             />
           </div>
 
           <div className="col-md-1 mr-2">
-            <div className="btn btn-purple ">Search</div>
+            <div className="btn btn-purple ">{t("search.13")}</div>
           </div>
           <div className="col-md-1">
-            <div className="btn btn-info">Rest</div>
+            <div className="btn btn-info">{t("reset.67")}</div>
           </div>
           <div className="col-lg-12 col-sm-6 mt-4">
             <div className="container">

@@ -10,12 +10,14 @@ import Form2 from "./Form2";
 import Form3 from "./Form3";
 import Form4 from "./Form4";
 import Form5 from "./Form5";
+import {useTranslation} from "react-i18next";
 function ProfileView() {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/Profile">
       <>
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          Profile View
+          {t("ProfileView.301")}
         </div>
         {/* header  ProfileView */}
         <div className="card mr-2 ml-2 pb-3 ">
@@ -29,10 +31,10 @@ function ProfileView() {
               />
             </div>
             <div className="col-lg-1">
-              <button className="btn btn-purple">Search</button>
+              <button className="btn btn-purple">{t("search.13")}</button>
             </div>
             <div className="col-lg-1 ">
-              <button className="btn btn-info">Reset</button>
+              <button className="btn btn-info">{t("rest.67")}</button>
             </div>
           </div>
           {/* header end ProfileView */}
@@ -57,7 +59,7 @@ function ProfileView() {
                 <div className="">
                   <div className="content2">
                     <h4 className="name" style={{color: "grey"}}>
-                      Salar khalid{" "}
+                      Salar khalid
                     </h4>
                     <h5 className="name2" style={{color: "grey"}}>
                       binaryaddon
@@ -72,7 +74,7 @@ function ProfileView() {
                       className="button mb-3"
                       style={{color: "purple"}}
                     >
-                      Change Password
+                      {t("Change Password.302")}
                     </div>
 
                     <div
@@ -98,7 +100,7 @@ function ProfileView() {
                               <div className="modal-icon">
                                 <i className="fa fa-lock mb-3"></i>
                               </div>
-                              Change Password ?
+                              {t("Change Password.302")}
                             </h5>
                           </div>
                           <div class="modal-body">
@@ -108,7 +110,7 @@ function ProfileView() {
                                   for="exampleInputPassword1 "
                                   style={{color: "grey", float: "left"}}
                                 >
-                                  current Password
+                                  {t("currentPassword.303")}
                                 </label>
                                 <input
                                   type="password"
@@ -120,7 +122,7 @@ function ProfileView() {
                                   for="exampleInputPassword1 "
                                   style={{color: "grey", float: "left"}}
                                 >
-                                  New Password
+                                  {t("NewPassword.304")}
                                 </label>
                                 <input
                                   type="password"
@@ -132,7 +134,7 @@ function ProfileView() {
                                   for="exampleInputPassword1 "
                                   style={{color: "grey", float: "left"}}
                                 >
-                                  Confirm Password
+                                  {t("ConfirmPassword.305")}
                                 </label>
                                 <input
                                   type="password"
@@ -149,13 +151,13 @@ function ProfileView() {
                               class="btn btn-outline-light"
                               data-dismiss="modal"
                             >
-                              Close
+                              {t("Close.314")}
                             </button>
                             <button
                               type="button"
                               class="btn btn-outline-indigo"
                             >
-                              change Password
+                              {t("Change Password.302")}
                             </button>
                           </div>
                         </div>
@@ -179,11 +181,12 @@ function ProfileView() {
                 >
                   <i className="fa fa-th"></i>
                 </div>
-                Rank: <span style={{color: "#7266ba"}}>xyz</span>
+                {t("Rank.309")}:{" "}
+                <span style={{color: "#7266ba"}}>{t("xyz.310")}</span>
               </h4>
 
-              <h6 style={{color: "grey"}}>Membership packge:</h6>
-              <h5 style={{color: "black"}}>Membership Pack:3</h5>
+              <h6 style={{color: "grey"}}>{t("Membershippackge.306")}:</h6>
+              <h5 style={{color: "black"}}>{t("Membershippackge.306")}:3</h5>
               <hr />
               <div className="row">
                 {/* first */}
@@ -204,7 +207,7 @@ function ProfileView() {
                           }}
                         ></i>
                       </span>
-                      Personal PV
+                      {t("PersonalPV.307")}
                     </h6>
 
                     <h4 className="ml-5" style={{color: "black"}}>
@@ -231,7 +234,7 @@ function ProfileView() {
                         }}
                       ></i>
                     </span>
-                    Group PV
+                    {t("GroupPV.308")}
                   </h6>
                   <h4 className="ml-5" style={{color: "black"}}>
                     80503
@@ -258,7 +261,7 @@ function ProfileView() {
                           }}
                         ></i>
                       </span>
-                      Left Carry
+                      {t("LeftCarry.311")}
                     </h6>
                     <h4 className="ml-5" style={{color: "black"}}>
                       8050
@@ -286,7 +289,7 @@ function ProfileView() {
                           }}
                         ></i>
                       </span>
-                      Right Carry
+                      {t("RightCarry.312")}
                     </h6>
                     <h4 className="ml-5" style={{color: "black"}}>
                       10

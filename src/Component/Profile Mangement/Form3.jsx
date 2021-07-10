@@ -1,7 +1,9 @@
 import React, {useState} from "react";
+import {useTranslation} from "react-i18next";
 function Form3() {
   const [disable, setdisable] = useState(true);
   const [show, setshow] = useState("none");
+  const {t, i18n} = useTranslation();
   return (
     <>
       <div className=" mr-3 ml-3 mt-3 mb-3">
@@ -25,12 +27,12 @@ function Form3() {
           />
         </span>
         <h3 className="" style={{color: "black"}}>
-          Bank Details
+          {t("BankDetails.199")}
         </h3>
         <form>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Bank Name
+              {t("BankName.200")}
             </label>
 
             <input
@@ -43,7 +45,7 @@ function Form3() {
           </div>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Branch Name
+              {t("BranchName.201")}
             </label>
             <input
               type="text"
@@ -55,7 +57,7 @@ function Form3() {
           </div>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Account Holder
+              {t("AccountHolder.202")}
             </label>
             <input
               type="text"
@@ -68,7 +70,7 @@ function Form3() {
 
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Account Number
+              {t("AccountNumber.203")}
             </label>
             <input
               type="text"
@@ -80,7 +82,7 @@ function Form3() {
           </div>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              Ifsc Code
+              {t("IfscCode.204")}
             </label>
             <input
               type="text"
@@ -92,7 +94,7 @@ function Form3() {
           </div>
           <div class="form-group">
             <label for="usr" style={{color: "grey"}}>
-              PAN
+              {t("PAN.205")}
             </label>
             <input
               type="text"
@@ -103,7 +105,7 @@ function Form3() {
             />
           </div>
           <div className="FormBtn" style={{display: show}}>
-            <div className="btn btn-purple mt-3">Update</div>
+            <div className="btn btn-purple mt-3">{t("Update.187")}</div>
             <span>
               <div
                 className="btn btn-outline-primary mt-3 ml-1"
@@ -112,7 +114,7 @@ function Form3() {
                   setshow("none");
                 }}
               >
-                Cancel
+                {t("Cancel.188")}
               </div>
             </span>
           </div>
