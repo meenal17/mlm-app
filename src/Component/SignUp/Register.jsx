@@ -58,7 +58,7 @@ function Register() {
                               for="exampleFormControlSelect1"
                               class="title-name"
                             >
-                              {t("Levels.65")}
+                              {t("levels.66")}
                             </label>
                             <select
                               class="form-control"
@@ -91,7 +91,7 @@ function Register() {
                           </div>
                           <div style={{textAlign: "center"}}>
                             <button className="btn btn-primary">
-                              {t("Next.82")}
+                              {t("Next.100")}
                             </button>
                           </div>
                         </div>

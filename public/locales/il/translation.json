@@ -231,7 +231,7 @@
 "Sponsor And Package Information":{
     "78":"Informazioni sullo sponsor e sul pacchetto"
 },
-" Sponser Username":{
+"Sponser Username":{
     "79":"Nome utente sponsor"
 },
 "Sponser fullname":{
@@ -968,5 +968,14 @@
 },
 "Infinite MLM Blog":{
     "426":"Blog MLM infinito"
+},
+"MyProfile":{
+    "427":"Il mio profilo"
+},
+"Help":{
+    "428":"Aiuto"
+},
+"VIEWAL":{
+    "429":"VISUALIZZAZIONE"
 }
 }

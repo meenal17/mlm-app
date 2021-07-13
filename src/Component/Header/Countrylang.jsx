@@ -94,24 +94,7 @@ const Countrylang = () => {
               Deutsch
             </a>
           </li>
-          {/* <li>
-            <a
-              href="javascript:changeDefaultLanguage('5');"
-              className="text-dark"
-            >
-              <img
-                src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/pt.png"
-                className="imagestyle"
-                onClick={() => {
-                  handleClick("pg");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/pt.png"
-                  );
-                }}
-              />
-              Português
-            </a>
-          </li> */}
+
           <li>
             <a
               href="javascript:changeDefaultLanguage('6');"

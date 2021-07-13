@@ -178,7 +178,7 @@ function ReferralMember() {
     <>
       <Link to="/ReferralMember">
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          {t("Refferal Member.73")}
+          {t("Refferal Member.77")}
         </div>
 
         <div className="card ml-2 p-0 mr-2">

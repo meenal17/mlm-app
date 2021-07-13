@@ -231,7 +231,7 @@
 "Sponsor And Package Information":{
     "78":"معلومات الراعي والحزمة"
 },
-" Sponser Username":{
+"Sponser Username":{
     "79":"اسم المستخدم الراعي"
 },
 "Sponser fullname":{
@@ -968,5 +968,14 @@
 },
 "Infinite MLM Blog":{
     "426":"مدونة الامتيازات اللانهائية"
+},
+"MyProfile":{
+    "427":"ملفي"
+},
+"Help":{
+    "428":"مساعدة"
+},
+"VIEWAL":{
+    "429":"تصويري"
 }
 }

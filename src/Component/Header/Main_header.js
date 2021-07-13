@@ -1,7 +1,9 @@
 import React from "react";
 import MobileHeader from "./MobileHeader";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function MainHeader() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <div className="main-header-right">
@@ -32,7 +34,7 @@ function MainHeader() {
                 </span>
               </div>
               <div className="text-center dropdown-footer">
-                <Link to="/mailbox">VIEW ALL</Link>
+                <Link to="/mailbox">{t("VIEWAL.429")}L</Link>
               </div>
             </div>
           </div>
@@ -78,17 +80,18 @@ function MainHeader() {
                 <span>Premium Member</span>
               </div>
               <Link className="dropdown-item" to="/Profile">
-                <i className="far fa-user"></i> My Profile
+                <i className="far fa-user"></i>
+                {t("MyProfile.427")}
               </Link>
 
               <Link className="dropdown-item" href="/">
-                <i className="fa fa-sign-in"></i> SignUp
+                <i className="fa fa-sign-in"></i> {t("signup.21")}
               </Link>
               <Link className="dropdown-item" to="/">
-                <i className="fas fa-user"></i> Help
+                <i className="fas fa-user"></i> {"Help.428"}
               </Link>
               <Link className="dropdown-item" to="/logout">
-                <i className="fas fa-sign-out-alt"></i> Logout Out
+                <i className="fas fa-sign-out-alt"></i> {t("logout.53")}
               </Link>
             </div>
           </div>
