@@ -1,5 +1,7 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 const EditRepurchase = () => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <i
@@ -24,7 +26,7 @@ const EditRepurchase = () => {
                 id="exampleModalLabel"
                 style={{color: "#3b5698", fontSize: "25px"}}
               >
-                Edit Repurchase Category
+                {t("EditRepurchaseCategory.333")}
               </h5>
               <button
                 type="button"
@@ -37,7 +39,7 @@ const EditRepurchase = () => {
             </div>
             <div class="modal-body">
               <h5 className="mt-2">
-                Category <span style={{color: "red"}}>*</span>{" "}
+                {t("Category.94")} <span style={{color: "red"}}>*</span>{" "}
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -47,7 +49,7 @@ const EditRepurchase = () => {
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-purple">
-                Change
+                {t("Change.334")}
               </button>
             </div>
           </div>

@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import Countrylang from "../Header/Countrylang";
-
+import {useTranslation} from "react-i18next";
 import "../Logout/style.css";
 const LogOut = () => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <div className="main-signin-wrapper mt-4">
@@ -42,7 +43,9 @@ const LogOut = () => {
           </div>
           <div className="p-5 wd-md-50p">
             <div className="main-signin-header">
-              <h2 style={{color: "#736d6d", textAlign: "center"}}>LogOut</h2>
+              <h2 style={{color: "#736d6d", textAlign: "center"}}>
+                {t("logout.53")}
+              </h2>
               <h6>
                 {" "}
                 <div className="ml-3" style={{listStyleType: "none"}}>
@@ -51,7 +54,7 @@ const LogOut = () => {
               </h6>
               <form action="index.html">
                 <div className="form-group">
-                  <label>Email</label>
+                  <label>{t("Email.196")}</label>
                   <input
                     className="form-control"
                     placeholder="Enter your email"
@@ -60,7 +63,7 @@ const LogOut = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label>Password</label>{" "}
+                  <label>{t("Password.416")}</label>{" "}
                   <input
                     className="form-control"
                     placeholder="Enter your password"
@@ -68,13 +71,15 @@ const LogOut = () => {
                     value="sprukodemo"
                   />
                 </div>
-                <button className="btn btn-purple btn-block">Sign Out</button>
+                <button className="btn btn-purple btn-block">
+                  {t("SignOut.417")}
+                </button>
               </form>
             </div>
             <div className="main-signin-footer mt-3 mg-t-5">
               <p>
                 <a href="" className="text-info">
-                  Forgot password?
+                  {t("Forgotpassword?.418")}
                 </a>
               </p>
             </div>

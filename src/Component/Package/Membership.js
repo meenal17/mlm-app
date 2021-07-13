@@ -3,9 +3,10 @@ import {Link} from "react-router-dom";
 import Addnewmember from "./Addnewmember";
 import CheckBox from "../Profile Mangement/CheckBox";
 import EditMemeber from "./EditMemeber";
-
+import {useTranslation} from "react-i18next";
 const Membership = () => {
   const [checked, setchecked] = useState(false);
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -35,7 +36,7 @@ const Membership = () => {
                 textTransform: "capitalize",
               }}
             >
-              ID
+              {t("Id.157")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -46,7 +47,7 @@ const Membership = () => {
                 textTransform: "capitalize",
               }}
             >
-              Package
+              {t("package.33")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -57,7 +58,7 @@ const Membership = () => {
                 textTransform: "capitalize",
               }}
             >
-              Amount
+              {t("Amount.95")}
             </th>
 
             <th
@@ -69,7 +70,7 @@ const Membership = () => {
                 textTransform: "capitalize",
               }}
             >
-              PV
+              {t("pv.326")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -89,7 +90,7 @@ const Membership = () => {
                 textTransform: "capitalize",
               }}
             >
-              Action
+              {t("Action.59")}
             </th>
             <th></th>
           </tr>
@@ -151,15 +152,16 @@ const Membership = () => {
         <td className="d-md-none d-table-cell">
           <div className="card">
             <div className="card-body">
-              Package: <strong class="card-title">{props.package}</strong>
+              {t("package.33")}:{" "}
+              <strong class="card-title">{props.package}</strong>
               <p className="card-text">
-                Amount: {props.amount}
+                {t("Amount.95")}: {props.amount}
                 <br />
-                PV:{props.pv}
+                {t("pv.326")}:{props.pv}
                 <br />
                 <br />
                 {props.no}
-                Action: <EditMemeber editform={EditMemeber} />
+                {t("Action.59")}: <EditMemeber editform={EditMemeber} />
               </p>
             </div>
           </div>
@@ -185,7 +187,7 @@ const Membership = () => {
     <>
       <Link to="/membership">
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          Membership
+          {t("membership.34")}
           <Addnewmember />
         </div>
         <div className="card mr-2 ml-2">
@@ -193,19 +195,19 @@ const Membership = () => {
             <div className="col-md-3 ml-2 p-4">
               <div class="form-group">
                 <select class="form-control" id="exampleFormControlSelect1 ">
-                  <option>Active</option>
-                  <option>Blocked</option>
+                  <option>{t("Active.174")}</option>
+                  <option>{"Blocked.175"}</option>
                 </select>
               </div>
             </div>
             <div className="col-md-1  p-4">
               <div class="form-group">
-                <div className="btn btn-purple">Search</div>
+                <div className="btn btn-purple">{t("search.13")}</div>
               </div>
             </div>
             <div className="col-md-1  p-4">
               <div class="form-group">
-                <div className="btn btn-info">Rest</div>
+                <div className="btn btn-info">{t("rest.57")}</div>
               </div>
             </div>
           </div>
@@ -226,7 +228,7 @@ const Membership = () => {
                         tabindex="-1"
                         aria-disabled="true"
                       >
-                        Previous
+                        {t("Previous.99")}
                       </a>
                     </li>
                     <li class="page-item">
@@ -246,7 +248,7 @@ const Membership = () => {
                     </li>
                     <li class="page-item">
                       <a class="page-link" href="#">
-                        Next
+                        {t("Next.100")}
                       </a>
                     </li>
                   </ul>

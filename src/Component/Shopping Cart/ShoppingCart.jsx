@@ -1,21 +1,22 @@
 import React from "react";
 import "../Shopping Cart/style.css";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const ShoppingCart = () => {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/shoppingcart">
       <>
         <div className="">
           <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-            Shopping Cart
+            {t("ShoppingCart.347")}
           </div>
           <h5 className="ml-4 mt-2" style={{color: "grey"}}>
             <i
               class="fa fa-exclamation-circle bell "
               style={{color: "#ffad31", fontSize: 25 + "px"}}
             />
-            <span style={{color: "black"}}>Note</span> : This is an add-on
-            module
+            {t("onmodule.113")}
           </h5>
           <div className="card">
             <div className="card-body">
@@ -40,7 +41,7 @@ const ShoppingCart = () => {
                             fontSize: "16px",
                           }}
                         >
-                          Product
+                          {t("Product.81")}
                         </th>
                         <th
                           scope="col"
@@ -49,7 +50,7 @@ const ShoppingCart = () => {
                             fontSize: "16px",
                           }}
                         >
-                          Price
+                          {t("Price.351")}
                         </th>
                         <th
                           scope="col"
@@ -58,7 +59,7 @@ const ShoppingCart = () => {
                             fontSize: "16px",
                           }}
                         >
-                          Quantity
+                          {t("Quantity.356")}
                         </th>
                         <th
                           style={{
@@ -66,21 +67,21 @@ const ShoppingCart = () => {
                             fontSize: "16px",
                           }}
                         >
-                          Sub Total
+                          {t("SubTotal.359")}
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Purchase Pack 1</td>
+                        <td>{t("PurchasePack.348")}1</td>
                         <td>$ 100.00 </td>
                         <td>2</td>
                         <td>$ 200.00 </td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Purchase Pack 1</td>
+                        <td>{t("PurchasePack.348")}1</td>
                         <td>$ 100.00 </td>
                         <td>2</td>
                         <td>$ 200.00 </td>
@@ -100,7 +101,7 @@ const ShoppingCart = () => {
                         className="fa fa-shopping-cart mr-2"
                         style={{fontSize: "20px"}}
                       />
-                      Checkout
+                      {t("checkout.41")}
                     </div>
                   </Link>
                 </div>
@@ -118,13 +119,14 @@ const ShoppingCart = () => {
                     alt="not found"
                   />
                   <div class="card-body">
-                    <h3 class="card-title">Purchase Pack 1</h3>
+                    <h3 class="card-title">{t("PurchasePack.348")}1</h3>
                     <p class="card-text">category1</p>
                     <p class="card-text2">$ 100.00 </p>
                     <div>
                       <Link to="/shoppingcart">
                         <div className="btn btn-info ">
-                          <i className="fa fa-shopping-cart" /> Add to Cart
+                          <i className="fa fa-shopping-cart" />{" "}
+                          {t("AddtoCart.360")}
                         </div>
                       </Link>
                       <span>
@@ -134,7 +136,7 @@ const ShoppingCart = () => {
                               className="fa fa-shopping-eye "
                               style={{fontSize: "20px"}}
                             />
-                            More Details
+                            {t("MoreDetails.361")}
                           </div>
                         </Link>
                       </span>
@@ -150,13 +152,14 @@ const ShoppingCart = () => {
                     alt="not found"
                   />
                   <div class="card-body">
-                    <h3 class="card-title">Purchase Pack 1</h3>
+                    <h3 class="card-title">{t("PurchasePack.348")}1</h3>
                     <p class="card-text">category1</p>
                     <p class="card-text2">$ 100.00 </p>
                     <div>
                       <Link to="/shoppingcart">
                         <div className="btn btn-info ">
-                          <i className="fa fa-shopping-cart" /> Add to Cart
+                          <i className="fa fa-shopping-cart" />
+                          {t("AddtoCart.360")}
                         </div>
                       </Link>
                       <span>
@@ -166,7 +169,7 @@ const ShoppingCart = () => {
                               className="fa fa-shopping-eye "
                               style={{fontSize: "20px"}}
                             />
-                            More Details
+                            {t("MoreDetails.361")}
                           </div>
                         </Link>
                       </span>
@@ -182,13 +185,14 @@ const ShoppingCart = () => {
                     alt="not found"
                   />
                   <div class="card-body">
-                    <h3 class="card-title">Purchase Pack 1</h3>
+                    <h3 class="card-title">{t("PurchasePack.348")}1</h3>
                     <p class="card-text">category1</p>
                     <p class="card-text2">$ 100.00 </p>
                     <div>
                       <Link to="/shoppingcart">
                         <div className="btn btn-info ">
-                          <i className="fa fa-shopping-cart" /> Add to Cart
+                          <i className="fa fa-shopping-cart" />{" "}
+                          {t("AddtoCart.360")}
                         </div>
                       </Link>
                       <span>
@@ -198,7 +202,7 @@ const ShoppingCart = () => {
                               className="fa fa-shopping-eye "
                               style={{fontSize: "20px"}}
                             />
-                            More Details
+                            {t("MoreDetails.361")}
                           </div>
                         </Link>
                       </span>

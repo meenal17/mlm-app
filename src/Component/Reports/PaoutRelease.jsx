@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const PaoutRelease = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -25,7 +27,7 @@ const PaoutRelease = () => {
                 textTransform: "capitalize",
               }}
             >
-              Memeber Name
+              {t("member name.68")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -36,7 +38,7 @@ const PaoutRelease = () => {
                 textTransform: "capitalize",
               }}
             >
-              TotalAmont
+              {t("TotalAmont.374")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -47,7 +49,7 @@ const PaoutRelease = () => {
                 textTransform: "capitalize",
               }}
             >
-              Tax
+              {t("Tax.375")}
             </th>
 
             <th
@@ -59,7 +61,7 @@ const PaoutRelease = () => {
                 textTransform: "capitalize",
               }}
             >
-              Service Charge
+              {t("ServiceCharge.376")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -70,7 +72,7 @@ const PaoutRelease = () => {
                 textTransform: "capitalize",
               }}
             >
-              Payment Payable
+              {t("PaymentPayable.377")}
             </th>
           </tr>
         </thead>
@@ -135,12 +137,12 @@ const PaoutRelease = () => {
           <div className="card">
             <div className="card-body">
               <p class="card-title">
-                ID:{props.Id}
-                Invoice:{props.invoice}
-                Name: {props.MemberName}
+                {t("Id.157")}:{props.Id}
+                {t("Invoice.136")}:{props.invoice}
+                {t("Member Name.74")}: {props.MemberName}
               </p>
               <p className="card-text">
-                TotalAmont: {props.totalamount}
+                {t("TotalAmont.374")}: {props.totalamount}
                 <br />
                 {props.date}
                 <br />
@@ -166,7 +168,7 @@ const PaoutRelease = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          Payout Released Report
+          {t("PayoutReleasedReport.154")}
         </div>
 
         <div className="card p-3  mr-2 ml-3">
@@ -175,31 +177,31 @@ const PaoutRelease = () => {
               <div className="col-lg-2 col-sm-2">
                 <div class="form-group">
                   <label for="exampleFormControlSelect1" className="text-dark">
-                    Status
+                    {t("Status.160")}
                   </label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Released</option>
-                    <option>Pending</option>
+                    <option>{t("Released.392")}</option>
+                    <option>{t("Pending.5")}</option>
                   </select>
                 </div>
               </div>
               <div className="col-lg-2 col-sm-2">
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1" className="text-dark">
-                    Date Range
+                  <label for="exampleFormControlSelect1">
+                    {t("Date Range.379")}
                   </label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Overall</option>
-                    <option>Month</option>
-                    <option>Year</option>
-                    <option>Today</option>
-                    <option>Custom</option>
+                    <option>{t("Overall.364")}</option>
+                    <option>{t("Month.365")}</option>
+                    <option>{t("Year.366")}</option>
+                    <option>{t("Today.367")}</option>
+                    <option>{t("Custom.368")}</option>
                   </select>
                 </div>
               </div>
 
               <div className="col-md-1 col-lg-1" style={{marginTop: "28px"}}>
-                <button className="btn btn-info">Submit</button>
+                <button className="btn btn-info">{t("Submit.369")}</button>
               </div>
             </div>
           </div>
@@ -209,12 +211,14 @@ const PaoutRelease = () => {
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file mr-1"></i>Create excel
+                <i className="fas fa-file mr-1"></i>
+                {t("Createexcel.370")}
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fa fa-file-excel-o mr-1"></i>Create CSV
+                <i className="fa fa-file-excel-o mr-1"></i>
+                {t("CreateCSV.371")}
               </button>
             </div>
           </div>
@@ -233,11 +237,11 @@ const PaoutRelease = () => {
               color: "grey",
             }}
           >
-            <h5 className="mb-1"> Company Name</h5>
-            <h6 className="mb-1">Company address </h6>
+            <h5 className="mb-1">{t("CompanyName.401")}</h5>
+            <h6 className="mb-1">{t("Companyaddress.402")} </h6>
             <h8 className=" mb-1">
-              Phone: 9999999999 <br />
-              Email:companyname@emil.com
+              {t("Phone.386")}: 9999999999 <br />
+              {t("Email.196")}:companyname@emil.com
             </h8>
           </div>
           {/* table */}

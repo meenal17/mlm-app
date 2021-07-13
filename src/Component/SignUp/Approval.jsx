@@ -49,7 +49,7 @@ function Approval() {
                 textTransform: "capitalize",
               }}
             >
-              {t("Package.33")}
+              {t("package.33")}
             </th>
 
             <th

@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import CheckBox from "../Profile Mangement/CheckBox";
+import {useTranslation} from "react-i18next";
 const PrivilegedTable = () => {
+  const {t, i18n} = useTranslation();
   const [checked, setchecked] = useState(false);
   function TableComponent(props = {}) {
     return (
@@ -31,7 +33,7 @@ const PrivilegedTable = () => {
                 textTransform: "capitalize",
               }}
             >
-              Name
+              {t("Name.135")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -42,7 +44,7 @@ const PrivilegedTable = () => {
                 textTransform: "capitalize",
               }}
             >
-              E-mail
+              {t("Email.411")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -53,7 +55,7 @@ const PrivilegedTable = () => {
                 textTransform: "capitalize",
               }}
             >
-              Mobile
+              {t("Mobile.318")}
             </th>
 
             <th
@@ -65,7 +67,7 @@ const PrivilegedTable = () => {
                 textTransform: "capitalize",
               }}
             >
-              Action
+              {t("Action.59")}
             </th>
           </tr>
         </thead>
@@ -111,14 +113,14 @@ const PrivilegedTable = () => {
         <td className="d-md-none d-table-cell">
           <div className="card">
             <div className="card-body">
-              Name: <strong class="card-title">{props.name}</strong>
+              {t("Name.135")}: <strong class="card-title">{props.name}</strong>
               <p className="card-text">
-                E-mail: {props.email}
+                {t("Email.411")}: {props.email}
                 <br />
-                Mobile:{props.mobile}
+                {t("Mobile.318")}:{props.mobile}
                 <br />
                 <br />
-                Action:{" "}
+                {t("Action.59")}:{" "}
                 <p>
                   <i
                     className="fa fa-edit p-2 mr-1"
@@ -188,12 +190,12 @@ const PrivilegedTable = () => {
           </div>
           <div className="col-md-1  p-4 mr-1">
             <div class="form-group">
-              <div className="btn btn-purple">Search</div>
+              <div className="btn btn-purple">{t("search.13")}</div>
             </div>
           </div>
           <div className="col-md-1  p-4">
             <div class="form-group">
-              <div className="btn btn-info">Rest</div>
+              <div className="btn btn-info">{t("rest.57")}</div>
             </div>
           </div>
         </div>
@@ -217,7 +219,7 @@ const PrivilegedTable = () => {
                       tabindex="-1"
                       aria-disabled="true"
                     >
-                      Previous
+                      {t("Previous.99")}
                     </a>
                   </li>
                   <li class="page-item">
@@ -237,7 +239,7 @@ const PrivilegedTable = () => {
                   </li>
                   <li class="page-item">
                     <a class="page-link" href="#">
-                      Next
+                      {t("Next.100")}
                     </a>
                   </li>
                 </ul>

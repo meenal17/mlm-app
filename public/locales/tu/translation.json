@@ -1,5 +1,972 @@
 {
     "dashboard":{
         "1":"Gösterge Paneli"
-    }
-    }
+    },
+    "EwalletBalance":{
+        "2":"E-cüzdan Bakiyesi"
+    },
+    "Income":{
+        "3":"Gelir"
+    },
+    "Bonus":{
+        "4":"Bonus"
+    },
+    "Pending":{
+        "5":"Bekliyor"
+    },
+    "IncomeVScommssion":{
+        "6":"Gelir VS komisyonu"
+    },
+    "payoutoverview":{
+        "7":"Ödemeye Genel Bakış"
+    },
+    "totaljoinigs":{
+        "8":"Toplam birleştirme"
+    },
+    "NewMembers":{
+        "9":"Yeni üyeler"
+    },
+    "promotiontool":{
+        "10":"Promosyon aracı"
+    },
+    "ReplicaLink":{
+        "11":"Çoğaltma Bağlantısı"
+    },
+    "LeadCapture":{
+        "12":"Kurşun Yakalama"
+    },
+    "search":{
+        "13":" Arama"
+    },
+    "Incomeandcommssion":{
+        "14":" Gelir ve komisyon"
+    },
+    "network":{
+        "15":"Ağ"
+    },
+    "GenealogyTree":{
+        "16":"soy ağacı"
+    },
+    "SponsorTree":{
+        "17":"Sponsor Ağacı"
+    },
+    "TreeView":{
+        "18":"Ağaç görünümü"
+    },
+    "DownLineMembers":{
+        "19":"Alt Sıra Üyeleri"
+    },
+    "RefferralMembers":{
+        "20":"Yönlendirme Üyeleri "
+    },
+    "signup":{
+        "21":"Kaydol"
+    },
+    "register":{
+        "22":"Kayıt ol"
+    },
+    "Approval":{
+        "23":"onay"
+    },
+    "bulk register":{
+        "24":"Toplu kayıt"
+    },
+    "Bussiness":{
+        "25":"iş"
+    },
+    "Ewallet":{
+        "26":" e-cüzdan"
+    },
+    "PayOut":{
+        "27":"Ödeme"
+    },
+    "Epin":{
+        "28":"E-pin"
+    },
+    "Profile Managment":{
+        "29":"Profil Yönetimi"
+    },
+    "profileview":{
+        "30":"profil görünümü "
+    },
+    "memberlist":{
+        "31":"Üye Listesi"
+    }, 
+    "KYC detail":{
+"32":"KYC ayrıntısı"
+    },
+    "package":{
+        "33":"paket"
+    },
+    "membership":{
+        "34":"Üyelik"
+    },"Repurchase/Cart":{
+        "35":"Yeniden Satın Alma/Sepet"
+    },
+    "Shopping Cart":{
+        "36":"Alışveriş kartı"
+    } ,
+    "checkout":{
+        "37":"ödeme"
+    },
+    "approval":{
+        "38":"onay"
+    },
+"Reports":{
+    "39":"Raporlar"
+},
+"profile":{
+    "40":"Profil"
+},
+"checkout":
+{"41": "Ödeme"},
+"Joining":{
+    "42":"birleştirme"
+},
+"Commission":{
+    "43":" komisyon"
+},
+"totalBonus":{
+    "44":"Toplam Bonus"
+},
+"total earning":{
+    "45":"Toplam Kazanç"
+},
+"payoutrelease":{
+    "46":"Ödeme Sürümü"
+},
+"rankperformance":{
+    "47":"Sıralama performansı"
+},
+"rankarchive":{
+    "48":"Derece Arşivi"
+},
+"epin transfer":{
+    "49":"epin transferi"
+},
+"packageupgrated":{
+    "50":"Paket Yükseltildi "
+},
+"mail":{
+    "51":"Posta"
+},
+"Privileged User":{
+    "52":"Ayrıcalıklı Kullanıcı"
+},
+"logout":{
+    "53":"Çıkış Yap"
+},
+"GenologyTree":{
+    "54":"soy ağacı"
+},
+"sponsortree":{
+    "55":"Sponsor Ağacı"
+},
+"tree":{
+    "56":"ağaç"
+},
+"rest":{
+    "57":"Sıfırla"
+},
+"binarryaddon":{
+    "58":" Binarryaddon"
+},
+"Action":{
+"59":"Aksiyon"
+},
+"Another action":{
+    "60":"Başka bir eylem"
+},
+"Something else here":{
+    "61":"Burada başka bir şey var"
+},
+"DownloadMember":{
+    "62":"Üye İndir"
+},
+"Total DownLine Members":{
+    "63":"Toplam Alt Hat Üyeleri"
+},
+"Total Levels":{
+    "64":"Toplam Seviyeler"
+},
+"username":{
+    "65":"Kullanıcı adı"
+},
+"levels":{
+"66":"Seviyeler"
+},
+"reset":{
+    "67":"Sıfırla"
+},
+"member name":{
+    "68":"Üye adı"
+},
+"placement":{
+    "69":"Yerleştirme"
+},
+"sponsor":{
+    "70":"Sponsor"
+},
+"level":{
+    "71":"Seviye"
+},
+"icon":{
+    "72":"Simge"
+},
+"Refferal Member":{
+    "73":"Referans Üye"
+},
+"Memeber Name":{
+    "74":"İsimsiz miembro"
+},
+"Sponsor":{
+    "75":"Patrocinador"
+},
+"Joining Date":{
+    "76":"Giriş resmi"
+},
+"Refferal Member":{
+    "77":"Referans Üye"
+},
+"Sponsor And Package Information":{
+    "78":"Sponsor Ve Paket Bilgileri"
+},
+" Sponser Username":{
+    "79":"Sponsor Kullanıcı Adı"
+},
+"Sponser fullname":{
+    "80":"Sponsorun tam adı"
+},
+"Product":{
+    "81":"Ürün"
+},
+"Next":{
+    "82":"Sonraki"
+},
+"Bulk Register":{
+    "83":"Toplu Kayıt"
+},
+"Select File":{
+    "84":"Dosya Seç"
+},
+"Register":{
+    "85":"Kayıt ol"
+},
+"Download sample file":{
+    "86":"Örnek dosyayı indirin"
+},
+"Approval Member":{
+    "87":"Onay Üyesi"
+},
+"Total Amount":{
+    "88":"Toplam tutar"
+},
+"Payment Method":{
+    "89":"Ödeme şekli"
+},
+"Approve":{
+    "90":"onayla"
+},
+"reject":{
+    "91":"reddet"
+},
+"Bussiness":{
+    "92":"iş"
+},
+"Bussiness Summary":{
+    "93":"İşletme Özeti"
+},
+"Category":{
+    "94":"Kategori"
+},
+"Amount":{
+    "95":"Miktar"
+},
+"Transaction Date":{
+    "96":"İşlem günü"
+},
+"Showing 1 to 10 of 1,881 entries":{
+    "97":"1.881 kayıttan 1 ile 10 arası gösteriliyor"
+},
+"Row Pages":{
+    "98":"Satır Sayfaları"
+},
+"Previous":{
+    "99":"Önceki"
+},
+"Next":{
+    "100":"Sonraki"
+},
+"Bussiness Transactions":{
+    "101":"Ticari İşlemler"
+},
+"Ewallet Summary":{
+    "102":"E-cüzdan Özeti"
+},
+"Ewallet Transactions":{
+    "103":"E-cüzdan İşlemleri"
+},
+"Ewallet Balance":{
+    "104":"E-cüzdan Bakiyesi"
+},
+"Ewallet Statment":{
+    "105":"Ewallet Ekstresi"
+},
+"Purchase Wallet":{
+    "106":"Cüzdan Satın Al"
+},
+"User Earning":{
+    "107":"Kullanıcı Kazancı"
+},
+"Credit":{
+    "108":"Kredi"
+},
+"Registation Fee":{
+    "109":"Kayıt ücreti"
+},
+"Package Amount":{
+    "110":"Paket Tutarı"
+},
+"Purchase Amount":{
+    "111":"Satın alma miktarı"
+},
+" Debit":{
+    "112":"borç"
+},
+"onmodule":{
+    "113":"Not: Bu bir eklenti modülüdür"
+},
+"Desciption":{
+    "114":"Açıklama"
+},
+"Balance":{
+    "115":"Denge"
+},
+"Transection Date":{
+    "116":"İşlem Tarihi"
+},
+"Refferral Commission":{
+    "117":"Yönlendirme Komisyonu"
+},
+"Rank Commission":{
+    "118":"Rütbe Komisyonu"
+},
+"Level Commission":{
+    "119":"Seviye Komisyonu"
+},
+"Binary Commission":{
+    "120":"İkili Komisyon"
+},
+"Matching Bonus":{
+    "121":"Eşleştirme Bonusu"
+} ,
+"Pool Bonus" :{
+"122":"Havuz Bonusu"
+},
+"Fast Start Bonus":{
+    "123":"Hızlı Başlangıç ​​Bonusu"                                                      
+},
+"Vacation Bonus":{
+    "124":"Tatil Bonusu"
+},
+"Education Fund":{
+    "125":"Eğitim Fonu"
+},
+"Car Fund":{
+    "126":"Araba Fonu"
+},
+"House Fund":{
+    "127":"Ev Fonu"
+},
+"Username":{
+    "128":"Kullanıcı adı"
+},
+"Type":{
+    "129":"Tür"
+},
+"PayOut":{
+    "130":"Ödeme"
+},
+"PayOut Summary":{
+    "131":"Ödeme Özeti"
+},
+"PayOut Release":{
+    "132":"PayOut Sürümü"
+},
+"Prosess Payment":{
+    "133":"İşlem Ödeme"
+},
+"user":{
+    "134":"kullanıcı"
+},
+"Name":{
+    "135":"isim"
+},
+"Invoice":{
+    "136":"Fatura"
+},
+"PayOut Method":{
+    "137":"Ödeme Yöntemi"
+},
+"Paid Date":{
+    "138":"Ödenen tarih"
+},
+"Bank Transfer":{
+    "139":"Banka transferi"
+},
+"Block Chain":{
+    "140":"Blok Zinciri"
+},
+"Paypal":{
+    "141":"Paypal"
+},
+"Bitgo":{
+    "142":"Bitgo"
+},
+"Manual User":{
+    "143":"Manuel Kullanıcı"
+},
+"Request":{
+    "144":"İstek"
+},
+"KYC verified":{
+    "145":"KYC doğrulandı"
+},
+"KYCnotverified":{
+    "146":"KYC doğrulanmadı"
+},
+"PayOut Amount":{
+"147":"Ödeme Tutarı"
+},
+"member_name":{
+    "148":"Üye adı"
+},
+"payoutType":{
+    "149":"Ödeme Türü"
+},
+"Payout_Method":{
+    "150":"Ödeme Yöntemi"
+},
+"Approved Date":{
+    "151":"Onay tarihi"
+},
+"ActiveEpin":{
+    "152":"Aktif E-pin"
+},
+"Epin":{
+    "153":"E-pin"
+},
+"PayoutReleasedReport":{
+    "154":"Ödeme Yayınlandı Raporu"
+},
+"EpinList":{
+    "155":"E-pin Listesi"
+},
+"PendingRequest":{
+    "156":" Bekleyen İstek"
+},
+"Id":{
+"157":"İD"
+},
+"Alocate Member":{
+    "158":"Üye Alocate"
+},
+"BalanceAmount":{
+    "159":"Bakiye tutarı"
+},
+"Status":{
+    "160":""
+},
+"ExpireDate":{
+    "170":"Son kullanma tarihi"
+},
+"PinCount":{
+    "171":"Pin Sayısı"
+},
+"Count":{
+    "172":"Miktar"
+},
+"Requestdate":{
+    "173":"İstek Tarihi"
+},
+"Active":{
+    "174":"Aktif"
+},
+"Blocked":{
+    "175":"Engellendi"
+},
+"Used/Expired":{
+    "176":"Kullanılmış/Süresi Dolmuş"
+},
+"Deleted":{
+    "177":"silindi"
+},
+"Paid":{
+    "178":"ücretli"
+},
+"PersonalDetails":{
+    "179":"Kişisel detaylar"
+},
+"FirstName":{
+    "180":"İsim"
+},
+"LastName":{
+    "181":"Soyadı"
+},
+"Gender":{
+    "182":"Cinsiyet"
+},
+"Male":{
+    "183":"Erkek"
+},
+"Female":{
+    "184":"Kadın"
+},
+"other":{
+    "185":"diğer"
+},
+"DOB":{
+    "186":"Doğum tarihi"
+},
+"Update":{
+    "187":"Güncelleme"
+},
+"Cancel":{
+    "189":"İptal etmek"
+},
+"ContactDetails":{
+    "190":"İletişim detayları"
+},
+"AddressLine1":{
+    "191":"Adres satırı 1"
+},
+"AddressLine2":{
+    "192":"Adres Satırı 2"
+},
+"countries":{
+    "193":"Ülkeler"
+},
+"City":{
+    "194":"Kent"
+},
+"ZipCode":{
+    "195":"Posta kodu"
+},
+"Email":{
+    "196":"E-posta"
+},
+"Mobilenumber":{
+    "197":"Cep numarası"
+},
+"LandlineNumber":{
+    "198":"Sabit hat numarası"
+},
+"BankDetails":{
+    "199":"Banka detayları"
+},
+"BankName":{
+    "200":"Banka adı"
+},
+"BranchName":{
+    "201":"Şube Adı"
+},
+"AccountHolder":{
+    "202":"Hesap sahibi"
+},
+"AccountNumber":{
+    "203":"Hesap numarası"
+},
+"IfscCode":{
+    "204":"ifsc kodu"
+},
+"PAN":{
+    "205":"TAVA"
+},
+"PaypalAccount":{
+    "206":"Paypal hesabı"
+},
+"PaymentDetails":{
+    "207":"Ödeme detayları"
+},
+"Settings":{
+    "208":"Ayarlar"
+},
+"Language":{
+    "209":"Dil"
+},
+"currency":{
+    "300":"Para birimi"
+},
+"ProfileView":{
+    "301":"Profil görünümü"
+},
+"Change Password":{
+    "302":"Şifre değiştir"
+},
+"currentPassword":{
+    "303":"Current Password"
+},
+"NewPassword":{
+    "304":"Yeni Şifre"
+},
+"ConfirmPassword":{
+    "305":"Şifreyi Onayla"
+},
+"Membershippackge":{
+    "306":"üyelik paketi"
+},
+"Rank":{
+    "309":"rütbe"
+},
+"xyz":{
+    "310":"xyz"
+},
+"PersonalPV":{
+    "307":"Kişiye özel PV"
+},
+"GroupPV":{
+    "308":"GrupPV"
+},
+"LeftCarry":{
+    "311":"SolTaşıma"
+},
+"RightCarry":{
+    "312":"Sağ Taşıma"
+},
+"Change Transacttion Password":{
+    "313":"İşlem Şifresini Değiştir"
+},
+"Close":{
+    "314":"Kapat"
+},
+"TotalJoinings":{
+    "315":"Toplam Katılım"
+},
+"newJoinigs":{
+    "316":"Yeni Üyelikler"
+},
+"PendingUpgrades":{
+    "317":"Bekleyen Yükseltmeler"
+},
+"Mobile":{
+    "318":"Mobil"
+},
+"KYC Details":{
+    "319":"KYC Ayrıntıları"
+},
+"Back":{
+    "320":"Geri"
+},
+"SelectCategory":{
+    "321":"Kategori seç"
+},
+"Rejected":{
+    "322":"Reddedildi"
+},
+"Approved":{
+    "323":"Onaylandı"
+},
+"UserSelecter":{
+    "324":"Kullanıcı Seçici"
+},
+"Manage KYC configuration?":{
+    "325":"KYC yapılandırması yönetilsin mi?"
+},
+ "pv":{
+    "326":"PV"
+},
+"NewPackage":{
+    "327":"Yeni Paket"
+},
+"AddPurchasePackage":{
+    "328":"Satın Alma Paketi Ekle"
+},
+"AdvancedConfigration":{
+    "329":"Gelişmiş Yapılandırma"
+},
+"ManagePackage":{
+    "330":"Paketi Yönet"
+},
+"ManageCategory":{
+    "331":"Kategoriyi Yönet"
+},
+"UpdateMembershipPackage":{
+    "332":"Üyelik Paketini Güncelle"
+},
+"EditRepurchaseCategory":{
+    "333":"Yeniden Satın Alma Kategorisini Düzenle"
+},
+"Change":{
+    "334":"Değişiklik"
+},
+"CategoryName":{
+    "335":"Kategori adı"
+},
+"PackageName":{
+    "336":"Paket ismi"
+},
+"Productimage":{
+    "337":"Ürün resmi"
+},
+"UpdatePurchasePackage":{
+    "338":"Satın Alma Paketini Güncelle"
+},
+"Savechanges":{
+    "339":"Değişiklikleri Kaydet"
+},
+"AddMembershipPackage":{
+    "340":"Üyelik Paketi Ekle"
+},
+"InvoiceNo":{
+    "341":"Fatura No"
+},
+"TotalAmount":{
+    "342":"Toplam tutar"
+},
+"PaymentMethod":{
+    "343":"Ödeme şekli"
+},
+"OrderDetail":{
+    "345":"Sipariş detayı"
+},
+"CheckoutSteps":{
+    "346":"Ödeme Adımları"
+},
+"ShoppingCart":{
+    "347":"Alışveriş kartı"
+},
+"PurchasePack":{
+"348":"Satın Alma Paketi"    
+},
+"Product Id":{
+    "349":"Ürün kimliği"
+},
+"cart":{
+    "350":"araba"
+},
+"Price":{
+"351":"Toplam PVPFiyat"
+},
+"Total":{
+    "352":"Toplam PV"
+},
+"TotalPV":{
+    "353":"Toplam PV"
+},
+"UpdateCart":{
+    "354":"Sepeti Güncelle"
+},
+"Item":{
+    "355":"öğe"
+},
+"Quantity":{
+    "356":"miktar"
+},"Purchase":{
+    "357":"Satın alma"
+},
+"Remove":{
+    "358":"Kaldırmak"
+},
+"SubTotal":{
+    "359":"Ara toplam"
+},
+"AddtoCart":{
+    "360":"Sepete ekle"
+},
+"MoreDetails":{
+    "361":"Daha fazla detay"
+},
+"Activate/Deactivate Report":{
+    "362":"Raporu Etkinleştir/Devre Dışı Bırak"
+},
+"Exampleselect":{
+    "363":"Örnek Seçim"
+},
+"Overall":{
+    "364":"Genel"
+},
+"Month":{
+    "365":"Ay"
+},
+"Year":{
+    "366":"Yıl"
+},
+"Today":{
+    "367":"Bugün"
+},
+"Custom":{
+    "368":"özel"
+},
+"Submit":{
+    "369":"Sunmak"
+},
+"Createexcel":{
+    "370":"excel oluştur"
+},
+"CreateCSV":{
+    "371":"OluşturCSV"
+},
+"Date":{
+    "372":"Tarih"
+},
+"Deactivated":{
+    "373":"devre dışı"
+},
+"TotalAmont":{
+    "374":"Toplam tutar"
+},
+"Tax":{
+    "375":"Vergi"
+},
+"ServiceCharge":{
+    "376":"Servis bedeli"
+},
+"PaymentPayable":{
+    "377":"Ödeme Ödenecek"
+},
+"UserCommissionJoinig":{
+    "378":"Kullanıcı Komisyonu Üyeliği"
+},
+"Date Range":{
+    "379":"Tarih aralığı"
+},
+"FromUser":{
+    "380":"Kullanıcıdan"
+},
+"ToUser":{
+    "381":"Kullanıcıya"
+},
+"TransferDate":{
+    "382":"Transfer tarihi"
+},
+"RegistrationFee":{
+   "383":"Kayıt ücreti"
+},
+"enrollmentdate":{
+    "384":"kayıt tarihi"
+},
+"UserJoinig":{
+    "385":"Kullanıcı Katılımı"
+},
+"Phone":{
+    "386":"Telefon"
+},
+"Old Package":{
+    "387":"Eski Paket"
+},
+"Upgratedpackage":{
+    "388":"Yükseltilmiş paket"
+},
+"UpgradedPackage":{
+    "389":"Yükseltilmiş Paket"
+},
+"UpgradedDate":{
+    "390":"Yükseltme Tarihi"
+},
+"EpinTransferReport":{
+    "391":"Epin Transfer Raporu"
+},
+"Released":{
+    "392":"Yayınlandı"
+},
+"ProfileReports":{
+"393":"Profil Raporları"
+},
+"View":{
+    "394":"Görünüm"
+},
+"EnterCount":{
+    "395":"Sayı Girin"
+},
+"EnterCountstartfrom":{
+    "396":"Sayı başlangıcını girin"
+},
+"RankArchiveDate":{
+    "397":"Sıralama Arşivi Tarihi"
+},
+"RankPerformanceReport":{
+    "398":"Sıra Performans Raporu"
+},
+"Epin Transfer Report":{
+    "399":"E-pin Transfer Raporu"
+},
+"TotalEarning":{
+    "400":"Toplam Kazanç"
+},
+"CompanyName":{
+    "401":"Şirket Adı"
+},
+"Companyaddress":{
+    "402":"Şirket adresi"
+},
+"Compose":{
+    "403":"oluştur"
+},
+"Inbox":{
+    "404":"Gelen kutusu"
+},
+"Send":{
+    "405":"gönder"
+},
+"SingleUser":{
+    "406":"Tek kullanıcı"
+},
+"AllUser":{
+    "407":"Tüm kullanıcılar"
+},
+"MainContent":{
+    "408":"Ana içerik"
+},
+"SendMessages":{
+    "409":"Mesaj gönder"
+},
+"Mail Box":{
+    "410":"Posta Kutusu"
+},
+"Email":{"411":"E-posta"},
+"PrivilegedUser":{
+"412":"Ayrıcalıklı Kullanıcı"
+},
+"AddNew":{
+    "413":"Yeni ekle"
+},
+"UserList":{
+    "414":"Kullanıcı listesi"
+},
+"UserActivity":{
+    "415":"Kullanıcı Etkinliği"
+},
+"Password":{
+    "416":"Parola"
+},
+"SignOut":{
+    "417":"Oturumu Kapat"
+},
+"Forgotpassword?":{
+    "418":"Parolanızı mı unuttunuz?"
+},
+"Welcome back!":{
+    "419":"Tekrar hoşgeldiniz!"
+},
+"Please sign in to continue!":{
+    "420":"Devam etmek için giriş yapın!"
+},
+"SignIn":{
+    "421":"Oturum aç"
+},
+"Don't have an account?":{
+    "422":"Hesabınız yok mu?"
+},
+"Create an Account":{
+    "423":"Hesap oluştur"
+},
+"You are viewing shared demo Multiple users may try this demo simultaneously":{
+    "424":"Paylaşılan demoyu görüntülüyorsunuz Birden fazla kullanıcı bu demoyu aynı anda deneyebilir"
+},
+"Try custom demo as per your configurations":{
+    "425":"Yapılandırmalarınıza göre özel demoyu deneyin"
+},
+"Infinite MLM Blog":{
+    "426":"Sonsuz MLM Blogu"
+}
+}

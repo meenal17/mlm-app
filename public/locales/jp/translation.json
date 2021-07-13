@@ -1,5 +1,972 @@
 {
     "dashboard":{
         "1":"ダッシュボード"
-    }
-    }
+    },
+    "EwalletBalance":{
+        "2":"Ewalletバランス"
+    },
+    "Income":{
+        "3":"所得"
+    },
+    "Bonus":{
+        "4":"ボーナス"
+    },
+    "Pending":{
+        "5":"保留中"
+    },
+    "IncomeVScommssion":{
+        "6":"収入VSコミッション"
+    },
+    "payoutoverview":{
+        "7":"支払いの概要"
+    },
+    "totaljoinigs":{
+        "8":"総参加者数"
+    },
+    "NewMembers":{
+        "9":"新メンバー"
+    },
+    "promotiontool":{
+        "10":"プロモーションツール"
+    },
+    "ReplicaLink":{
+        "11":"レプリカリンク"
+    },
+    "LeadCapture":{
+        "12":"リードキャプチャ"
+    },
+    "search":{
+        "13":" 探す"
+    },
+    "Incomeandcommssion":{
+        "14":" 収入とコミッション"
+    },
+    "network":{
+        "15":"通信網"
+    },
+    "GenealogyTree":{
+        "16":"系図ツリー"
+    },
+    "SponsorTree":{
+        "17":"スポンサーツリー"
+    },
+    "TreeView":{
+        "18":"ツリー表示"
+    },
+    "DownLineMembers":{
+        "19":"ダウンラインメンバー"
+    },
+    "RefferralMembers":{
+        "20":"参照メンバー"
+    },
+    "signup":{
+        "21":"サインアップ"
+    },
+    "register":{
+        "22":"登録"
+    },
+    "Approval":{
+        "23":"承認"
+    },
+    "bulk register":{
+        "24":"一括登録"
+    },
+    "Bussiness":{
+        "25":"忙しさ"
+    },
+    "Ewallet":{
+        "26":" Ewallet"
+    },
+    "PayOut":{
+        "27":"ペイアウト"
+    },
+    "Epin":{
+        "28":"Eピン"
+    },
+    "Profile Managment":{
+        "29":"プロファイル管理"
+    },
+    "profileview":{
+        "30":"縦断ビュー "
+    },
+    "memberlist":{
+        "31":"メンバーリスト"
+    }, 
+    "KYC detail":{
+"32":"KYCの詳細"
+    },
+    "package":{
+        "33":"パッケージ"
+    },
+    "membership":{
+        "34":"メンバーシップ"
+    },"Repurchase/Cart":{
+        "35":"買戻し/カート"
+    },
+    "Shopping Cart":{
+        "36":"ショッピングカート"
+    } ,
+    "checkout":{
+        "37":"チェックアウト"
+    },
+    "approval":{
+        "38":"承認"
+    },
+"Reports":{
+    "39":"レポート"
+},
+"profile":{
+    "40":"プロフィール"
+},
+"checkout":
+{"41": "チェックアウト"},
+"Joining":{
+    "42":"接合"
+},
+"Commission":{
+    "43":" 手数料"
+},
+"totalBonus":{
+    "44":"トータルボーナス"
+},
+"total earning":{
+    "45":"総収益"
+},
+"payoutrelease":{
+    "46":"ペイアウトリリース"
+},
+"rankperformance":{
+    "47":"ランクパフォーマンス"
+},
+"rankarchive":{
+    "48":"ランクアーカイブ"
+},
+"epin transfer":{
+    "49":"エピン転送"
+},
+"packageupgrated":{
+    "50":"パッケージのアップグレード "
+},
+"mail":{
+    "51":"郵便物"
+},
+"Privileged User":{
+    "52":"特権ユーザー"
+},
+"logout":{
+    "53":"ログアウト"
+},
+"GenologyTree":{
+    "54":"系図ツリー"
+},
+"sponsortree":{
+    "55":"スポンサーツリー"
+},
+"tree":{
+    "56":"木"
+},
+"rest":{
+    "57":"リセット"
+},
+"binarryaddon":{
+    "58":" Binarryaddon"
+},
+"Action":{
+"59":"アクション"
+},
+"Another action":{
+    "60":"別のアクション"
+},
+"Something else here":{
+    "61":"ここに何か他のもの"
+},
+"DownloadMember":{
+    "62":"メンバーをダウンロード"
+},
+"Total DownLine Members":{
+    "63":"ダウンラインメンバーの合計"
+},
+"Total Levels":{
+    "64":"合計レベル"
+},
+"username":{
+    "65":"ユーザー名"
+},
+"levels":{
+"66":"レベル"
+},
+"reset":{
+    "67":"リセット"
+},
+"member name":{
+    "68":"メンバー名"
+},
+"placement":{
+    "69":"配置"
+},
+"sponsor":{
+    "70":"スポンサー"
+},
+"level":{
+    "71":"レベル"
+},
+"icon":{
+    "72":"アイコン"
+},
+"Refferal Member":{
+    "73":"紹介会員"
+},
+"Memeber Name":{
+    "74":"メンバー名"
+},
+"Sponsor":{
+    "75":"スポンサー"
+},
+"Joining Date":{
+    "76":"入会日"
+},
+"Refferal Member":{
+    "77":"紹介会員"
+},
+"Sponsor And Package Information":{
+    "78":"スポンサーとパッケージ情報"
+},
+" Sponser Username":{
+    "79":"スポンサーユーザー名"
+},
+"Sponser fullname":{
+    "80":"スポンサーのフルネーム"
+},
+"Product":{
+    "81":"製品"
+},
+"Next":{
+    "82":"次"
+},
+"Bulk Register":{
+    "83":"一括登録"
+},
+"Select File":{
+    "84":"ファイルを選択"
+},
+"Register":{
+    "85":"登録"
+},
+"Download sample file":{
+    "86":"サンプルファイルをダウンロードする"
+},
+"Approval Member":{
+    "87":"承認メンバー"
+},
+"Total Amount":{
+    "88":"合計金額"
+},
+"Payment Method":{
+    "89":"支払方法"
+},
+"Approve":{
+    "90":"承認する"
+},
+"reject":{
+    "91":"拒否する"
+},
+"Bussiness":{
+    "92":"忙しさ"
+},
+"Bussiness Summary":{
+    "93":"業務概要"
+},
+"Category":{
+    "94":"カテゴリー"
+},
+"Amount":{
+    "95":"量"
+},
+"Transaction Date":{
+    "96":"取引日"
+},
+"Showing 1 to 10 of 1,881 entries":{
+    "97":"1,881エントリのうち1から10を表示"
+},
+"Row Pages":{
+    "98":"行ページ"
+},
+"Previous":{
+    "99":"前"
+},
+"Next":{
+    "100":"次"
+},
+"Bussiness Transactions":{
+    "101":"商取引"
+},
+"Ewallet Summary":{
+    "102":"Ewalletの概要"
+},
+"Ewallet Transactions":{
+    "103":"Ewalletトランザクション"
+},
+"Ewallet Balance":{
+    "104":"Ewalletバランス"
+},
+"Ewallet Statment":{
+    "105":"Ewalletステートメント"
+},
+"Purchase Wallet":{
+    "106":"ウォレットを購入する"
+},
+"User Earning":{
+    "107":"ユーザーの収益"
+},
+"Credit":{
+    "108":"クレジット"
+},
+"Registation Fee":{
+    "109":"登録料"
+},
+"Package Amount":{
+    "110":"パッケージ金額"
+},
+"Purchase Amount":{
+    "111":"購入金額"
+},
+" Debit":{
+    "112":"デビット"
+},
+"onmodule":{
+    "113":"注：これはアドオンモジュールです"
+},
+"Desciption":{
+    "114":"記述"
+},
+"Balance":{
+    "115":"残高"
+},
+"Transection Date":{
+    "116":"切断日"
+},
+"Refferral Commission":{
+    "117":"参照委員会"
+},
+"Rank Commission":{
+    "118":"ランク委員会"
+},
+"Level Commission":{
+    "119":"レベル委員会"
+},
+"Binary Commission":{
+    "120":"バイナリコミッション"
+},
+"Matching Bonus":{
+    "121":"マッチングボーナス"
+} ,
+"Pool Bonus" :{
+"122":"プールボーナス"
+},
+"Fast Start Bonus":{
+    "123":"ファストスタートボーナス"                                                      
+},
+"Vacation Bonus":{
+    "124":"休暇ボーナス"
+},
+"Education Fund":{
+    "125":"教育基金"
+},
+"Car Fund":{
+    "126":"自動車ファンド"
+},
+"House Fund":{
+    "127":"ハウスファンド"
+},
+"Username":{
+    "128":"ユーザー名"
+},
+"Type":{
+    "129":"タイプ"
+},
+"PayOut":{
+    "130":"ペイアウト"
+},
+"PayOut Summary":{
+    "131":"支払いの概要"
+},
+"PayOut Release":{
+    "132":"ペイアウトリリース"
+},
+"Prosess Payment":{
+    "133":"支払いを処理します"
+},
+"user":{
+    "134":"ユーザー"
+},
+"Name":{
+    "135":"名前"
+},
+"Invoice":{
+    "136":"請求書"
+},
+"PayOut Method":{
+    "137":"支払い方法"
+},
+"Paid Date":{
+    "138":"支払日"
+},
+"Bank Transfer":{
+    "139":"銀行振込"
+},
+"Block Chain":{
+    "140":"ブロックチェーン"
+},
+"Paypal":{
+    "141":"ペイパル"
+},
+"Bitgo":{
+    "142":"Bitgo"
+},
+"Manual User":{
+    "143":"手動ユーザー"
+},
+"Request":{
+    "144":"リクエスト"
+},
+"KYC verified":{
+    "145":"KYC検証済み"
+},
+"KYCnotverified":{
+    "146":"KYCは検証されていません"
+},
+"PayOut Amount":{
+"147":"支払い額"
+},
+"member_name":{
+    "148":"メンバー名"
+},
+"payoutType":{
+    "149":"支払いタイプ"
+},
+"Payout_Method":{
+    "150":"支払い方法"
+},
+"Approved Date":{
+    "151":"承認日"
+},
+"ActiveEpin":{
+    "152":"アクティブEピン"
+},
+"Epin":{
+    "153":"E-pin"
+},
+"PayoutReleasedReport":{
+    "154":"ペイアウトリリースレポート"
+},
+"EpinList":{
+    "155":"Eピンリスト"
+},
+"PendingRequest":{
+    "156":" 保留中の要求"
+},
+"Id":{
+"157":"Id"
+},
+"Alocate Member":{
+    "158":"メンバーを割り当てる"
+},
+"BalanceAmount":{
+    "159":"残高"
+},
+"Status":{
+    "160":"状態"
+},
+"ExpireDate":{
+    "170":"有効期限"
+},
+"PinCount":{
+    "171":"ピン数"
+},
+"Count":{
+    "172":"カウント"
+},
+"Requestdate":{
+    "173":"リクエスト日"
+},
+"Active":{
+    "174":"アクティブ"
+},
+"Blocked":{
+    "175":"ブロックされた"
+},
+"Used/Expired":{
+    "176":"使用済み/期限切れ"
+},
+"Deleted":{
+    "177":"削除されました"
+},
+"Paid":{
+    "178":"有料"
+},
+"PersonalDetails":{
+    "179":"個人情報"
+},
+"FirstName":{
+    "180":"ファーストネーム"
+},
+"LastName":{
+    "181":"苗字"
+},
+"Gender":{
+    "182":"性別"
+},
+"Male":{
+    "183":"男性"
+},
+"Female":{
+    "184":"女性"
+},
+"other":{
+    "185":"その他"
+},
+"DOB":{
+    "186":"生年月日"
+},
+"Update":{
+    "187":"更新"
+},
+"Cancel":{
+    "189":"キャンセル"
+},
+"ContactDetails":{
+    "190":"連絡先の詳細"
+},
+"AddressLine1":{
+    "191":"住所1"
+},
+"AddressLine2":{
+    "192":"住所2"
+},
+"countries":{
+    "193":"国"
+},
+"City":{
+    "194":"市"
+},
+"ZipCode":{
+    "195":"郵便番号"
+},
+"Email":{
+    "196":"Eメール"
+},
+"Mobilenumber":{
+    "197":"携帯電話番号"
+},
+"LandlineNumber":{
+    "198":"固定電話番号"
+},
+"BankDetails":{
+    "199":"銀行の詳細"
+},
+"BankName":{
+    "200":"銀行名"
+},
+"BranchName":{
+    "201":"支店名"
+},
+"AccountHolder":{
+    "202":"口座名義人"
+},
+"AccountNumber":{
+    "203":"口座番号"
+},
+"IfscCode":{
+    "204":"Ifscコード"
+},
+"PAN":{
+    "205":"PAN"
+},
+"PaypalAccount":{
+    "206":"PayPalアカウント"
+},
+"PaymentDetails":{
+    "207":"支払詳細"
+},
+"Settings":{
+    "208":"設定"
+},
+"Language":{
+    "209":"言語"
+},
+"currency":{
+    "300":"通貨"
+},
+"ProfileView":{
+    "301":"縦断ビュー"
+},
+"Change Password":{
+    "302":"パスワードを変更する"
+},
+"currentPassword":{
+    "303":"現在のパスワード"
+},
+"NewPassword":{
+    "304":"新しいパスワード"
+},
+"ConfirmPassword":{
+    "305":"パスワードを認証する"
+},
+"Membershippackge":{
+    "306":"メンバーシップパッケージ"
+},
+"Rank":{
+    "309":"ランク"
+},
+"xyz":{
+    "310":"xyz"
+},
+"PersonalPV":{
+    "307":"パーソナルPV"
+},
+"GroupPV":{
+    "308":"グループPV"
+},
+"LeftCarry":{
+    "311":"左キャリー"
+},
+"RightCarry":{
+    "312":"右キャリー"
+},
+"Change Transacttion Password":{
+    "313":"取引パスワードの変更"
+},
+"Close":{
+    "314":"閉じる"
+},
+"TotalJoinings":{
+    "315":"総参加数"
+},
+"newJoinigs":{
+    "316":"新しいJoinigs"
+},
+"PendingUpgrades":{
+    "317":"保留中のアップグレード"
+},
+"Mobile":{
+    "318":"モバイル"
+},
+"KYC Details":{
+    "319":"KYCの詳細"
+},
+"Back":{
+    "320":"バック"
+},
+"SelectCategory":{
+    "321":"カテゴリを選んでください"
+},
+"Rejected":{
+    "322":"拒否されました"
+},
+"Approved":{
+    "323":"拒否されました"
+},
+"UserSelecter":{
+    "324":"ユーザーセレクター"
+},
+"Manage KYC configuration?":{
+    "325":"KYC構成を管理しますか？"
+},
+ "pv":{
+    "326":"PV"
+},
+"NewPackage":{
+    "327":"新しいパッケージ"
+},
+"AddPurchasePackage":{
+    "328":"購入パッケージの追加"
+},
+"AdvancedConfigration":{
+    "329":"高度な構成"
+},
+"ManagePackage":{
+    "330":"パッケージの管理"
+},
+"ManageCategory":{
+    "331":"カテゴリの管理"
+},
+"UpdateMembershipPackage":{
+    "332":"メンバーシップパッケージを更新する"
+},
+"EditRepurchaseCategory":{
+    "333":"買戻しカテゴリの編集"
+},
+"Change":{
+    "334":"変化する"
+},
+"CategoryName":{
+    "335":"種別名"
+},
+"PackageName":{
+    "336":"パッケージ名"
+},
+"Productimage":{
+    "337":"商品画像"
+},
+"UpdatePurchasePackage":{
+    "338":"購入パッケージの更新"
+},
+"Savechanges":{
+    "339":"変更内容を保存"
+},
+"AddMembershipPackage":{
+    "340":"メンバーシップパッケージを追加する"
+},
+"InvoiceNo":{
+    "341":"請求書番号"
+},
+"TotalAmount":{
+    "342":"合計金額"
+},
+"PaymentMethod":{
+    "343":"支払方法"
+},
+"OrderDetail":{
+    "345":"注文詳細"
+},
+"CheckoutSteps":{
+    "346":"チェックアウト手順"
+},
+"ShoppingCart":{
+    "347":"ショッピングカート"
+},
+"PurchasePack":{
+"348":"購入パック」"    
+},
+"Product Id":{
+    "349":"製品番号"
+},
+"cart":{
+    "350":"カート"
+},
+"Price":{
+"351":"価格"
+},
+"Total":{
+    "352":"合計"
+},
+"TotalPV":{
+    "353":"合計 PV"
+},
+"UpdateCart":{
+    "354":"カートの更新"
+},
+"Item":{
+    "355":"項目"
+},
+"Quantity":{
+    "356":"量"
+},"Purchase":{
+    "357":"購入"
+},
+"Remove":{
+    "358":"削除する"
+},
+"SubTotal":{
+    "359":"小計"
+},
+"AddtoCart":{
+    "360":"カートに追加"
+},
+"MoreDetails":{
+    "361":"詳細"
+},
+"Activate/Deactivate Report":{
+    "362":"レポートのアクティブ化/非アクティブ化"
+},
+"Exampleselect":{
+    "363":"例選択"
+},
+"Overall":{
+    "364":"全体"
+},
+"Month":{
+    "365":"月"
+},
+"Year":{
+    "366":"年"
+},
+"Today":{
+    "367":"今日"
+},
+"Custom":{
+    "368":"カスタム"
+},
+"Submit":{
+    "369":"参加する"
+},
+"Createexcel":{
+    "370":"エクセルを作成する"
+},
+"CreateCSV":{
+    "371":"CSVを作成する"
+},
+"Date":{
+    "372":"日付"
+},
+"Deactivated":{
+    "373":"非アクティブ化"
+},
+"TotalAmont":{
+    "374":"合計金額"
+},
+"Tax":{
+    "375":"税金"
+},
+"ServiceCharge":{
+    "376":"サービス料"
+},
+"PaymentPayable":{
+    "377":"支払い"
+},
+"UserCommissionJoinig":{
+    "378":"ユーザーコミッションJoinig"
+},
+"Date Range":{
+    "379":"日付範囲"
+},
+"FromUser":{
+    "380":"ユーザーから"
+},
+"ToUser":{
+    "381":"ユーザーへ"
+},
+"TransferDate":{
+    "382":"転送日"
+},
+"RegistrationFee":{
+   "383":"登録料"
+},
+"enrollmentdate":{
+    "384":"登録日"
+},
+"UserJoinig":{
+    "385":"ユーザー参加"
+},
+"Phone":{
+    "386":"電話"
+},
+"Old Package":{
+    "387":"古いパッケージ"
+},
+"Upgratedpackage":{
+    "388":"アップグレードされたパッケージ"
+},
+"UpgradedPackage":{
+    "389":"アップグレードされたパッケージ"
+},
+"UpgradedDate":{
+    "390":"アップグレード日"
+},
+"EpinTransferReport":{
+    "391":"Epin Transfer Report"
+},
+"Released":{
+    "392":"リリース済み"
+},
+"ProfileReports":{
+"393":"プロフィールレポート"
+},
+"View":{
+    "394":"見る"
+},
+"EnterCount":{
+    "395":"カウントを入力してください"
+},
+"EnterCountstartfrom":{
+    "396":"カウント開始から入力"
+},
+"RankArchiveDate":{
+    "397":"ランクアーカイブ日"
+},
+"RankPerformanceReport":{
+    "398":"ランクパフォーマンスレポート"
+},
+"Epin Transfer Report":{
+    "399":"Eピン転送レポート"
+},
+"TotalEarning":{
+    "400":"総収益"
+},
+"CompanyName":{
+    "401":"会社名"
+},
+"Companyaddress":{
+    "402":"会社の住所"
+},
+"Compose":{
+    "403":"作曲"
+},
+"Inbox":{
+    "404":"受信トレイ"
+},
+"Send":{
+    "405":"送信"
+},
+"SingleUser":{
+    "406":"シングルユーザー"
+},
+"AllUser":{
+    "407":"すべてのユーザー"
+},
+"MainContent":{
+    "408":" メインコンテンツ"
+},
+"SendMessages":{
+    "409":"メッセージを送る"
+},
+"Mail Box":{
+    "410":"メールボックス"
+},
+"Email":{"411":"Eメール"},
+"PrivilegedUser":{
+"412":"特権ユーザー"
+},
+"AddNew":{
+    "413":"新しく追加する"
+},
+"UserList":{
+    "414":"ユーザーリスト"
+},
+"UserActivity":{
+    "415":"ユーザーアクティビティ"
+},
+"Password":{
+    "416":"パスワード"
+},
+"SignOut":{
+    "417":"サインアウト"
+},
+"Forgotpassword?":{
+    "418":"パスワードをお忘れですか？"
+},
+"Welcome back!":{
+    "419":"お帰りなさい！"
+},
+"Please sign in to continue!":{
+    "420":"続行するにはサインインしてください！"
+},
+"SignIn":{
+    "421":"サインイン"
+},
+"Don't have an account?":{
+    "422":"アカウントをお持ちではありませんか？"
+},
+"Create an Account":{
+    "423":"アカウントを作成する"
+},
+"You are viewing shared demo Multiple users may try this demo simultaneously":{
+    "424":"共有デモを表示しています複数のユーザーがこのデモを同時に試すことができます"
+},
+"Try custom demo as per your configurations":{
+    "425":"構成に従ってカスタムデモを試す"
+},
+"Infinite MLM Blog":{
+    "426":"無限のマルチ商法ブログ"
+}
+}

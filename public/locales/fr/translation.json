@@ -1,5 +1,973 @@
 {
     "dashboard":{
-        "1":"où nous utilisons"
-    }
+        "1":"tableau de bord"
+    },
+    "EwalletBalance":{
+        "2":"Solde du portefeuille électronique"
+    },
+    "Income":{
+        "3":"Revenu"
+    },
+    "Bonus":{
+        "4":"Prime"
+    },
+    "Pending":{
+        "5":"En attente"
+    },
+    "IncomeVScommssion":{
+        "6":"RevenuVSCommssion"
+    },
+    "payoutoverview":{
+        "7":"aperçu des paiements"
+    },
+    "totaljoinigs":{
+        "8":"total des adhésions"
+    },
+    "NewMembers":{
+        "9":"Nouveaux membres"
+    },
+    "promotiontool":{
+        "10":"Outil promotionnel"
+    },
+    "ReplicaLink":{
+        "11":"Lien de réplique"
+    },
+    "LeadCapture":{
+        "12":"Capture de plomb"
+    },
+    "search":{
+        "13":"Rechercher"
+    },
+    "Incomeandcommssion":{
+        "14":"Revenus et commissions"
+    },
+    "network":{
+        "15":"Réseau"
+    },
+    "GenealogyTree":{
+        "16":"Généalogie Arbre"
+    },
+    "SponsorTree":{
+        "17":"Arbre de parrainage"
+    },
+    "TreeView":{
+        "18":"Vue arborescente"
+    },
+    "DownLineMembers":{
+        "19":"Membres descendants"
+    },
+    "RefferralMembers":{
+        "20":"Membres référents"
+    },
+    "signup":{
+        "21":"s'inscrire"
+    },
+    "register":{
+        "22":"S'inscrire"
+    },
+    "Approval":{
+        "23":"Approbation"
+    },
+    "bulk register":{
+        "24":"Registre en vrac"
+    },
+    "Bussiness":{
+        "25":"Affaires"
+    },
+    "Ewallet":{
+        "26":" Portefeuille électronique"
+    },
+    "PayOut":{
+        "27":"Paiement"
+    },
+    "Epin":{
+        "28":"Épin"
+    },
+    "Profile Managment":{
+        "29":"Gestion de profil"
+    },
+    "profileview":{
+        "30":"vue de profil"
+    },
+    "memberlist":{
+        "31":"Liste des membres"
+    }, 
+    "KYC detail":{
+"32":"Détail KYC"
+    },
+    "package":{
+        "33":"Paquet"
+    },
+    "membership":{
+        "34":"Adhésion"
+    },"Repurchase/Cart":{
+        "35":"Rachat/Panier"
+    },
+    "Shopping Cart":{
+        "36":"Panier"
+    } ,
+    "checkout":{
+        "37":"vérifier"
+    },
+    "approval":{
+        "38":"Approbation"
+    },
+"Reports":{
+    "39":"Rapports"
+},
+"profile":{
+    "40":"Profil"
+},
+"checkout":
+{"41": "vérifier"},
+"Joining":{
+    "42":"Joindre"
+},
+"Commission":{
+    "43":"Commission"
+},
+"totalBonus":{
+    "44":"Prime totale"
+},
+"total earning":{
+    "45":"Gain total"
+},
+"payoutrelease":{
+    "46":"Libération de paiement"
+},
+"rankperformance":{
+    "47":"Classement des performances"
+},
+"rankarchive":{
+    "48":"archive de classement"
+},
+"epin transfer":{
+    "49":"Transfert d'essorage"
+},
+"packageupgrated":{
+    "50":"Package mis à jour "
+},
+"mail":{
+    "51":"Poster"
+},
+"Privileged User":{
+    "52":"Utilisateur privilégié"
+},
+"logout":{
+    "53":"Se déconnecter"
+},
+"GenologyTree":{
+    "54":"Arbre généalogique"
+},
+"sponsortree":{
+    "55":"Arbre de parrainage"
+},
+"tree":{
+    "56":"Arbre"
+},
+"rest":{
+    "57":"Réinitialiser"
+},
+"binarryaddon":{
+    "58":"Binarryaddon"
+},
+"Action":{
+"59":"Action"
+},
+"Another action":{
+    "60":"Une autre action"
+},
+"Something else here":{
+    "61":" Quelque chose d'autre ici "
+},
+"DownloadMember":{
+    "62":"Télécharger le membre"
+},
+"Total DownLine Members":{
+    "63":"Total des membres descendants"
+},
+"Total Levels":{
+    "64":"Niveaux totaux"
+},
+"username":{
+    "65":"Nom d'utilisateur"
+},
+"levels":{
+"66":"Les niveaux"
+},
+"reset":{
+    "67":"Réinitialiser"
+},
+"member name":{
+    "68":"Nom de membre"
+},
+"placement":{
+    "69":"Placement"
+},
+"sponsor":{
+    "70":"Parrainer"
+},
+"level":{
+    "71":"Niveau"
+},
+"icon":{
+    "72":"Icône"
+},
+"Refferal Member":{
+    "73":"Membre référent"
+},
+"Memeber Name":{
+    "74":"Nom de membre"
+},
+"Sponsor":{
+    "75":"Parrainer"
+},
+"Joining Date":{
+    "76":"Date d'inscription"
+},
+"Refferal Member":{
+    "77":"Membre référent"
+},
+"Sponsor And Package Information":{
+    "78":"Informations sur le commanditaire et le forfait"
+},
+" Sponser Username":{
+    "79":"Nom d'utilisateur du commanditaire"
+},
+"Sponser fullname":{
+    "80":"Nom complet du sponsor"
+},
+"Product":{
+    "81":"Produit"
+},
+"Next":{
+    "82":"Suivant"
+},
+"Bulk Register":{
+    "83":"Enregistrement en masse"
+},
+"Select File":{
+    "84":"Choisir le dossier"
+},
+"Register":{
+    "85":"S'inscrire"
+},
+"Download sample file":{
+    "86":"Télécharger un exemple de fichier"
+},
+"Approval Member":{
+    "87":"Membre d'approbation"
+},
+"Total Amount":{
+    "88":"Montant total"
+},
+"Payment Method":{
+    "89":"Mode de paiement"
+},
+"Approve":{
+    "90":"Approuver"
+},
+"reject":{
+    "91":"Rejeter"
+},
+"Bussiness":{
+    "92":"Affaires"
+},
+"Bussiness Summary":{
+    "93":"Résumé de l'entreprise"
+},
+"Category":{
+    "94":"Catégorie"
+},
+"Amount":{
+    "95":"Montant"
+},
+"Transaction Date":{
+    "96":"Date de la transaction"
+},
+"Showing 1 to 10 of 1,881 entries":{
+    "97":"Affichage de 1 à 10 sur 1 881 entrées"
+},
+"Row Pages":{
+    "98":"Pages de lignes"
+},
+"Previous":{
+    "99":"Précédent"
+},
+"Next":{
+    "100":"Suivant"
+},
+"Bussiness Transactions":{
+    "101":"Transactions commerciales"
+},
+"Ewallet Summary":{
+    "102":"Résumé du portefeuille électronique"
+},
+"Ewallet Transactions":{
+    "103":"Transactions de portefeuille électronique"
+},
+"Ewallet Balance":{
+    "104":"Solde du portefeuille électronique"
+},
+"Ewallet Statment":{
+    "105":"Déclaration de portefeuille électronique"
+},
+"Purchase Wallet":{
+    "106":"Acheter un portefeuille"
+},
+"User Earning":{
+    "107":"Gain de l'utilisateur"
+},
+"Credit":{
+    "108":"Crédit"
+},
+"Registation Fee":{
+    "109":"Frais d'inscription"
+},
+"Package Amount":{
+    "110":"Montant du forfait"
+},
+"Purchase Amount":{
+    "111":"Montant des achats"
+},
+" Debit":{
+    "112":"Débit"
+},
+"onmodule":{
+    "113":"Remarque : il s'agit d'un module complémentaire"
+},
+"Desciption":{
+    "114":"Description"
+},
+"Balance":{
+    "115":"Équilibre"
+},
+"Transection Date":{
+    "116":"Date de retranchement"
+},
+"Refferral Commission":{
+    "117":"Commission de référence"
+},
+"Rank Commission":{
+    "118":"Rang Commission"
+},
+"Level Commission":{
+    "119":"Commission de niveau"
+},
+"Binary Commission":{
+    "120":"Commission binaire"
+},
+"Matching Bonus":{
+    "121":"Bonus correspondant"
+} ,
+"Pool Bonus" :{
+"122":"Bonus de piscine"
+},
+"Fast Start Bonus":{
+    "123":"Bonus de démarrage rapide"                                                      
+},
+"Vacation Bonus":{
+    "124":"Prime de vacances"
+},
+"Education Fund":{
+    "125":"Fonds d'éducation"
+},
+"Car Fund":{
+    "126":"Fonds automobile"
+},
+"House Fund":{
+    "127":"Fonds de la maison"
+},
+"Username":{
+    "128":"Nom d'utilisateur"
+},
+"Type":{
+    "129":"Taper"
+},
+"PayOut":{
+    "130":"Paiement"
+},
+"PayOut Summary":{
+    "131":"Résumé des paiements"
+},
+"PayOut Release":{
+    "132":"Libération de paiement"
+},
+"Prosess Payment":{
+    "133":"Processus de paiement"
+},
+"user":{
+    "134":"Utilisateur"
+},
+"Name":{
+    "135":"Nom"
+},
+"Invoice":{
+    "136":"Facturer"
+},
+"PayOut Method":{
+    "137":"Méthode de paiement"
+},
+"Paid Date":{
+    "138":"La date de paiement"
+},
+"Bank Transfer":{
+    "139":"Virement"
+},
+"Block Chain":{
+    "140":"Chaîne de blocs"
+},
+"Paypal":{
+    "141":"Pay Pal"
+},
+"Bitgo":{
+    "142":"Bitgo"
+},
+"Manual User":{
+    "143":"Utilisateur manuel"
+},
+"Request":{
+    "144":"Demander"
+},
+"KYC verified":{
+    "145":"KYC vérifié"
+},
+"KYCnotverified":{
+    "146":"KYC non vérifié"
+},
+"PayOut Amount":{
+"147":"Montant du paiement"
+},
+"member_name":{
+    "148":"Nom de membre"
+},
+"payoutType":{
+    "149":"Type de paiement"
+},
+"Payout_Method":{
+    "150":"Méthode de paiement"
+},
+"Approved Date":{
+    "151":"Date confirmée"
+},
+"ActiveEpin":{
+    "152":"E-pin actif"
+},
+"Epin":{
+    "153":"E-pin"
+},
+"PayoutReleasedReport":{
+    "154":"Rapport de paiement publié"
+},
+"EpinList":{
+    "155":"Liste des broches électroniques"
+},
+"PendingRequest":{
+    "156":"Demande en attente"
+},
+"Id":{
+"157":"Identifiant"
+},
+"Alocate Member":{
+    "158":"Affecter un membre"
+},
+"BalanceAmount":{
+    "159":"Montant du solde"
+},
+"Status":{
+    "160":"Statut"
+},
+"ExpireDate":{
+    "170":"Date d'expiration"
+},
+"PinCount":{
+    "171":"Nombre de broches"
+},
+"Count":{
+    "172":"Compter"
+},
+"Requestdate":{
+    "173":"Date de la demande"
+},
+"Active":{
+    "174":"Actif"
+},
+"Blocked":{
+    "175":"Bloqué"
+},
+"Used/Expired":{
+    "176":"Utilisé/Expiré"
+},
+"Deleted":{
+    "177":"Supprimé"
+},
+"Paid":{
+    "178":"Payé"
+},
+"PersonalDetails":{
+    "179":"Détails personnels"
+},
+"FirstName":{
+    "180":"Prénom"
+},
+"LastName":{
+    "181":"Nom de famille"
+},
+"Gender":{
+    "182":"Genre"
+},
+"Male":{
+    "183":"Mâle"
+},
+"Female":{
+    "184":"Femelle"
+},
+"other":{
+    "185":"autre"
+},
+"DOB":{
+    "186":"Date de naissance"
+},
+"Update":{
+    "187":"Mettre à jour"
+},
+"Cancel":{
+    "189":"Annuler"
+},
+"ContactDetails":{
+    "190":"Détails du contact"
+},
+"AddressLine1":{
+    "191":"Adresse 1"
+},
+"AddressLine2":{
+    "192":"Adresse 2"
+},
+"countries":{
+    "193":"Des pays"
+},
+"City":{
+    "194":"Ville"
+},
+"ZipCode":{
+    "195":"Code postal"
+},
+"Email":{
+    "196":"E-mail"
+},
+"Mobilenumber":{
+    "197":"Numéro de portable"
+},
+"LandlineNumber":{
+    "198":"Numéro de téléphone fixe"
+},
+"BankDetails":{
+    "199":"Coordonnées bancaires"
+},
+"BankName":{
+    "200":"Nom de banque"
+},
+"BranchName":{
+    "201":"Nom de la filiale"
+},
+"AccountHolder":{
+    "202":"Titulaire de compte"
+},
+"AccountNumber":{
+    "203":"Numéro de compte"
+},
+"IfscCode":{
+    "204":"Code Ifsc"
+},
+"PAN":{
+    "205":"POÊLE"
+},
+"PaypalAccount":{
+    "206":"Compte Paypal"
+},
+"PaymentDetails":{
+    "207":"Détails de paiement"
+},
+"Settings":{
+    "208":"Paramètres"
+},
+"Language":{
+    "209":"Langue"
+},
+"currency":{
+    "300":"Devise"
+},
+"ProfileView":{
+    "301":"Vue de profil"
+},
+"Change Password":{
+    "302":"Changer le mot de passe"
+},
+"currentPassword":{
+    "303":"Mot de passe actuel"
+},
+"NewPassword":{
+    "304":"nouveau mot de passe"
+},
+"ConfirmPassword":{
+    "305":"Confirmez le mot de passe"
+},
+"Membershippackge":{
+    "306":"Pack d'adhésion"
+},
+"Rank":{
+    "309":"Rang"
+},
+"xyz":{
+    "310":"xyz"
+},
+"PersonalPV":{
+    "307":"PV personnel"
+},
+"GroupPV":{
+    "308":"GroupePV"
+},
+"LeftCarry":{
+    "311":"Porter à gauche"
+},
+"RightCarry":{
+    "312":"Porter à droite"
+},
+"Change Transacttion Password":{
+    "313":"Changer le mot de passe de transaction"
+},
+"Close":{
+    "314":"Fermer"
+},
+"TotalJoinings":{
+    "315":"Nombre total de jointures"
+},
+"newJoinigs":{
+    "316":"Nouvelles adhésions"
+},
+"PendingUpgrades":{
+    "317":"Mises à niveau en attente"
+},
+"Mobile":{
+    "318":"Mobile"
+},
+"KYC Details":{
+    "319":"Détails du KYC"
+},
+"Back":{
+    "320":"Dos"
+},
+"SelectCategory":{
+    "321":"Choisir une catégorie"
+},
+"Rejected":{
+    "322":"Rejeté"
+},
+"Approved":{
+    "323":"Approuvé"
+},
+"UserSelecter":{
+    "324":"Sélecteur d'utilisateur"
+},
+"Manage KYC configuration?":{
+    "325":"Gérer la configuration KYC ?"
+},
+ "pv":{
+    "326":"PV"
+},
+"NewPackage":{
+    "327":"Nouveau forfait"
+},
+"AddPurchasePackage":{
+    "328":"Ajouter un forfait d'achat"
+},
+"AdvancedConfigration":{
+    "329":"Configuration avancée"
+},
+"ManagePackage":{
+    "330":"Gérer le paquet"
+},
+"ManageCategory":{
+    "331":"Gérer la catégorie"
+},
+"UpdateMembershipPackage":{
+    "332":"Mettre à jour le forfait d'adhésion"
+},
+"EditRepurchaseCategory":{
+    "333":"Modifier la catégorie de rachat"
+},
+"Change":{
+    "334":"Changer"
+},
+"CategoryName":{
+    "335":"Nom de catégorie"
+},
+"PackageName":{
+    "336":"Nom du paquet"
+},
+"Productimage":{
+    "337":"Image du produit"
+},
+"UpdatePurchasePackage":{
+    "338":"Mettre à jour le forfait d'achat"
+},
+"Savechanges":{
+    "339":"Sauvegarder les modifications"
+},
+"AddMembershipPackage":{
+    "340":"Ajouter un forfait d'adhésion"
+},
+"InvoiceNo":{
+    "341":"N° de facture"
+},
+"TotalAmount":{
+    "342":"Montant total"
+},
+"PaymentMethod":{
+    "343":"Mode de paiement"
+},
+"OrderDetail":{
+    "345":"Détails de la commande"
+},
+"CheckoutSteps":{
+    "346":"Étapes de paiement"
+},
+"ShoppingCart":{
+    "347":"Panier"
+},
+"PurchasePack":{
+"348":"Pack d'achat"    
+},
+"Product Id":{
+    "349":"Identifiant du produit"
+},
+"cart":{
+    "350":"Chariot"
+},
+"Price":{
+"351":"Prix"
+},
+"Total":{
+    "352":"Le total"
+},
+"TotalPV":{
+    "353":"PV totale"
+},
+"UpdateCart":{
+    "354":"Mise à jour panier"
+},
+"Item":{
+    "355":"Article"
+},
+"Quantity":{
+    "356":"Quantité"
+},"Purchase":{
+    "357":"Acheter"
+},
+"Remove":{
+    "358":"Supprimer"
+},
+"SubTotal":{
+    "359":"Sous-total"
+},
+"AddtoCart":{
+    "360":"Ajouter au chariot"
+},
+"MoreDetails":{
+    "361":"Plus de détails"
+},
+"Activate/Deactivate Report":{
+    "362":"Activer/Désactiver le rapport"
+},
+"Exampleselect":{
+    "363":"Exemple Sélectionner"
+},
+"Overall":{
+    "364":"Globalement"
+},
+"Month":{
+    "365":"Mois"
+},
+"Year":{
+    "366":"An"
+},
+"Today":{
+    "367":"Aujourd'hui"
+},
+"Custom":{
+    "368":"Personnalisé"
+},
+"Submit":{
+    "369":"Soumettre"
+},
+"Createexcel":{
+    "370":"Créer excel"
+},
+"CreateCSV":{
+    "371":"Créer CSV"
+},
+"Date":{
+    "372":"Date"
+},
+"Deactivated":{
+    "373":"Désactivé"
+},
+"TotalAmont":{
+    "374":"Montant total"
+},
+"Tax":{
+    "375":"Impôt"
+},
+"ServiceCharge":{
+    "376":"Frais de service"
+},
+"PaymentPayable":{
+    "377":"Paiement à payer"
+},
+"UserCommissionJoinig":{
+    "378":"Commission d'utilisateur"
+},
+"Date Range":{
+    "379":"Plage de dates"
+},
+"FromUser":{
+    "380":"De l'utilisateur"
+},
+"ToUser":{
+    "381":"À l'utilisateur"
+},
+"TransferDate":{
+    "382":"Date de transfert"
+},
+"RegistrationFee":{
+   "383":"Frais d'inscription"
+},
+"enrollmentdate":{
+    "384":"Date de l'inscription"
+},
+"UserJoinig":{
+    "385":"Rejoindre l'utilisateur"
+},
+"Phone":{
+    "386":"Téléphoner"
+},
+"Old Package":{
+    "387":"Ancien Forfait"
+},
+"Upgratedpackage":{
+    "388":"Paquet mis à jour"
+},
+"UpgradedPackage":{
+    "389":"Forfait amélioré"
+},
+"UpgradedDate":{
+    "390":"Date de mise à niveau"
+},
+"EpinTransferReport":{
+    "391":"Rapport de transfert Epin"
+},
+"Released":{
+    "392":"Publié"
+},
+"ProfileReports":{
+"393":"Rapports de profil"
+},
+"View":{
+    "394":"Vue"
+},
+"EnterCount":{
+    "395":"Entrer le nombre"
+},
+"EnterCountstartfrom":{
+    "396":"Entrer compter à partir de"
+},
+"RankArchiveDate":{
+    "397":"Classement Date d'archivage"
+},
+"RankPerformanceReport":{
+    "398":"Rapport de performance de classement"
+},
+"Epin Transfer Report":{
+    "399":"Rapport de transfert E-pin"
+},
+"TotalEarning":{
+    "400":"Gain total"
+},
+"CompanyName":{
+    "401":"Nom de la compagnie"
+},
+"Companyaddress":{
+    "402":"Adresse de la société"
+},
+"Compose":{
+    "403":"Composer"
+},
+"Inbox":{
+    "404":"Boîte de réception"
+},
+"Send":{
+    "405":"Envoyer"
+},
+"SingleUser":{
+    "406":"Utilisateur unique"
+},
+"AllUser":{
+    "407":"Tous les utilisateurs"
+},
+"MainContent":{
+    "408":"Contenu principal"
+},
+"SendMessages":{
+    "409":"Envoyer des messages"
+},
+"Mail Box":{
+    "410":"Boites aux lettres"
+},
+"Email":{"411":"E-mail"},
+"PrivilegedUser":{
+"412":"Utilisateur privilégié"
+},
+"AddNew":{
+    "413":"Ajouter un nouveau"
+},
+"UserList":{
+    "414":"liste d'utilisateur"
+},
+"UserActivity":{
+    "415":"Activité de l'utilisateur"
+},
+"Password":{
+    "416":"Mot de passe"
+},
+"SignOut":{
+    "417":"Se déconnecter"
+},
+"Forgotpassword?":{
+    "418":"Mot de passe oublié?"
+},
+"Welcome back!":{
+    "419":"Welcome back!"
+},
+"Please sign in to continue!":{
+    "420":"Veuillez vous connecter pour continuer !"
+},
+"SignIn":{
+    "421":"S'identifier"
+},
+"Don't have an account?":{
+    "422":"Vous n'avez pas de compte ?"
+},
+"Create an Account":{
+    "423":"Créer un compte"
+},
+"You are viewing shared demo Multiple users may try this demo simultaneously":{
+    "424":"Vous visualisez une démo partagée Plusieurs utilisateurs peuvent essayer cette démo simultanément"
+},
+"Try custom demo as per your configurations":{
+    "425":"Essayez une démo personnalisée selon vos configurations"
+},
+"Infinite MLM Blog":{
+    "426":"Blog MLM infini"
+}
+    
     }

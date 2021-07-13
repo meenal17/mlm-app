@@ -111,7 +111,7 @@ function AmountinfoCard() {
                   </div>
                   <div className="text-wrapper ">
                     <h3 className="">€14.61K</h3>
-                    <span>{t("pending.5")}</span>
+                    <span>{t("Pending.5")}</span>
                   </div>
                 </div>
               </Card.Body>

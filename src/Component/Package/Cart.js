@@ -3,7 +3,9 @@ import {Link} from "react-router-dom";
 import AddPurchase from "./AddPurchase";
 import ManagePack from "./ManagePack";
 import ManageCategory from "./ManageCategory";
+import {useTranslation} from "react-i18next";
 const Cart = () => {
+  const {t, i18n} = useTranslation();
   return (
     <Link>
       <>
@@ -18,7 +20,7 @@ const Cart = () => {
             class="fa fa-exclamation-circle bell mr-2 "
             style={{color: "#ffad31", fontSize: 25 + "px"}}
           />
-          <span style={{color: "black"}}>Note</span> : This is an add-on module
+          {t("onmodule.113")}
         </h5>
         {/* tabs */}
         <div className="card mr-2 ml-2 ">
@@ -32,7 +34,7 @@ const Cart = () => {
                     role="tab"
                     data-toggle="tab"
                   >
-                    Manage Package
+                    {t("ManagePackage.330")}
                   </a>
                 </li>
                 <li class="nav-item">
@@ -42,7 +44,7 @@ const Cart = () => {
                     role="tab"
                     data-toggle="tab"
                   >
-                    Manage Category
+                    {t("ManageCategory.331")}
                   </a>
                 </li>
               </ul>

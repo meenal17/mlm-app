@@ -2,21 +2,22 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import CheckBox from "../Profile Mangement/CheckBox";
 import EditMemeber from "../Package/EditMemeber";
-
+import {useTranslation} from "react-i18next";
 const Approvalshopping = () => {
   const [checked, setchecked] = useState(false);
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/approval2">
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          Approval
+          {t("Approval.23")}
         </div>
         <h5 className="ml-4 mt-2" style={{color: "grey"}}>
           <i
             class="fa fa-exclamation-circle bell mr-2 "
             style={{color: "#ffad31", fontSize: 25 + "px"}}
           />
-          <span style={{color: "black"}}>Note</span> : This is an add-on module
+          <span style={{color: "black"}}>{t("onmodule.113")}</span>
         </h5>
         {/* Table */}
         <div>
@@ -32,10 +33,10 @@ const Approvalshopping = () => {
                   />
                 </div>
                 <div className=" ml-1">
-                  <div className="btn btn-purple">Search</div>
+                  <div className="btn btn-purple">{t("search.13")}</div>
                 </div>
                 <div className="col-md-1">
-                  <div className="btn btn-info">Reset</div>
+                  <div className="btn btn-info">{t("rest.57")}</div>
                 </div>
               </div>
             </div>
@@ -74,7 +75,7 @@ const Approvalshopping = () => {
                             color: "black",
                           }}
                         >
-                          Invoice No
+                          {t("InvoiceNo.341")}
                         </th>
                         <th
                           style={{
@@ -83,17 +84,7 @@ const Approvalshopping = () => {
                             fontWeight: "bold",
                           }}
                         >
-                          Members Name
-                        </th>
-                        <th
-                          style={{
-                            fontSize: 15 + "px",
-                            color: "black",
-                            fontWeight: "bold",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          Total Amount
+                          {t("member name.68")}
                         </th>
                         <th
                           style={{
@@ -103,7 +94,7 @@ const Approvalshopping = () => {
                             fontWeight: "bold",
                           }}
                         >
-                          Payment Method
+                          {t("TotalAmount.342")}
                         </th>
                         <th
                           style={{
@@ -113,7 +104,7 @@ const Approvalshopping = () => {
                             fontWeight: "bold",
                           }}
                         >
-                          Order Detail
+                          {t("PaymentMethod.343")}
                         </th>
                         <th
                           style={{
@@ -123,7 +114,17 @@ const Approvalshopping = () => {
                             fontWeight: "bold",
                           }}
                         >
-                          Action
+                          {t("OrderDetail.345")}
+                        </th>
+                        <th
+                          style={{
+                            fontSize: 15 + "px",
+                            color: "black",
+                            fontWeight: "bold",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {t("Action.59")}
                         </th>
                       </tr>
                     </thead>
@@ -147,7 +148,7 @@ const Approvalshopping = () => {
                       </tr>
                     </tbody>
                   </table>
-                  <div className="btn btn-purple">Approval</div>
+                  <div className="btn btn-purple">{t("Approval.23")}</div>
                 </div>
               </div>
             </div>

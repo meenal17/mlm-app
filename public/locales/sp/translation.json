@@ -11,7 +11,7 @@
     "Bonus":{
         "4":"Primo"
     },
-    " Pending":{
+    "Pending":{
         "5":"Pendiente"
     },
     "IncomeVScommssion":{
@@ -670,5 +670,303 @@
 },
 "Manage KYC configuration?":{
     "325":"¿Administrar la configuración de KYC?"
+},
+"pv":{
+    "326":"PV"
+},
+"NewPackage":{
+    "327":"Nuevo paquete"
+},
+"AddPurchasePackage":{
+    "328":"Agregar paquete de compra"
+},
+"AdvancedConfigration":{
+    "329":"Configuración avanzada"
+},
+"ManagePackage":{
+    "330":"Administrar paquete"
+},
+"ManageCategory":{
+    "331":"Administrar categoría"
+},
+"UpdateMembershipPackage":{
+    "332":"Actualizar paquete de membresía"
+},
+"EditRepurchaseCategory":{
+    "333":"Editar categoría de recompra"
+},
+"Change":{
+    "334":"Cambio"
+},
+"CategoryName":{
+    "335":"nombre de la categoría"
+},
+"PackageName":{
+    "336":"Nombre del paquete"
+},
+"Productimage":{
+    "337":"Imagen del producto"
+},
+"UpdatePurchasePackage":{
+    "338":"Actualizar paquete de compra"
+},
+"Savechanges":{
+    "339":"Guardar cambios"
+},
+"AddMembershipPackage":{
+    "340":"Agregar paquete de membresía"
+},
+"InvoiceNo":{
+    "341":"Factura no"
+},
+"TotalAmount":{
+    "342":"Cantidad total"
+},
+"PaymentMethod":{
+    "343":"Método de pago"
+},
+"OrderDetail":{
+    "345":"Detalle de la orden"
+},
+"CheckoutSteps":{
+    "346":"Pasos de pago"
+},
+"ShoppingCart":{
+    "347":"Carro de compras"
+},
+"PurchasePack":{
+"348":"Paquete de compra"    
+},
+"Product Id":{
+    "349":"ID del Producto"
+},
+"cart":{
+    "350":"carro"
+},
+"Price":{
+"351":"Precio"
+},
+"Total":{
+    "352":"Total"
+},
+"TotalPV":{
+    "353":"PV total"
+},
+"UpdateCart":{
+    "354":"Actualización de la compra"
+},
+"Item":{
+    "355":"Artículo"
+},
+"Quantity":{
+    "356":"Cantidad"
+},"Purchase":{
+    "357":"Compra"
+},
+"Remove":{
+    "358":"Eliminar"
+},
+"SubTotal":{
+    "359":"Total parcial"
+},
+"AddtoCart":{
+    "360":"Añadir al carrito"
+},
+"MoreDetails":{
+    "361":"Más detalles"
+},
+"Activate/Deactivate Report":{
+    "362":"Activar / Desactivar informe"
+},
+"Exampleselect":{
+    "363":"Ejemplo seleccionar"
+},
+"Overall":{
+    "364":"General"
+},
+"Month":{
+    "365":"Mes"
+},
+"Year":{
+    "366":"Año"
+},
+"Today":{
+    "367":"Hoy"
+},
+"Custom":{
+    "368":"Personalizado"
+},
+"Submit":{
+    "369":"Enviar"
+},
+"Createexcel":{
+    "370":"Crear Excel"
+},
+"CreateCSV":{
+    "371":"Crear CSV"
+},
+"Date":{
+    "372":"Fecha"
+},
+"Deactivated":{
+    "373":"Desactivado"
+},
+"TotalAmont":{
+    "374":"Total aguas arriba"
+},
+"Tax":{
+    "375":"Impuesto"
+},
+"ServiceCharge":{
+    "376":"Cargo por servicio"
+},
+"PaymentPayable":{
+    "377":"Pago a pagar"
+},
+"UserCommissionJoinig":{
+    "378":"Usuarion Comisión Joinig"
+},
+"Date Range":{
+    "379":"Rango de fechas"
+},
+"FromUser":{
+    "380":"Del usuario"
+},
+"ToUser":{
+    "381":"Al usuario"
+},
+"TransferDate":{
+    "382":"Fecha de transferencia"
+},
+"RegistrationFee":{
+   "383":"Cuota de inscripción"
+},
+"enrollmentdate":{
+    "384":"Fecha de inscripción"
+},
+"UserJoinig":{
+    "385":"Usuario Joinig"
+},
+"Phone":{
+    "386":"Teléfono"
+},
+"Old Package":{
+    "387":"Paquete antiguo"
+},
+"Upgratedpackage":{
+    "388":"Actualizado paquete"
+},
+"UpgradedPackage":{
+    "389":"Actualizado Paquete"
+},
+"UpgradedDate":{
+    "390":"Fecha de actualización"
+},
+"EpinTransferReport":{
+    "391":"Informe de transferencia de Epin"
+},
+"Released":{
+    "392":"Liberado"
+},
+"ProfileReports":{
+"393":"Informes de perfil"
+},
+"View":{
+    "394":"Vista"
+},
+"EnterCount":{
+    "395":"Ingrese el recuento"
+},
+"EnterCountstartfrom":{
+    "396":"Ingrese el recuento comienzo de"
+},
+"RankArchiveDate":{
+    "397":"Fecha de archivo de rango"
+},
+"RankPerformanceReport":{
+    "398":"Informe de rendimiento de rango"
+},
+"Epin Transfer Report":{
+    "399":"Informe de transferencia de pin electrónico"
+},
+"TotalEarning":{
+    "400":"Ganancia total"
+},
+"CompanyName":{
+    "401":"nombre de empresa"
+},
+"Companyaddress":{
+    "402":"Dirección de la empresa"
+},
+"Compose":{
+    "403":"Componer"
+},
+"Inbox":{
+    "404":"Bandeja de entrada"
+},
+"Send":{
+    "405":"Enviar"
+},
+"SingleUser":{
+    "406":"Usuario unico"
+},
+"AllUser":{
+    "407":"Todo usuario"
+},
+"MainContent":{
+    "408":"Contenido principal"
+},
+"SendMessages":{
+    "409":"Enviar mensajes"
+},
+"Mail Box":{
+    "410":"Buzón de correo"
+},
+"Email":{"411":"Correo electrónico"},
+"PrivilegedUser":{
+"412":"Usuario privilegiado"
+},
+"AddNew":{
+    "413":"Agregar nuevo"
+},
+"UserList":{
+    "414":"Lista de usuarios"
+},
+"UserActivity":{
+    "415":"Actividad del usuario"
+},
+"Password":{
+    "416":"Contraseña"
+},
+"SignOut":{
+    "417":"Desconectar"
+},
+"Forgotpassword?":{
+    "418":"¿Se te olvidó tu contraseña?"
+},
+"Welcome back!":{
+    "419":"¡Bienvenido de nuevo!"
+},
+"Please sign in to continue!":{
+    "420":"¡Por favor inicie sesión para continuar!"
+},
+"SignIn":{
+    "421":"Registrarse"
+},
+"Don't have an account?":{
+    "422":"¿No tienes una cuenta?"
+},
+"Create an Account":{
+    "423":"Crea una cuenta"
+},
+"You are viewing shared demo Multiple users may try this demo simultaneously":{
+    "424":"Estás viendo una demostración compartida. Varios usuarios pueden probar esta demostración simultaneamente"
+},
+"Try custom demo as per your configurations":{
+    "425":"Pruebe la demostración personalizada según sus configuraciones"
+},
+"Infinite MLM Blog":{
+    "426":"Blog Infinito de MLM"
 }
+
 }

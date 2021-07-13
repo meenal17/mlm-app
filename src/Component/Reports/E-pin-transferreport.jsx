@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const Epintransferreport = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -25,7 +27,7 @@ const Epintransferreport = () => {
                 textTransform: "capitalize",
               }}
             >
-              From User
+              {t("FromUser.380")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -36,7 +38,7 @@ const Epintransferreport = () => {
                 textTransform: "capitalize",
               }}
             >
-              To User
+              {t("ToUser.381")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -47,7 +49,7 @@ const Epintransferreport = () => {
                 textTransform: "capitalize",
               }}
             >
-              E-pin
+              {t("Epin.153")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -58,7 +60,7 @@ const Epintransferreport = () => {
                 textTransform: "capitalize",
               }}
             >
-              Transfer Date
+              {t("TransferDate.382")}
             </th>
           </tr>
         </thead>
@@ -116,15 +118,15 @@ const Epintransferreport = () => {
           <div className="card">
             <div className="card-body">
               <p class="card-title">
-                ID:{props.Id}
-                From user: {props.fromuser}
+                {t("Id.157")}:{props.Id}
+                {t("FromUser.380")}: {props.fromuser}
               </p>
               <p className="card-text">
-                To-user{props.touser}
+                {t("ToUser.381")}:{props.touser}
                 <br />
-                E-pin{props.pin}
+                {t("Epin.28")}:{props.pin}
                 <br />
-                Transfer-Date{props.transfer}
+                {t("TransferDate.382")}:{props.transfer}
               </p>
             </div>
           </div>
@@ -145,18 +147,18 @@ const Epintransferreport = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          Payout Released Report
+          {t("PayoutReleasedReport.154")}
         </div>
 
         <div className="card p-3  mr-2 ml-3">
           <div className="container-fluid">
             <div className="">
-              <h4 className="text-dark">E-pin Transfer Report </h4>
+              <h4 className="text-dark">{t("Epin Transfer Report.399")} </h4>
               <hr />
             </div>
             <div className="row">
               <div className="col-lg-3 col-sm-2">
-                <label className="text-dark">From User</label>
+                <label className="text-dark">{t("FromUser.380")}</label>
                 <input
                   class="form-control form-control-lg"
                   type="text"
@@ -164,7 +166,7 @@ const Epintransferreport = () => {
                 ></input>
               </div>
               <div className="col-lg-3 col-sm-2">
-                <label className="text-dark">To User</label>
+                <label className="text-dark">{t("ToUser.381")}</label>
                 <input
                   class="form-control form-control-lg"
                   type="text"
@@ -174,26 +176,26 @@ const Epintransferreport = () => {
               <div className="col-lg-2 col-sm-2">
                 <div class="form-group">
                   <label for="exampleFormControlSelect1" className="text-dark">
-                    Date Range
+                    {t("Date Range.379")}
                   </label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Overall</option>
-                    <option>Month</option>
-                    <option>Year</option>
-                    <option>Today</option>
-                    <option>Custom</option>
+                    <option>{t("Overall.364")}</option>
+                    <option>{t("Month.365")}</option>
+                    <option>{t("Year.366")}</option>
+                    <option>{t("Today.367")}</option>
+                    <option>{t("Custom.368")}</option>
                   </select>
                 </div>
               </div>
 
               <div className="col-md-1 col-lg-1" style={{marginTop: "28px"}}>
-                <button className="btn btn-info">Submit</button>
+                <button className="btn btn-info">{t("Submit.369")}</button>
               </div>
               <div
                 className="col-md-1 col-lg-1 ml-2"
                 style={{marginTop: "28px"}}
               >
-                <button className="btn btn-purple">Rest</button>
+                <button className="btn btn-purple">{t("rest.57")}</button>
               </div>
             </div>
           </div>
@@ -203,12 +205,14 @@ const Epintransferreport = () => {
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file mr-1"></i>Create excel
+                <i className="fas fa-file mr-1"></i>
+                {t("Createexcel.370")}
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fa fa-file-excel-o mr-1"></i>Create CSV
+                <i className="fa fa-file-excel-o mr-1"></i>
+                {t("CreateCSV.371")}
               </button>
             </div>
           </div>
@@ -227,11 +231,11 @@ const Epintransferreport = () => {
               color: "grey",
             }}
           >
-            <h5 className="mb-1"> Company Name</h5>
-            <h6 className="mb-1">Company address </h6>
+            <h5 className="mb-1">{t("CompanyName.401")}</h5>
+            <h6 className="mb-1">{t("Companyaddress.402")} </h6>
             <h8 className=" mb-1">
-              Phone: 9999999999 <br />
-              Email:companyname@emil.com
+              {t("Phone.386")}: 9999999999 <br />
+              {t("Email.196")}:companyname@emil.com
             </h8>
           </div>
           {/* table */}

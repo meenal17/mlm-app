@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const Activedeactive = () => {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/active-deactiveprofile">
       <>
@@ -8,7 +10,7 @@ const Activedeactive = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          Activate / Deactivate Report
+          {t("Activate/Deactivate Report.362")}
         </div>
 
         <div className="card p-3  mr-2 ml-3">
@@ -16,18 +18,20 @@ const Activedeactive = () => {
             <div className="row">
               <div className="col-lg-3 col-sm-4">
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">Example select</label>
+                  <label for="exampleFormControlSelect1">
+                    {t("Date Range.379")}
+                  </label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Overall</option>
-                    <option>Month</option>
-                    <option>Year</option>
-                    <option>Today</option>
-                    <option>Custom</option>
+                    <option>{t("Overall.364")}</option>
+                    <option>{t("Month.365")}</option>
+                    <option>{t("Year.366")}</option>
+                    <option>{t("Today.367")}</option>
+                    <option>{t("Custom.368")}</option>
                   </select>
                 </div>
               </div>
               <div className="col-md-1 col-lg-1" style={{marginTop: "28px"}}>
-                <button className="btn btn-purple">Submit</button>
+                <button className="btn btn-purple">{t("Submit.369")}</button>
               </div>
             </div>
           </div>
@@ -37,12 +41,14 @@ const Activedeactive = () => {
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file "></i>Create excel
+                <i className="fas fa-file "></i>
+                {t("Createexcel.370")}
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fa fa-file-excel-o mr-1"></i>Create CSV
+                <i className="fa fa-file-excel-o mr-1"></i>
+                {t("CreateCSV.371")}
               </button>
             </div>
           </div>
@@ -62,11 +68,11 @@ const Activedeactive = () => {
               color: "grey",
             }}
           >
-            <h5 className="mb-1"> Company Name</h5>
-            <h6 className="mb-1">Company address </h6>
+            <h5 className="mb-1">{t("CompanyName.401")}</h5>
+            <h6 className="mb-1">{t("Companyaddress.402")} </h6>
             <h8 className=" mb-1">
-              Phone: 9999999999 <br />
-              Email:companyname@emil.com
+              {t("Phone.386")}: 9999999999 <br />
+              {t("Email.196")}:companyname@emil.com
             </h8>
           </div>
           {/* table */}
@@ -92,7 +98,7 @@ const Activedeactive = () => {
                       fontSize: "15px",
                     }}
                   >
-                    Member Name
+                    {t("member name.68")}
                   </th>
                   <th
                     scope="col"
@@ -102,7 +108,7 @@ const Activedeactive = () => {
                       fontSize: "15px",
                     }}
                   >
-                    Status
+                    {t("Status.160")}
                   </th>
                   <th
                     scope="col"
@@ -112,7 +118,7 @@ const Activedeactive = () => {
                       fontSize: "15px",
                     }}
                   >
-                    Date
+                    {t("Date.372")}
                   </th>
                 </tr>
               </thead>
@@ -120,37 +126,37 @@ const Activedeactive = () => {
                 <tr>
                   <th scope="row">1</th>
                   <td>Adella Schoen (member1)</td>
-                  <td>Deactivated</td>
+                  <td>{t("Deactivated.373")}</td>
                   <td>12 Mar 2021 - 08:45:05 AM</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
                   <td>Adella Schoen (member1)</td>
-                  <td>Deactivated</td>
+                  <td>{t("Deactivated.373")}</td>
                   <td>12 Mar 2021 - 08:45:05 AM</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
                   <td>Adella Schoen (member1)</td>
-                  <td>Deactivated</td>
+                  <td>{t("Deactivated.373")}</td>
                   <td>12 Mar 2021 - 08:45:05 AM</td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
                   <td>Adella Schoen (member1)</td>
-                  <td>Deactivated</td>
+                  <td>{t("Deactivated.373")}</td>
                   <td>12 Mar 2021 - 08:45:05 AM</td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
                   <td>Adella Schoen (member1)</td>
-                  <td>Deactivated</td>
+                  <td>{t("Deactivated.373")}</td>
                   <td>12 Mar 2021 - 08:45:05 AM</td>
                 </tr>
                 <tr>
                   <th scope="row">6</th>
                   <td>Adella Schoen (member1)</td>
-                  <td>Deactivated</td>
+                  <td>{t("Deactivated.373")}</td>
                   <td>12 Mar 2021 - 08:45:05 AM</td>
                 </tr>
               </tbody>

@@ -1,6 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const PackageTable = () => {
+  const {t, i18n} = useTranslation();
+
   return (
     <Link to="/packagetable">
       <>
@@ -16,7 +19,7 @@ const PackageTable = () => {
                     fontSize: "16px",
                   }}
                 >
-                  Item
+                  {t("Item.355")}
                 </th>
 
                 <th
@@ -26,7 +29,7 @@ const PackageTable = () => {
                     fontSize: "16px",
                   }}
                 >
-                  Quantity
+                  {t("Quantity.356")}
                 </th>
                 <th
                   scope="col"
@@ -35,7 +38,7 @@ const PackageTable = () => {
                     fontSize: "16px",
                   }}
                 >
-                  Price
+                  {t("Price.351")}
                 </th>
                 <th
                   scope="col"
@@ -44,7 +47,7 @@ const PackageTable = () => {
                     fontSize: "16px",
                   }}
                 >
-                  Total
+                  {t("Total.352")}
                 </th>
                 <th
                   scope="col"
@@ -53,7 +56,7 @@ const PackageTable = () => {
                     fontSize: "16px",
                   }}
                 >
-                  Action
+                  {t("Action.59")}
                 </th>
               </tr>
             </thead>
@@ -66,7 +69,7 @@ const PackageTable = () => {
                     alt="not found"
                   />
                 </th>
-                <td>Purchase</td>
+                <td>{t("Purchase.357")}</td>
 
                 <td>
                   <input type="number" />
@@ -75,12 +78,12 @@ const PackageTable = () => {
                 <td>20000</td>
                 <td>
                   <div className="btn btn-purple p-2 mb-1">
-                    <i className="fa fa-refresh" /> update
+                    <i className="fa fa-refresh" /> {t("Update.187")}
                   </div>
                   <br />
                   <div className="btn btn-info p-2">
                     <i className="fas fa-trash" />
-                    Remove
+                    {t("Remove.358")}
                   </div>
                 </td>
               </tr>
@@ -93,7 +96,7 @@ const PackageTable = () => {
                     alt="not found"
                   />
                 </th>
-                <td>Purchase</td>
+                <td>{t("Purchase.357")}</td>
 
                 <td>
                   <input type="number" />
@@ -102,12 +105,12 @@ const PackageTable = () => {
                 <td>20000</td>
                 <td>
                   <div className="btn btn-purple p-2 mb-1">
-                    <i className="fa fa-refresh" /> update
+                    <i className="fa fa-refresh" /> {t("Update.187")}
                   </div>
                   <br />
                   <div className="btn btn-info p-2">
                     <i className="fas fa-trash" />
-                    Remove
+                    {t("Remove.358")}
                   </div>
                 </td>
               </tr>
@@ -125,7 +128,7 @@ const PackageTable = () => {
                   color: " #fff",
                 }}
               >
-                <i className="fa fa-arrow-left" /> Back
+                <i className="fa fa-arrow-left" /> {t("Back.320")}
               </Link>
             </div>
           </table>

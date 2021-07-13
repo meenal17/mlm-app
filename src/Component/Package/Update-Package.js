@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 const UpdatePackage = (props) => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       {/* <!-- Button trigger modal --> */}
@@ -29,7 +30,7 @@ const UpdatePackage = (props) => {
                 id="exampleModalLabel"
                 style={{color: "#3b5698", fontSize: "25px"}}
               >
-                Update Purchase Package
+                (t{"UpdatePurchasePackage.338"})
               </h5>
               <button
                 type="button"
@@ -42,7 +43,7 @@ const UpdatePackage = (props) => {
             </div>
             <div class="modal-body">
               <h5 className="" style={{color: "grey"}}>
-                ID <span style={{color: "red"}}>*</span>
+                {t("Id.157")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -50,7 +51,7 @@ const UpdatePackage = (props) => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Name <span style={{color: "red"}}>*</span>
+                {t("Name.135")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -58,7 +59,7 @@ const UpdatePackage = (props) => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Category <span style={{color: "red"}}>*</span>
+                {t("Category.94")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -66,7 +67,7 @@ const UpdatePackage = (props) => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Amount <span style={{color: "red"}}>*</span>
+                {t("Amount.95")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -74,7 +75,7 @@ const UpdatePackage = (props) => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                PV <span style={{color: "red"}}>*</span>
+                {t("pv.326")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -82,7 +83,8 @@ const UpdatePackage = (props) => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Desciption<span style={{color: "red"}}>*</span>
+                {t("Desciption.114")}
+                <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -90,15 +92,16 @@ const UpdatePackage = (props) => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Product image<span style={{color: "red"}}>*</span>
+                {t("Productimage.337")}
+                <span style={{color: "red"}}>*</span>
               </h5>
               <button type="button" class="btn btn-outline-success">
-                Change
+                {t("Change.334")}
               </button>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary">
-                Save changes
+                {t("Savechanges.339")}
               </button>
             </div>
           </div>

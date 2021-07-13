@@ -1,7 +1,9 @@
 import {fontSize} from "@material-ui/system";
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const RankArchive = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -26,7 +28,7 @@ const RankArchive = () => {
                 textTransform: "capitalize",
               }}
             >
-              Rank
+              {t("Rank.309")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -37,7 +39,7 @@ const RankArchive = () => {
                 textTransform: "capitalize",
               }}
             >
-              MemberName
+              {t("member name.68")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -48,7 +50,7 @@ const RankArchive = () => {
                 textTransform: "capitalize",
               }}
             >
-              Rank Archive Date
+              {t("RankArchiveDate.397")}
             </th>
           </tr>
         </thead>
@@ -107,13 +109,13 @@ const RankArchive = () => {
           <div className="card">
             <div className="card-body">
               <p class="card-title">
-                ID:{props.Id}
-                Name: {props.Rank}
+                {t("Id.157")}:{props.Id}
+                {t("Name.135")}: {props.Rank}
               </p>
               <p className="card-text">
-                {props.MemberName}
+                {t("Member Name.74")} : {props.MemberName}
                 <br />
-                {props.rankdate}
+                {t("RankArchiveDate.397")}:{props.rankdate}
               </p>
             </div>
           </div>
@@ -133,21 +135,21 @@ const RankArchive = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          Rank Performance Report
+          {t("RankPerformanceReport.398")}
         </div>
         <h5 className="ml-5 mt-2" style={{color: "grey"}}>
           <i
             class="fa fa-exclamation-circle bell mr-2 "
             style={{color: "#ffad31", fontSize: 25 + "px"}}
           />
-          Note : This is an add-on module
+          {t("onmodule.113")}
         </h5>
         <div className="card p-3  mr-3 ml-3">
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-4 col-sm-4">
                 <label for="usr" style={{color: "grey"}}>
-                  Username{" "}
+                  {t("username.65")}
                   <span className="ml-1" style={{color: "red"}}>
                     *
                   </span>
@@ -155,7 +157,7 @@ const RankArchive = () => {
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div className="col-md-1 col-lg-1" style={{marginTop: "28px"}}>
-                <button className="btn btn-purple">View</button>
+                <button className="btn btn-purple">{t("View.394")}</button>
               </div>
             </div>
           </div>
@@ -165,12 +167,14 @@ const RankArchive = () => {
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file mr-1"></i>Create excel
+                <i className="fas fa-file mr-1"></i>
+                {t("Createexcel.370")}
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fa fa-file-excel mr-1"></i>Create CSV
+                <i className="fa fa-file-excel mr-1"></i>
+                {t("CreateCSV.371")}
               </button>
             </div>
           </div>
@@ -192,11 +196,11 @@ const RankArchive = () => {
                     color: "grey",
                   }}
                 >
-                  <h5 className="mb-1"> Company Name</h5>
-                  <h6 className="mb-1">Company address </h6>
+                  <h5 className="mb-1">{t("CompanyName.401")}</h5>
+                  <h6 className="mb-1">{t("Companyaddress.402")} </h6>
                   <h8 className=" mb-1">
-                    Phone: 9999999999 <br />
-                    Email:companyname@emil.com
+                    {t("Phone.386")}: 9999999999 <br />
+                    {t("Email.196")}:companyname@emil.com
                   </h8>
                 </div>
               </div>
@@ -206,54 +210,6 @@ const RankArchive = () => {
                 <div className="container mt-3">
                   <TableComponent />
                 </div>
-                {/* <table class="table table-striped mg-b-0 text-md-nowrap">
-                    <thead>
-                      <tr>
-                        <th style={{color: "black", fontSize: "15px"}}>ID</th>
-                        <th style={{color: "black", fontSize: "15px"}}>
-                          New Rank
-                        </th>
-                        <th style={{color: "black", fontSize: "15px"}}>
-                          Member Name
-                        </th>
-                        <th style={{color: "black", fontSize: "15px"}}>
-                          Rank Archive Date
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Silver</td>
-                        <td>salar khalid(binaryaddon)</td>
-                        <td>11 Nov 2020 - 10:09:56 AM</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Silver</td>
-                        <td>salar khalid(binaryaddon)</td>
-                        <td>11 Nov 2020 - 10:09:56 AM</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Silver</td>
-                        <td>salar khalid(binaryaddon)</td>
-                        <td>11 Nov 2020 - 10:09:56 AM</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Silver</td>
-                        <td>salar khalid(binaryaddon)</td>
-                        <td>11 Nov 2020 - 10:09:56 AM</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Silver</td>
-                        <td>salar khalid(binaryaddon)</td>
-                        <td>11 Nov 2020 - 10:09:56 AM</td>
-                      </tr>
-                    </tbody>
-                  </table> */}
               </div>
             </div>
           </div>

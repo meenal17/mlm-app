@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 const AddPurchase = () => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <button
@@ -10,7 +11,8 @@ const AddPurchase = () => {
         data-target="#exampleModal"
         style={{float: "right"}}
       >
-        New Package <i className="fa fa-plus ml-1" style={{color: "#fff"}} />
+        {t("NewPackage.327")}{" "}
+        <i className="fa fa-plus ml-1" style={{color: "#fff"}} />
       </button>
       <div
         class="modal fade"
@@ -28,7 +30,7 @@ const AddPurchase = () => {
                 id="exampleModalLabel"
                 style={{color: "#3b5698", fontSize: "25px"}}
               >
-                Add Purchase Package
+                {t("Add Purchase Package.328")}
               </h5>
               <button
                 type="button"
@@ -41,7 +43,8 @@ const AddPurchase = () => {
             </div>
             <div class="modal-body">
               <h5 className="" style={{color: "grey"}}>
-                ID <span style={{color: "red"}}>*</span>
+                {t("Id.157")}
+                <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -49,7 +52,7 @@ const AddPurchase = () => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Name <span style={{color: "red"}}>*</span>
+                {t("Name.135")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -57,7 +60,7 @@ const AddPurchase = () => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Category <span style={{color: "red"}}>*</span>
+                {t("Category.94")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -65,7 +68,7 @@ const AddPurchase = () => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                Amount <span style={{color: "red"}}>*</span>
+                {t("Amount.95")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -73,7 +76,7 @@ const AddPurchase = () => {
                 placeholder=""
               />
               <h5 className="" style={{color: "grey"}}>
-                PV <span style={{color: "red"}}>*</span>
+                {t("pv.326")} <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -82,7 +85,8 @@ const AddPurchase = () => {
               />
 
               <h5 className="" style={{color: "grey"}}>
-                Desciption<span style={{color: "red"}}>*</span>
+                {t("Desciption.114")}
+                <span style={{color: "red"}}>*</span>
               </h5>
               <input
                 class="form-control form-control-lg"
@@ -99,7 +103,7 @@ const AddPurchase = () => {
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-purple">
-                Advanced Configration
+                {t("AdvancedConfigration.329")}
               </button>
             </div>
           </div>

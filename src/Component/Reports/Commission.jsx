@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const Commission = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -25,7 +27,7 @@ const Commission = () => {
                 textTransform: "capitalize",
               }}
             >
-              Memeber Name
+              {t("member name.68")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -36,7 +38,7 @@ const Commission = () => {
                 textTransform: "capitalize",
               }}
             >
-              TotalAmont
+              {t("TotalAmont.374")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -47,7 +49,7 @@ const Commission = () => {
                 textTransform: "capitalize",
               }}
             >
-              Tax
+              {t("Tax.375")}
             </th>
 
             <th
@@ -59,7 +61,7 @@ const Commission = () => {
                 textTransform: "capitalize",
               }}
             >
-              Service Charge
+              {t("ServiceCharge.376")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -70,7 +72,7 @@ const Commission = () => {
                 textTransform: "capitalize",
               }}
             >
-              Payment Payable
+              {t("PaymentPayable.377")}
             </th>
           </tr>
         </thead>
@@ -135,17 +137,17 @@ const Commission = () => {
           <div className="card">
             <div className="card-body">
               <p class="card-title">
-                ID:{props.Id}
-                Name: {props.MemberName}
+                {t("Id.157")}:{props.Id}
+                {t("Member Name.74")}: {props.MemberName}
               </p>
               <p className="card-text">
-                TotalAmont: {props.totalamount}
+                {t("TotalAmont.374")}: {props.totalamount}
                 <br />
-                {props.tax}
+                {t("Tax.375")}:{props.tax}
                 <br />
-                {props.servicecharge}
+                {t("ServiceCharge.376")}:{props.servicecharge}
                 <br />
-                {props.payable}
+                {t("PaymentPayable.377")}:{props.payable}
               </p>
             </div>
           </div>
@@ -166,14 +168,14 @@ const Commission = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          User Commission Joinig
+          {t("UserCommissionJoinig.378")}
         </div>
 
         <div className="card p-3">
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-4 col-sm-2">
-                <label for="">Username</label>
+                <label for="">{t("username.65")}</label>
 
                 <input
                   class="form-control form-control-lg"
@@ -183,13 +185,15 @@ const Commission = () => {
               </div>
               <div className="col-lg-2 col-sm-2">
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">Date Range</label>
+                  <label for="exampleFormControlSelect1">
+                    {t("Date Range.379")}
+                  </label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Overall</option>
-                    <option>Month</option>
-                    <option>Year</option>
-                    <option>Today</option>
-                    <option>Custom</option>
+                    <option>{t("Overall.364")}</option>
+                    <option>{t("Month.365")}</option>
+                    <option>{t("Year.366")}</option>
+                    <option>{t("Today.367")}</option>
+                    <option>{t("Custom.368")}</option>
                   </select>
                 </div>
               </div>
@@ -203,7 +207,7 @@ const Commission = () => {
                 />
               </div>
               <div className="col-md-1 col-lg-1" style={{marginTop: "28px"}}>
-                <button className="btn btn-info">Submit</button>
+                <button className="btn btn-info">{t("Submit.369")}</button>
               </div>
             </div>
           </div>
@@ -213,12 +217,13 @@ const Commission = () => {
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file mr-1"></i>Create excel
+                <i className="fas fa-file mr-1"></i>
+                {t("Createexcel.370")}
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fa fa-file-excel-o mr-1"></i>Create CSV
+                <i className="fa fa-file-excel-o mr-1"></i> {t("CreateCSV.371")}
               </button>
             </div>
           </div>
@@ -237,11 +242,11 @@ const Commission = () => {
               color: "grey",
             }}
           >
-            <h5 className="mb-1"> Company Name</h5>
-            <h6 className="mb-1">Company address </h6>
+            <h5 className="mb-1">{t("CompanyName.401")}</h5>
+            <h6 className="mb-1">{t("Companyaddress.402")} </h6>
             <h8 className=" mb-1">
-              Phone: 9999999999 <br />
-              Email:companyname@emil.com
+              {t("Phone.386")}: 9999999999 <br />
+              {t("Email.196")}:companyname@emil.com
             </h8>
           </div>
           {/* table */}

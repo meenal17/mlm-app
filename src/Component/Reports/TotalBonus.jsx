@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const TotalBonus = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -25,7 +27,7 @@ const TotalBonus = () => {
                 textTransform: "capitalize",
               }}
             >
-              Memeber Name
+              {t("member name.68")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -36,7 +38,7 @@ const TotalBonus = () => {
                 textTransform: "capitalize",
               }}
             >
-              TotalAmont
+              {t("TotalAmont.374")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -47,7 +49,7 @@ const TotalBonus = () => {
                 textTransform: "capitalize",
               }}
             >
-              Tax
+              {t("Tax.375")}
             </th>
 
             <th
@@ -59,7 +61,7 @@ const TotalBonus = () => {
                 textTransform: "capitalize",
               }}
             >
-              Service Charge
+              {t("ServiceCharge.376")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -70,7 +72,7 @@ const TotalBonus = () => {
                 textTransform: "capitalize",
               }}
             >
-              Payment Payable
+              {t("PaymentPayable.377")}
             </th>
           </tr>
         </thead>
@@ -135,11 +137,11 @@ const TotalBonus = () => {
           <div className="card">
             <div className="card-body">
               <p class="card-title">
-                ID:{props.Id}
-                Name: {props.MemberName}
+                {t("Id.157")}:{props.Id}
+                {t("Name.135")}: {props.MemberName}
               </p>
               <p className="card-text">
-                TotalAmont: {props.totalamount}
+                {t("TotalAmont.374")}: {props.totalamount}
                 <br />
                 {props.tax}
                 <br />
@@ -166,14 +168,14 @@ const TotalBonus = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          Profile Reports
+          {t("ProfileReports.393")}
         </div>
         <div className="card p-3  mr-2 ml-3">
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-4 col-sm-4">
                 <label for="usr" style={{color: "grey"}}>
-                  Username{" "}
+                  {t("Username.128")}
                   <span className="ml-1" style={{color: "red"}}>
                     *
                   </span>
@@ -183,26 +185,20 @@ const TotalBonus = () => {
 
               <div className="col-lg-4 col-sm-4">
                 <div class="form-group">
-                  <label
-                    for="exampleFormControlSelect1"
-                    style={{color: "grey"}}
-                  >
-                    Date Range{" "}
-                    <span className="ml-1" style={{color: "red"}}>
-                      *
-                    </span>{" "}
+                  <label for="exampleFormControlSelect1">
+                    {t("Date Range.379")}
                   </label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Overall</option>
-                    <option>Today</option>
-                    <option>This week</option>
-                    <option>This Month</option>
-                    <option>This year</option>
+                    <option>{t("Overall.364")}</option>
+                    <option>{t("Month.365")}</option>
+                    <option>{t("Year.366")}</option>
+                    <option>{t("Today.367")}</option>
+                    <option>{t("Custom.368")}</option>
                   </select>
                 </div>
               </div>
               <div className="col-md-1 col-lg-1" style={{marginTop: "28px"}}>
-                <button className="btn btn-purple">Submit</button>
+                <button className="btn btn-purple">{t("Submit.369")}</button>
               </div>
             </div>
           </div>
@@ -212,12 +208,13 @@ const TotalBonus = () => {
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file mr-1"></i>Create excel
+                <i className="fas fa-file mr-1"></i>
+                {t("Createexcel.370")}
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fa fa-file-excel mr-1"></i>Create CSV
+                <i className="fa fa-file-excel mr-1"></i> {t("CreateCSV.371")}
               </button>
             </div>
           </div>
@@ -239,8 +236,8 @@ const TotalBonus = () => {
                     color: "grey",
                   }}
                 >
-                  <h5 className="mb-1"> Company Name</h5>
-                  <h6 className="mb-1">Company address </h6>
+                  <h5 className="mb-1">{t("CompanyName.401")}</h5>
+                  <h6 className="mb-1">{t("Companyaddress.402")} </h6>
                   <h8 className=" mb-1">
                     Phone: 9999999999 <br />
                     Email:companyname@emil.com

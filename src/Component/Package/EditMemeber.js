@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 const EditMemeber = (props) => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <i
@@ -26,7 +27,7 @@ const EditMemeber = (props) => {
                 id="exampleModalLabel"
                 style={{color: "#3b5698", fontSize: "25px"}}
               >
-                Update Membership Package
+                {t("UpdateMembershipPackage.332")}
               </h5>
               <button
                 type="button"
@@ -38,25 +39,25 @@ const EditMemeber = (props) => {
               </button>
             </div>
             <div class="modal-body">
-              <h5 className="mt-2">ID</h5>
+              <h5 className="mt-2">{t("Id.157")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
                 placeholder=""
               />
-              <h5 className="mt-2">Name</h5>
+              <h5 className="mt-2">{t("Name.135")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
                 placeholder=""
               />
-              <h5 className="mt-2">Amount</h5>
+              <h5 className="mt-2">{t("Amount.95")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
                 placeholder=""
               />
-              <h5 className="mt-2">PV</h5>
+              <h5 className="mt-2">{t("pv.326")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
@@ -65,7 +66,7 @@ const EditMemeber = (props) => {
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-purple">
-                Advanced Configration
+                {t("AdvancedConfigration.329")}
               </button>
             </div>
           </div>

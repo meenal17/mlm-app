@@ -217,7 +217,7 @@ const LefSide = () => {
               <ul class="slide-menu">
                 <li>
                   <Link class="slide-item" to="/shoppingcart">
-                    {t("checkout.37")}
+                    {t("checkout.41")}
                   </Link>
                 </li>
                 <li>

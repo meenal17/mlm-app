@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const Login = () => {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/login">
       <>
@@ -42,11 +44,13 @@ const Login = () => {
             </div>
             <div className="p-5 wd-md-50p">
               <div className="main-signin-header">
-                <h2 style={{color: "#1c2b36"}}>Welcome back!</h2>
-                <h6 style={{color: "red"}}>Please sign in to continue !</h6>
+                <h2 style={{color: "#1c2b36"}}>{t("Welcome back!.419")}</h2>
+                <h6 style={{color: "red"}}>
+                  {t("Please sign in to continue!.420")}
+                </h6>
                 <form action="index.html">
                   <div className="form-group">
-                    <label>Email</label>
+                    <label>{t("Email.196")}</label>
                     <input
                       className="form-control"
                       placeholder="Enter your email"
@@ -55,7 +59,7 @@ const Login = () => {
                     />
                   </div>
                   <div className="form-group ">
-                    <label>Password</label>{" "}
+                    <label>{t("Password.416")}</label>
                     <input
                       className="form-control"
                       placeholder="Enter your password"
@@ -63,18 +67,20 @@ const Login = () => {
                       value="sprukodemo"
                     />
                   </div>
-                  <button className="btn btn-purple btn-block">Sign In</button>
+                  <button className="btn btn-purple btn-block">
+                    {t("SignIn.421")}
+                  </button>
                 </form>
               </div>
               <div className="main-signin-footer mt-3 mg-t-5">
                 <p>
                   <a href="" className="text-info">
-                    Forgot password?
+                    {t("Forgotpassword?.418")}
                   </a>
                 </p>
                 <p>
-                  Don't have an account?{" "}
-                  <a href="page-signup.html">Create an Account</a>
+                  {t("Don't have an account?.422")}
+                  <a href="page-signup.html">{t("Create an Account.423")}</a>
                 </p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useTranslation} from "react-i18next";
 const Addnewmember = () => {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <button
@@ -10,7 +11,8 @@ const Addnewmember = () => {
         data-target="#exampleModal"
         style={{float: "right"}}
       >
-        New Package <i className="fa fa-plus" style={{color: "#fff"}} />
+        {t("NewPackage.327")}{" "}
+        <i className="fa fa-plus" style={{color: "#fff"}} />
       </button>
       <div
         class="modal fade"
@@ -28,7 +30,7 @@ const Addnewmember = () => {
                 id="exampleModalLabel"
                 style={{color: "#3b5698", fontSize: "25px"}}
               >
-                Add Membership Package
+                {t("AddMembershipPackage.340")}
               </h5>
               <button
                 type="button"
@@ -40,25 +42,25 @@ const Addnewmember = () => {
               </button>
             </div>
             <div class="modal-body">
-              <h5 className="">ID</h5>
+              <h5 className="">{t("Id.157")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
                 placeholder=""
               />
-              <h5 className="">Name</h5>
+              <h5 className="">{t("Name.135")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
                 placeholder=""
               />
-              <h5 className="">Amount</h5>
+              <h5 className="">{t("Amount.95")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
                 placeholder=""
               />
-              <h5 className="">PV</h5>
+              <h5 className="">{t("pv.326")}</h5>
               <input
                 class="form-control form-control-lg"
                 type="text"
@@ -67,7 +69,7 @@ const Addnewmember = () => {
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-purple">
-                Advanced Configration
+                {t("AdvancedConfigration.329")}
               </button>
             </div>
           </div>

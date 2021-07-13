@@ -4,12 +4,14 @@ import "../Mail/style.css";
 import InboxTable from "./InboxTable";
 import SendboxTable from "./SendboxTable";
 import Compose from "./Compose";
+import {useTranslation} from "react-i18next";
 export default function Mail() {
+  const {t, i18n} = useTranslation();
   return (
     <>
       <Link to="/mailbox">
         <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-          Mail Box
+          {t("Mail Box.410")}
         </div>
         <div className="card ">
           <section class="container p-3 ">
@@ -28,7 +30,9 @@ export default function Mail() {
                         data-toggle="tab"
                         class=" small  p-2"
                       >
-                        <div className="btn btn-purple ">Compose</div>
+                        <div className="btn btn-purple ">
+                          {t("Compose.403")}
+                        </div>
                       </a>
                       <hr />
                     </li>
@@ -40,7 +44,7 @@ export default function Mail() {
                         data-toggle="tab"
                         class="nav-link small active sidecolumn "
                       >
-                        Inbox
+                        {t("Inbox.404")}
                         <i
                           className="fa fa-envelope-o icon-col ml-1"
                           style={{color: "white"}}
@@ -54,7 +58,7 @@ export default function Mail() {
                         data-toggle="tab"
                         class="nav-link small sidecolumn p-2"
                       >
-                        Send
+                        {t("Send.405")}
                         <i
                           className="fa fa-send-o  ml-1"
                           style={{color: "white"}}

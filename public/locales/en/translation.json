@@ -1,9 +1,972 @@
 {
-"dashboard":{
-    "1":"Dashboard"
+    "dashboard":{
+        "1":"Dashboard"
+    },
+    "EwalletBalance":{
+        "2":"Ewallet Balance"
+    },
+    "Income":{
+        "3":"Income"
+    },
+    "Bonus":{
+        "4":"Bonus"
+    },
+    "Pending":{
+        "5":"Pending"
+    },
+    "IncomeVScommssion":{
+        "6":"Income VS commssion"
+    },
+    "payoutoverview":{
+        "7":"Payout Overview"
+    },
+    "totaljoinigs":{
+        "8":"Total joinigs"
+    },
+    "NewMembers":{
+        "9":"New Members"
+    },
+    "promotiontool":{
+        "10":"Promotion tool"
+    },
+    "ReplicaLink":{
+        "11":"Replica Link"
+    },
+    "LeadCapture":{
+        "12":"Lead Capture"
+    },
+    "search":{
+        "13":" Search"
+    },
+    "Incomeandcommssion":{
+        "14":" Income and commssion"
+    },
+    "network":{
+        "15":"Network"
+    },
+    "GenealogyTree":{
+        "16":"Genealogy Tree"
+    },
+    "SponsorTree":{
+        "17":"Sponsor Tree"
+    },
+    "TreeView":{
+        "18":"Tree View"
+    },
+    "DownLineMembers":{
+        "19":"DownLine Members"
+    },
+    "RefferralMembers":{
+        "20":"Refferral Members "
+    },
+    "signup":{
+        "21":"SignUp"
+    },
+    "register":{
+        "22":"Register"
+    },
+    "Approval":{
+        "23":"Approval"
+    },
+    "bulk register":{
+        "24":"Bulk register"
+    },
+    "Bussiness":{
+        "25":"Bussiness"
+    },
+    "Ewallet":{
+        "26":" Ewallet"
+    },
+    "PayOut":{
+        "27":"PayOut"
+    },
+    "Epin":{
+        "28":"E-pin"
+    },
+    "Profile Managment":{
+        "29":"Profile Managment"
+    },
+    "profileview":{
+        "30":"profile View "
+    },
+    "memberlist":{
+        "31":"Memberlist"
+    }, 
+    "KYC detail":{
+"32":"KYC detail"
+    },
+    "package":{
+        "33":"Package"
+    },
+    "membership":{
+        "34":"Membership"
+    },"Repurchase/Cart":{
+        "35":"Repurchase/Cart"
+    },
+    "Shopping Cart":{
+        "36":"Shopping Cart"
+    } ,
+    "checkout":{
+        "37":"checkout"
+    },
+    "approval":{
+        "38":"Approval"
+    },
+"Reports":{
+    "39":"Reports"
 },
-"EwalletBalance":{
-    "2":" EwalletBalance"
+"profile":{
+    "40":"Profile"
+},
+"checkout":
+{"41": "Checkout"},
+"Joining":{
+    "42":"Joining"
+},
+"Commission":{
+    "43":" Commission"
+},
+"totalBonus":{
+    "44":"Total Bonus"
+},
+"total earning":{
+    "45":"Total Earning"
+},
+"payoutrelease":{
+    "46":"Payout Release"
+},
+"rankperformance":{
+    "47":"Rank performance"
+},
+"rankarchive":{
+    "48":"Rank Archive"
+},
+"epin transfer":{
+    "49":"Epin transfer"
+},
+"packageupgrated":{
+    "50":"Package Upgrated "
+},
+"mail":{
+    "51":"Mail"
+},
+"Privileged User":{
+    "52":"Privileged User"
+},
+"logout":{
+    "53":"Logout"
+},
+"GenologyTree":{
+    "54":"Genology Tree"
+},
+"sponsortree":{
+    "55":"Sponsor Tree"
+},
+"tree":{
+    "56":"Tree"
+},
+"rest":{
+    "57":"Reset"
+},
+"binarryaddon":{
+    "58":" Binarryaddon"
+},
+"Action":{
+"59":"Action"
+},
+"Another action":{
+    "60":"Another action"
+},
+"Something else here":{
+    "61":"Something else here"
+},
+"DownloadMember":{
+    "62":"Download Member"
+},
+"Total DownLine Members":{
+    "63":"Total DownLine Members"
+},
+"Total Levels":{
+    "64":"Total Levels"
+},
+"username":{
+    "65":"Username"
+},
+"levels":{
+"66":"Levels"
+},
+"reset":{
+    "67":"Reset"
+},
+"member name":{
+    "68":"Member Name"
+},
+"placement":{
+    "69":"Placement"
+},
+"sponsor":{
+    "70":"Sponsor"
+},
+"level":{
+    "71":"Level"
+},
+"icon":{
+    "72":"Icon"
+},
+"Refferal Member":{
+    "73":"Refferal Member"
+},
+"Memeber Name":{
+    "74":"Nombre de miembro"
+},
+"Sponsor":{
+    "75":"Patrocinador"
+},
+"Joining Date":{
+    "76":"Dia de ingreso"
+},
+"Refferal Member":{
+    "77":"Refferal Member"
+},
+"Sponsor And Package Information":{
+    "78":"Sponsor And Package Information"
+},
+" Sponser Username":{
+    "79":"Sponser Username"
+},
+"Sponser fullname":{
+    "80":"Sponser fullname"
+},
+"Product":{
+    "81":"Product"
+},
+"Next":{
+    "82":"Next"
+},
+"Bulk Register":{
+    "83":"Bulk Register"
+},
+"Select File":{
+    "84":"Select File"
+},
+"Register":{
+    "85":"Register"
+},
+"Download sample file":{
+    "86":"Download sample file"
+},
+"Approval Member":{
+    "87":"Approval Member"
+},
+"Total Amount":{
+    "88":"Total Amount"
+},
+"Payment Method":{
+    "89":"Payment Method"
+},
+"Approve":{
+    "90":"Approve"
+},
+"reject":{
+    "91":"Reject"
+},
+"Bussiness":{
+    "92":"Bussiness"
+},
+"Bussiness Summary":{
+    "93":"Bussiness Summary"
+},
+"Category":{
+    "94":"Category"
+},
+"Amount":{
+    "95":"Amount"
+},
+"Transaction Date":{
+    "96":"Transaction Date"
+},
+"Showing 1 to 10 of 1,881 entries":{
+    "97":"Showing 1 to 10 of 1,881 entries"
+},
+"Row Pages":{
+    "98":"Row Pages"
+},
+"Previous":{
+    "99":"Previous"
+},
+"Next":{
+    "100":"Next"
+},
+"Bussiness Transactions":{
+    "101":"Bussiness Transactions"
+},
+"Ewallet Summary":{
+    "102":"Ewallet Summary"
+},
+"Ewallet Transactions":{
+    "103":"Ewallet Transactions"
+},
+"Ewallet Balance":{
+    "104":"Ewallet Balance"
+},
+"Ewallet Statment":{
+    "105":"Ewallet Statment"
+},
+"Purchase Wallet":{
+    "106":"Purchase Wallet"
+},
+"User Earning":{
+    "107":"User Earning"
+},
+"Credit":{
+    "108":"Credit"
+},
+"Registation Fee":{
+    "109":"Registation Fee"
+},
+"Package Amount":{
+    "110":"Package Amount"
+},
+"Purchase Amount":{
+    "111":"Purchase Amount"
+},
+" Debit":{
+    "112":"Debit"
+},
+"onmodule":{
+    "113":"Note: this is an add-on module"
+},
+"Desciption":{
+    "114":"Desciption"
+},
+"Balance":{
+    "115":"Balance"
+},
+"Transection Date":{
+    "116":"Transection Date"
+},
+"Refferral Commission":{
+    "117":"Refferral Commission"
+},
+"Rank Commission":{
+    "118":"Rank Commission"
+},
+"Level Commission":{
+    "119":"Level Commission"
+},
+"Binary Commission":{
+    "120":"Binary Commission"
+},
+"Matching Bonus":{
+    "121":"Matching Bonus"
+} ,
+"Pool Bonus" :{
+"122":"Pool Bonus"
+},
+"Fast Start Bonus":{
+    "123":"Fast Start Bonus"                                                      
+},
+"Vacation Bonus":{
+    "124":"Vacation Bonus"
+},
+"Education Fund":{
+    "125":"Education Fund"
+},
+"Car Fund":{
+    "126":"Car Fund"
+},
+"House Fund":{
+    "127":"House Fund"
+},
+"Username":{
+    "128":"Username"
+},
+"Type":{
+    "129":"Type"
+},
+"PayOut":{
+    "130":"PayOut"
+},
+"PayOut Summary":{
+    "131":"PayOut Summary"
+},
+"PayOut Release":{
+    "132":"PayOut Release"
+},
+"Prosess Payment":{
+    "133":"Prosess Payment"
+},
+"user":{
+    "134":"User"
+},
+"Name":{
+    "135":"Name"
+},
+"Invoice":{
+    "136":"Invoice"
+},
+"PayOut Method":{
+    "137":"PayOut Method"
+},
+"Paid Date":{
+    "138":"Paid Date"
+},
+"Bank Transfer":{
+    "139":"Bank Transfer"
+},
+"Block Chain":{
+    "140":"Block Chain"
+},
+"Paypal":{
+    "141":"Paypal"
+},
+"Bitgo":{
+    "142":"Bitgo"
+},
+"Manual User":{
+    "143":"Manual User"
+},
+"Request":{
+    "144":"Request"
+},
+"KYC verified":{
+    "145":"KYC verified"
+},
+"KYCnotverified":{
+    "146":"KYC not verified"
+},
+"PayOut Amount":{
+"147":"PayOut Amount"
+},
+"member_name":{
+    "148":"Member Name"
+},
+"payoutType":{
+    "149":"Payout Type"
+},
+"Payout_Method":{
+    "150":"Payout Method"
+},
+"Approved Date":{
+    "151":"Approved Date"
+},
+"ActiveEpin":{
+    "152":"Active E-pin"
+},
+"Epin":{
+    "153":"E-pin"
+},
+"PayoutReleasedReport":{
+    "154":"Payout Released Report"
+},
+"EpinList":{
+    "155":"E-pin List"
+},
+"PendingRequest":{
+    "156":" Pending Request"
+},
+"Id":{
+"157":"Id"
+},
+"Alocate Member":{
+    "158":"Alocate Member"
+},
+"BalanceAmount":{
+    "159":"Balance Amount"
+},
+"Status":{
+    "160":"Status"
+},
+"ExpireDate":{
+    "170":"Expire Date"
+},
+"PinCount":{
+    "171":"Pin Count"
+},
+"Count":{
+    "172":"Count"
+},
+"Requestdate":{
+    "173":"Request Date"
+},
+"Active":{
+    "174":"Active"
+},
+"Blocked":{
+    "175":"Blocked"
+},
+"Used/Expired":{
+    "176":"Used/Expired"
+},
+"Deleted":{
+    "177":"Deleted"
+},
+"Paid":{
+    "178":"Paid"
+},
+"PersonalDetails":{
+    "179":"PersonalDetails"
+},
+"FirstName":{
+    "180":"First Name"
+},
+"LastName":{
+    "181":"Last Name"
+},
+"Gender":{
+    "182":"Gender"
+},
+"Male":{
+    "183":"Male"
+},
+"Female":{
+    "184":"Female"
+},
+"other":{
+    "185":"other"
+},
+"DOB":{
+    "186":"Date of Birth"
+},
+"Update":{
+    "187":"Update"
+},
+"Cancel":{
+    "189":"Cancel"
+},
+"ContactDetails":{
+    "190":"Contact Details"
+},
+"AddressLine1":{
+    "191":"AddressLine1"
+},
+"AddressLine2":{
+    "192":"AddressLine2"
+},
+"countries":{
+    "193":"Countries"
+},
+"City":{
+    "194":"City"
+},
+"ZipCode":{
+    "195":"Zip Code"
+},
+"Email":{
+    "196":"Email"
+},
+"Mobilenumber":{
+    "197":"Mobile Number"
+},
+"LandlineNumber":{
+    "198":"Landline Number"
+},
+"BankDetails":{
+    "199":"Bank Details"
+},
+"BankName":{
+    "200":"Bank Name"
+},
+"BranchName":{
+    "201":"Branch Name"
+},
+"AccountHolder":{
+    "202":"Account Holder"
+},
+"AccountNumber":{
+    "203":"Account Number"
+},
+"IfscCode":{
+    "204":"Ifsc Code"
+},
+"PAN":{
+    "205":"PAN"
+},
+"PaypalAccount":{
+    "206":"Paypal Account"
+},
+"PaymentDetails":{
+    "207":"Payment Details"
+},
+"Settings":{
+    "208":"Settings"
+},
+"Language":{
+    "209":"Language"
+},
+"currency":{
+    "300":"Currency"
+},
+"ProfileView":{
+    "301":"Profile View"
+},
+"Change Password":{
+    "302":"Change Password"
+},
+"currentPassword":{
+    "303":"Current Password"
+},
+"NewPassword":{
+    "304":"New Password"
+},
+"ConfirmPassword":{
+    "305":"Confirm Password"
+},
+"Membershippackge":{
+    "306":"Membership packge"
+},
+"Rank":{
+    "309":"Rank"
+},
+"xyz":{
+    "310":"xyz"
+},
+"PersonalPV":{
+    "307":"Personal PV"
+},
+"GroupPV":{
+    "308":"GroupPV"
+},
+"LeftCarry":{
+    "311":"LeftCarry"
+},
+"RightCarry":{
+    "312":"RightCarry"
+},
+"Change Transacttion Password":{
+    "313":"Change Transacttion Password"
+},
+"Close":{
+    "314":"Close"
+},
+"TotalJoinings":{
+    "315":"Total Joinings"
+},
+"newJoinigs":{
+    "316":"New Joinigs"
+},
+"PendingUpgrades":{
+    "317":"Pending Upgrades"
+},
+"Mobile":{
+    "318":"Mobile"
+},
+"KYC Details":{
+    "319":"KYC Details"
+},
+"Back":{
+    "320":"Back"
+},
+"SelectCategory":{
+    "321":"SelectCategory"
+},
+"Rejected":{
+    "322":"Rejected"
+},
+"Approved":{
+    "323":"Approved"
+},
+"UserSelecter":{
+    "324":"User Selector"
+},
+"Manage KYC configuration?":{
+    "325":"Manage KYC configuration?"
+},
+ "pv":{
+    "326":"PV"
+},
+"NewPackage":{
+    "327":"New Package"
+},
+"AddPurchasePackage":{
+    "328":"Add Purchase Package"
+},
+"AdvancedConfigration":{
+    "329":"Advanced Configration"
+},
+"ManagePackage":{
+    "330":"Manage Package"
+},
+"ManageCategory":{
+    "331":"Manage Category"
+},
+"UpdateMembershipPackage":{
+    "332":"Update Membership Package"
+},
+"EditRepurchaseCategory":{
+    "333":"Edit Repurchase Category"
+},
+"Change":{
+    "334":"Change"
+},
+"CategoryName":{
+    "335":"Category Name"
+},
+"PackageName":{
+    "336":"Package Name"
+},
+"Productimage":{
+    "337":"Product Image"
+},
+"UpdatePurchasePackage":{
+    "338":"Update Purchase Package"
+},
+"Savechanges":{
+    "339":"Save changes"
+},
+"AddMembershipPackage":{
+    "340":"Add Membership Package"
+},
+"InvoiceNo":{
+    "341":"Invoice No"
+},
+"TotalAmount":{
+    "342":"Total Amount"
+},
+"PaymentMethod":{
+    "343":"Payment Method"
+},
+"OrderDetail":{
+    "345":"Order Detail"
+},
+"CheckoutSteps":{
+    "346":"Checkout Steps"
+},
+"ShoppingCart":{
+    "347":"Shopping Cart"
+},
+"PurchasePack":{
+"348":"Purchase Pack"    
+},
+"Product Id":{
+    "349":"Product Id"
+},
+"cart":{
+    "350":"cart"
+},
+"Price":{
+"351":"Price"
+},
+"Total":{
+    "352":"Total"
+},
+"TotalPV":{
+    "353":"Total PV"
+},
+"UpdateCart":{
+    "354":"Update Cart"
+},
+"Item":{
+    "355":"Item"
+},
+"Quantity":{
+    "356":"Quantity"
+},"Purchase":{
+    "357":"Purchase"
+},
+"Remove":{
+    "358":"Remove"
+},
+"SubTotal":{
+    "359":"Sub Total"
+},
+"AddtoCart":{
+    "360":"Add to Cart"
+},
+"MoreDetails":{
+    "361":"More Details"
+},
+"Activate/Deactivate Report":{
+    "362":"Activate/Deactivate Report"
+},
+"Exampleselect":{
+    "363":"Example Select"
+},
+"Overall":{
+    "364":"Overall"
+},
+"Month":{
+    "365":"Month"
+},
+"Year":{
+    "366":"Year"
+},
+"Today":{
+    "367":"Today"
+},
+"Custom":{
+    "368":"Custom"
+},
+"Submit":{
+    "369":"Submit"
+},
+"Createexcel":{
+    "370":"Create excel"
+},
+"CreateCSV":{
+    "371":"CreateCSV"
+},
+"Date":{
+    "372":"Date"
+},
+"Deactivated":{
+    "373":"Deactivated"
+},
+"TotalAmont":{
+    "374":"Total Amount"
+},
+"Tax":{
+    "375":"Tax"
+},
+"ServiceCharge":{
+    "376":"Service Charge"
+},
+"PaymentPayable":{
+    "377":"Payment Payable"
+},
+"UserCommissionJoinig":{
+    "378":"User Commission Joinig"
+},
+"Date Range":{
+    "379":"Date Range"
+},
+"FromUser":{
+    "380":"From User"
+},
+"ToUser":{
+    "381":"To User"
+},
+"TransferDate":{
+    "382":"Transfer Date"
+},
+"RegistrationFee":{
+   "383":"Registration Fee"
+},
+"enrollmentdate":{
+    "384":"enrollment date"
+},
+"UserJoinig":{
+    "385":"User Joinig"
+},
+"Phone":{
+    "386":"Phone"
+},
+"Old Package":{
+    "387":"Old Package"
+},
+"Upgratedpackage":{
+    "388":"Upgrated package"
+},
+"UpgradedPackage":{
+    "389":"Upgraded Package"
+},
+"UpgradedDate":{
+    "390":"Upgraded Date"
+},
+"EpinTransferReport":{
+    "391":"Epin Transfer Report"
+},
+"Released":{
+    "392":"Released"
+},
+"ProfileReports":{
+"393":"Profile Reports"
+},
+"View":{
+    "394":"View"
+},
+"EnterCount":{
+    "395":"Enter Count"
+},
+"EnterCountstartfrom":{
+    "396":"Enter Count start from"
+},
+"RankArchiveDate":{
+    "397":"Rank Archive Date"
+},
+"RankPerformanceReport":{
+    "398":"Rank Performance Report"
+},
+"Epin Transfer Report":{
+    "399":"E-pin Transfer Report"
+},
+"TotalEarning":{
+    "400":"Total Earning"
+},
+"CompanyName":{
+    "401":"Company Name"
+},
+"Companyaddress":{
+    "402":"Company address"
+},
+"Compose":{
+    "403":"Compose"
+},
+"Inbox":{
+    "404":"Inbox"
+},
+"Send":{
+    "405":"Send"
+},
+"SingleUser":{
+    "406":"Single User"
+},
+"AllUser":{
+    "407":"All User"
+},
+"MainContent":{
+    "408":" Main Content"
+},
+"SendMessages":{
+    "409":"Send Messages"
+},
+"Mail Box":{
+    "410":"Mail Box"
+},
+"Email":{"411":"Email"},
+"PrivilegedUser":{
+"412":"Privileged User"
+},
+"AddNew":{
+    "413":"Add New"
+},
+"UserList":{
+    "414":"User List"
+},
+"UserActivity":{
+    "415":"User Activity"
+},
+"Password":{
+    "416":"Password"
+},
+"SignOut":{
+    "417":"Sign Out"
+},
+"Forgotpassword?":{
+    "418":"Forgot password?"
+},
+"Welcome back!":{
+    "419":"Welcome back!"
+},
+"Please sign in to continue!":{
+    "420":"Please sign in to continue!"
+},
+"SignIn":{
+    "421":"Sign In"
+},
+"Don't have an account?":{
+    "422":"Don't have an account?"
+},
+"Create an Account":{
+    "423":"Create an Account"
+},
+"You are viewing shared demo Multiple users may try this demo simultaneously":{
+    "424":"You are viewing shared demo Multiple users may try this demo simultaneously"
+},
+"Try custom demo as per your configurations":{
+    "425":"Try custom demo as per your configurations"
+},
+"Infinite MLM Blog":{
+    "426":"Infinite MLM Blog"
 }
-
 }

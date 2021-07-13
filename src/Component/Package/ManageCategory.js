@@ -2,7 +2,10 @@ import React, {useState} from "react";
 import Selectbox from "./Selectbox";
 import CheckBox from "../Profile Mangement/CheckBox";
 import EditRepurchase from "./EditRepurchase";
+import {useTranslation} from "react-i18next";
+
 const ManageCategory = () => {
+  const {t, i18n} = useTranslation();
   const [checked, setchecked] = useState(false);
   return (
     <>
@@ -37,7 +40,7 @@ const ManageCategory = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    Category Name
+                    {t("CategoryName.335")}
                   </th>
                   <th
                     style={{
@@ -47,7 +50,7 @@ const ManageCategory = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    Action
+                    {t("Action.59")}
                   </th>
                 </tr>
               </thead>
@@ -57,7 +60,7 @@ const ManageCategory = () => {
                     <CheckBox checkall={checked} />
                   </td>
 
-                  <td>category1</td>
+                  <td>{t("Category.94")}1</td>
 
                   <EditRepurchase />
                 </tr>
@@ -66,7 +69,7 @@ const ManageCategory = () => {
                     <CheckBox checkall={checked} />
                   </td>
 
-                  <td>category1</td>
+                  <td>{t("Category.94")}2</td>
 
                   <EditRepurchase />
                 </tr>
@@ -80,7 +83,7 @@ const ManageCategory = () => {
                   <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
                       <a class="page-link" href="#" tabindex="-1">
-                        Previous
+                        {t("Previous.99")}
                       </a>
                     </li>
                     <li class="page-item">
@@ -100,7 +103,7 @@ const ManageCategory = () => {
                     </li>
                     <li class="page-item">
                       <a class="page-link" href="#">
-                        Next
+                        {t("Next.100")}
                       </a>
                     </li>
                   </ul>

@@ -2,12 +2,14 @@ import React from "react";
 import {Link} from "react-router-dom";
 import PrivilegedTable from "./PrivilegedTable";
 import UserActivity from "./UserActivity";
+import {useTranslation} from "react-i18next";
 const Privilegeduser = () => {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/privilegeduser">
       <>
         <div class="alert alert-light" style={{fontSize: 22 + "px"}}>
-          Privileged User
+          {t("PrivilegedUser.412")}
           <button
             type="button"
             class="btn btn-purple"
@@ -15,7 +17,8 @@ const Privilegeduser = () => {
             data-target="#exampleModal"
             style={{float: "right"}}
           >
-            Add New <i className="fa fa-plus" style={{color: "#fff"}} />
+            {t("AddNew.413")}{" "}
+            <i className="fa fa-plus" style={{color: "#fff"}} />
           </button>
         </div>
         <h5 className="ml-4 mt-2" style={{color: "grey"}}>
@@ -23,7 +26,7 @@ const Privilegeduser = () => {
             class="fa fa-exclamation-circle bell mr-2 "
             style={{color: "#ffad31", fontSize: 25 + "px"}}
           />
-          <span style={{color: "black"}}>Note</span> : This is an add-on module
+          {t("onmodule.113")}
         </h5>
         <div className=" container-fluid">
           <div className="card">
@@ -37,7 +40,7 @@ const Privilegeduser = () => {
                     data-toggle="tab"
                     style={{textTransform: "capitalize"}}
                   >
-                    User List
+                    {t("UserList.414")}
                   </a>
                 </li>
                 <li class="nav-item">
@@ -48,7 +51,7 @@ const Privilegeduser = () => {
                     data-toggle="tab"
                     style={{textTransform: "capitalize"}}
                   >
-                    User Activity
+                    {t("UserActivity.415")}
                   </a>
                 </li>
               </ul>

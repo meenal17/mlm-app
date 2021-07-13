@@ -1,7 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
+import {useTranslation} from "react-i18next";
 const Totalearning = () => {
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -26,7 +27,7 @@ const Totalearning = () => {
                 textTransform: "capitalize",
               }}
             >
-              Memeber Name
+              {t("member name.68")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -37,7 +38,7 @@ const Totalearning = () => {
                 textTransform: "capitalize",
               }}
             >
-              TotalAmont
+              {t("TotalAmont.374")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -48,7 +49,7 @@ const Totalearning = () => {
                 textTransform: "capitalize",
               }}
             >
-              Tax
+              {t("Tax.375")}
             </th>
 
             <th
@@ -60,7 +61,7 @@ const Totalearning = () => {
                 textTransform: "capitalize",
               }}
             >
-              Action
+              {t("Action.59")}
             </th>
           </tr>
         </thead>
@@ -119,11 +120,11 @@ const Totalearning = () => {
           <div className="card">
             <div className="card-body">
               <p class="card-title">
-                ID:{props.Id}
-                Name: {props.MemberName}
+                {t("Id.157")}:{props.Id}
+                {t("Member Name.74")}: {props.MemberName}
               </p>
               <p className="card-text">
-                TotalAmont: {props.totalearning}
+                {t("TotalAmont.374")}: {props.totalearning}
                 <br />
                 {props.Ewallet}
                 <br />
@@ -157,19 +158,21 @@ const Totalearning = () => {
           class="alert alert-light p-1"
           style={{fontSize: 22 + "px", height: "50px"}}
         >
-          Total Earning
+          {t("TotalEarning.400")}
         </div>
         <div className="container-fluid">
           <div className="row mb-2">
             <div className="col-lg-8"></div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fas fa-file mr-1"></i>Create excel
+                <i className="fas fa-file mr-1"></i>
+                {t("Createexcel.370")}
               </button>
             </div>
             <div className="col-lg-2 col-sm-2">
               <button className="btn  btn-purple">
-                <i className="fa fa-file-excel-o mr-1"></i>Create CSV
+                <i className="fa fa-file-excel-o mr-1"></i>
+                {t("CreateCSV.371")}
               </button>
             </div>
           </div>

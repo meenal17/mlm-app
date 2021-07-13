@@ -2,8 +2,10 @@ import React, {useState} from "react";
 import CheckBox from "../Profile Mangement/CheckBox";
 import UpdatePackage from "./Update-Package";
 import Selectbox from "./Selectbox";
+import {useTranslation} from "react-i18next";
 function ManagePack() {
   const [checked, setchecked] = useState(false);
+  const {t, i18n} = useTranslation();
   function TableComponent(props = {}) {
     return (
       <table className="table">
@@ -33,7 +35,7 @@ function ManagePack() {
                 textTransform: "capitalize",
               }}
             >
-              Product image
+              {t("Productimage.337")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -44,7 +46,7 @@ function ManagePack() {
                 textTransform: "capitalize",
               }}
             >
-              Package Name
+              {t("PackageName.336")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -55,7 +57,7 @@ function ManagePack() {
                 textTransform: "capitalize",
               }}
             >
-              Category
+              {t("Category.94")}
             </th>
 
             <th
@@ -67,7 +69,7 @@ function ManagePack() {
                 textTransform: "capitalize",
               }}
             >
-              Amount
+              {t("Amount.95")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -78,7 +80,7 @@ function ManagePack() {
                 textTransform: "capitalize",
               }}
             >
-              PV
+              {t("pv.326")}
             </th>
             <th
               className="d-sm-none d-md-table-cell"
@@ -89,7 +91,7 @@ function ManagePack() {
                 textTransform: "capitalize",
               }}
             >
-              Action
+              {t("Action.59")}
             </th>
             <th></th>
           </tr>
@@ -115,16 +117,17 @@ function ManagePack() {
         <td className="d-md-none d-table-cell">
           <div className="card">
             <div className="card-body">
-              Product: <strong class="card-title">{props.productimg}</strong>
+              {t("Product.81")}:{" "}
+              <strong class="card-title">{props.productimg}</strong>
               <p className="card-text">
-                Package Name: {props.packagename}
+                {t("PackageName.336")}: {props.packagename}
                 <br />
-                Category:{props.category}
+                {t("Category.94")}:{props.category}
                 <br />
-                Amount:{props.amount}
+                {t("Amount.95")}:{props.amount}
                 <br />
-                PV:{props.pv}
-                Action: <UpdatePackage getform={UpdatePackage} />
+                {t("pv.326")} :{props.pv}
+                {t("Action.59")}: <UpdatePackage getform={UpdatePackage} />
               </p>
             </div>
           </div>
@@ -163,7 +166,7 @@ function ManagePack() {
                   <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
                       <a class="page-link" href="#" tabindex="-1">
-                        Previous
+                        {t("Previous.99")}
                       </a>
                     </li>
                     <li class="page-item">
@@ -183,7 +186,7 @@ function ManagePack() {
                     </li>
                     <li class="page-item">
                       <a class="page-link" href="#">
-                        Next
+                        {t("Next.100")}
                       </a>
                     </li>
                   </ul>

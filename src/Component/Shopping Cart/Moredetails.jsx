@@ -1,18 +1,19 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
+import {useTranslation} from "react-i18next";
 const Moredetails = () => {
+  const {t, i18n} = useTranslation();
   return (
     <Link to="/moredetails">
       <>
         <div className="">
           <div class="alert alert-light " style={{fontSize: 22 + "px"}}>
-            Shopping Cart
+            {t("ShoppingCart.347")}
           </div>
           <div className="container-fluid">
             <div className="card">
               <h4 className="ml-4  mt-4" style={{color: "grey"}}>
-                Purchase Pack 1
+                {t("PurchasePack.348")}1
               </h4>
               <hr />
               <div className="card-body">
@@ -32,9 +33,11 @@ const Moredetails = () => {
                     <div className="col-md-8">
                       <h6>
                         <p style={{color: "grey"}}>
-                          Product Id :cart1 &nbsp;&nbsp;&nbsp; Price : $ 100.00
-                          &nbsp;&nbsp;&nbsp; PV : 50 &nbsp;&nbsp;&nbsp;Category
-                          : category1
+                          {t("ProductId.349")} :{t("cart.350")}1
+                          &nbsp;&nbsp;&nbsp; {t("Price.351")} : $ 100.00
+                          &nbsp;&nbsp;&nbsp; {t("pv.326")} : 50
+                          &nbsp;&nbsp;&nbsp;{t("Category.94")}:{" "}
+                          {t("Category.94")}1
                         </p>
                       </h6>
 
@@ -53,7 +56,7 @@ const Moredetails = () => {
                           for="exampleFormControlInput1"
                           style={{color: "grey"}}
                         >
-                          Total
+                          {t("Total.352")}
                         </label>
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">
@@ -74,7 +77,7 @@ const Moredetails = () => {
                           for="exampleFormControlInput1"
                           style={{color: "grey"}}
                         >
-                          Total PV
+                          {t("TotalPV.353")}
                         </label>
 
                         <input
@@ -86,7 +89,7 @@ const Moredetails = () => {
                           for="exampleFormControlInput1"
                           style={{color: "grey"}}
                         >
-                          Description
+                          {t("Description.114")}
                         </label>
                         <input
                           class="form-control"
@@ -94,9 +97,13 @@ const Moredetails = () => {
                           placeholder="Default input"
                         />
                         <div className="mt-4">
-                          <div className="btn btn-purple ">Update Cart</div>
+                          <div className="btn btn-purple ">
+                            {t("UpdateCart.354")}
+                          </div>
                           <span>
-                            <div className="btn btn-info ml-1">Cancel</div>
+                            <div className="btn btn-info ml-1">
+                              {t("Cancel.189")}
+                            </div>
                           </span>
                         </div>
                       </div>
