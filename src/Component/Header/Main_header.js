@@ -88,7 +88,7 @@ function MainHeader() {
                 <i className="fa fa-sign-in"></i> {t("signup.21")}
               </Link>
               <Link className="dropdown-item" to="/">
-                <i className="fas fa-user"></i> {"Help.428"}
+                <i className="fas fa-user"></i> {t("Help.428")}
               </Link>
               <Link className="dropdown-item" to="/logout">
                 <i className="fas fa-sign-out-alt"></i> {t("logout.53")}

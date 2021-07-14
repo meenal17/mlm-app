@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   display: grid;
-  align-items: center;
+  /* align-items: center; */
   font-family: "Poppins", sans-serif;
 }
 .tree {

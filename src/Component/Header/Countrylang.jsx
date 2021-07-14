@@ -26,16 +26,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('1'); "
               className="text-dark"
+              onClick={() => {
+                handleClick("en");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/en.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/en.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("en");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/en.png"
-                  );
-                }}
               />
               English
             </a>
@@ -62,16 +62,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('3');"
               className="text-dark"
+              onClick={() => {
+                handleClick("jp");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ch.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ch.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("jp");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ch.png"
-                  );
-                }}
               />{" "}
               中文
             </a>
@@ -80,16 +80,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('4');"
               className="text-dark"
+              onClick={() => {
+                handleClick("gm");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/de.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/de.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("gm");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/de.png"
-                  );
-                }}
               />{" "}
               Deutsch
             </a>
@@ -99,16 +99,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('6');"
               className="text-dark"
+              onClick={() => {
+                handleClick("fr");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/fr.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/fr.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("fr");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/fr.png"
-                  );
-                }}
               />
               français
             </a>
@@ -117,16 +117,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('7');"
               className="text-dark"
+              onClick={() => {
+                handleClick("il");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/it.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/it.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("il");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/it.png"
-                  );
-                }}
               />{" "}
               italiano
             </a>
@@ -135,16 +135,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('8');"
               className="text-dark"
+              onClick={() => {
+                handleClick("tu");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/tr.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/tr.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("tu");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/tr.png"
-                  );
-                }}
               />
               Türk
             </a>
@@ -153,16 +153,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('9');"
               className="text-dark"
+              onClick={() => {
+                handleClick("po");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/po.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/po.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("po");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/po.png"
-                  );
-                }}
               />{" "}
               polski
             </a>
@@ -171,16 +171,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('10');"
               className="text-dark"
+              onClick={() => {
+                handleClick("ab");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ar.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ar.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("ab");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ar.png"
-                  );
-                }}
               />{" "}
               العربية
             </a>
@@ -189,16 +189,16 @@ const Countrylang = () => {
             <a
               href="javascript:changeDefaultLanguage('11');"
               className="text-dark"
+              onClick={() => {
+                handleClick("ru");
+                setflag(
+                  "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ru.png"
+                );
+              }}
             >
               <img
                 src="https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ru.png"
                 className="imagestyle"
-                onClick={() => {
-                  handleClick("ru");
-                  setflag(
-                    "https://backoffice.infinitemlmsoftware.com/backoffice/public_html/images/flags/ru.png"
-                  );
-                }}
               />{" "}
               русский
             </a>
