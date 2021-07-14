@@ -88,7 +88,7 @@ const DonutGraph = () => {
         style={{
           color: "grey",
           fontSize: 16 + "px",
-          padding: 15,
+          padding: 35,
         }}
       >
         <span>{t("payoutoverview.7")}</span>

@@ -10,7 +10,7 @@ function MemberList() {
           <RowComponent image="" MemberName="John" amount=" $38.65" />
           <RowComponent image="" MemberName="John" amount=" $38.65" />
           <RowComponent image="" MemberName="John" amount=" $38.65" />
-
+          <RowComponent image="" MemberName="John" amount=" $38.65" />
           <RowComponent image="" MemberName="John" amount=" $38.65" />
         </tbody>
       </table>
@@ -60,7 +60,7 @@ function MemberList() {
   return (
     <>
       <Container fluid>
-        <div class="card pb-4">
+        <div class="card ">
           <div
             class="card-body"
             style={{

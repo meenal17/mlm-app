@@ -17,60 +17,59 @@ function Bar() {
   return (
     <>
       {/* <!-- row --> */}
-      <Link to="/dashboard">
+
+      <div className="row">
+        <div className="col-sm-4 col-lg-7">
+          <div class="card">
+            <h4
+              style={{
+                color: "grey",
+                fontSize: 16 + "px",
+                padding: 15,
+              }}
+            >
+              <span>{t("IncomeVScommssion.6")}</span>
+            </h4>
+            <div class="card-body" style={{padding: 30}}>
+              <BarGraph />
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-4 col-lg-5">
+          <DonutGraph />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-sm-4 col-lg-7">
+          <LineGraph />
+        </div>
+
+        <div className="col-sm-12 col-lg-5">
+          <MemberList />
+        </div>
+      </div>
+
+      <div className="mt-0">
+        <SearchLinkBar />
+      </div>
+
+      <div>
         <div className="row">
-          <div className="col-sm-4 col-lg-7">
-            <div class="card">
-              <h4
-                style={{
-                  color: "grey",
-                  fontSize: 16 + "px",
-                  padding: 15,
-                }}
-              >
-                <span>{t("IncomeVScommssion.6")}</span>
-              </h4>
-              <div class="card-body" style={{padding: 30}}>
-                <BarGraph />
-              </div>
-            </div>
+          <div className="col-sm-4 col-lg-6">
+            <ListWidget />
           </div>
-          <div className="col-sm-4 col-lg-5">
-            <DonutGraph />
+
+          <div className="col-sm-4 col-lg-6 ">
+            <ListWidget2 />
           </div>
         </div>
-
-        <div className="row">
-          <div className="col-sm-4 col-lg-7">
-            <LineGraph />
-          </div>
-
-          <div className="col-sm-12 col-lg-5">
-            <MemberList />
-          </div>
-        </div>
-
-        <div className="mt-0">
-          <SearchLinkBar />
-        </div>
-
-        <div>
-          <div className="row">
-            <div className="col-sm-4 col-lg-6">
-              <ListWidget />
-            </div>
-
-            <div className="col-sm-4 col-lg-6 ">
-              <ListWidget2 />
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          {/* <div className="mt-0">
+      </div>
+      <div className="container">
+        {/* <div className="mt-0">
             <FontLinks />
           </div> */}
-        </div>
-      </Link>
+      </div>
     </>
   );
 }
